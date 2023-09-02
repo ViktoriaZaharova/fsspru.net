@@ -1,0 +1,126 @@
+@import "vars"
+
+.navbar-header
+	padding: 0
+	background: #fff
+
+.wrapperHeader
+	max-width: 1320px
+	padding: 0 12px
+	width: 100%
+	margin: 0 auto
+	display: flex
+	justify-content: space-between
+	align-items: center
+	font-size: 14px
+
+.wrapperLogoAndBtn
+	margin: 0 20px 0 0
+
+.wrapperLogo
+	display: flex
+	align-items: center
+	padding: 0
+	margin: 0
+
+.logo
+	width: 50px
+	height: 50px
+
+.textHeader
+	font-size: 14px
+	margin-left: 10px
+	color: #2862AC
+	line-height: 15px
+
+.active
+	border-bottom: 1px solid #fff
+
+.navbar-nav
+	font-family: $default-font
+	font-size: 14px
+	.nav-item
+		margin: 0 24px 0 0
+		&:last-child
+			margin: 0
+		.nav-link
+			font-weight: normal
+			color: #0E0E0E
+			padding: 29.7px 0
+			position: relative
+			transition: .3s ease
+			&::before
+				content: ''
+				position: absolute
+				left: 0
+				bottom: 0
+				width: 100%
+				height: 2px
+				background: transparent
+		&.active
+			.nav-link
+				color: #2862AC
+				font-weight: 500
+				&::before
+					background: $accent
+		&.show
+			.dropdown-toggle
+				font-weight: 500
+				&::before
+					background: $accent
+				&:after
+					border-top-color: $accent
+					transform: rotate(180deg)
+					
+.dropdown-menu
+	.scroll-vertical
+		max-height: 174px
+		overflow-y: auto
+		padding: 0 12px 0 0
+
+
+
+.dropdown-toggle
+	display: flex
+	align-items: center
+	&::after
+		margin-left: 2px
+		vertical-align: inherit
+		border-top: 6px solid #0E0E0E
+		border-right: 3px solid transparent
+		border-bottom: 0
+		border-left: 3px solid transparent
+
+.dropdown-menu
+	min-width: 303px
+	border: none
+	border-radius: 12px
+	background: #FFF
+	box-shadow: 0px 4px 54px 0px rgba(0, 0, 0, 0.10)
+	margin: 20px 0 0
+	padding: 12px 30px 12px 12px
+
+.dropdown-item
+	color: #5A5A5A
+	font-size: 14px
+	font-weight: 300
+	padding: 8px 0
+	border-bottom: 2px solid #E5E7EA
+	background: #FFF
+	&:first-child
+		border-top: 2px solid #E5E7EA
+	&:hover
+		background: #fff
+		color: $accent
+
+.phoneHeader
+	text-align: right
+	color: #5A5A5A
+	a
+		font-size: 16px
+		font-weight: 500
+		text-decoration-line: underline
+		color: #2862AC
+		margin: 0 0 8px auto
+		&:hover
+			color: $blue

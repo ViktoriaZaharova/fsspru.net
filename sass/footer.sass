@@ -1,0 +1,97 @@
+@import "vars"
+
+footer
+	background: #000
+	color: #fff
+	padding: 64px 0 0
+	font-size: 14px
+	font-weight: 300
+	margin: 53px 0 0
+
+.wrapperFooter
+	max-width: 1320px
+	margin: 0 auto
+
+.wrapperLogoFooter
+	display: flex
+	align-items: center
+
+.logoText
+	font-size: 14px
+	margin: 0 0 0 8px
+
+.contentTextNameDownFooter
+	margin: 24px 0
+	max-width: 306px
+	line-height: 130%
+
+.contentTextUpFooter
+	max-width: 400px
+	line-height: 130%
+
+.wrapperSectionsFooterTitle
+	margin: 0 0 24px
+	text-transform: uppercase
+
+
+.contentTextUpFooterLinks, .contentTextDownFooter
+	color: #fff
+	opacity: 0.5
+	text-decoration: underline
+	margin: 0 0 18px
+	font-size: 14px	
+	line-height: 100%
+	&:last-child
+		margin: 0
+	&:hover
+		color: #fff
+		opacity: 1
+
+.contentTextDownFooter
+	opacity: 0.6
+	margin: 0 0 14px
+	line-height: 100%
+
+.wrapperPaymentsFooter
+	padding: 24px 0
+	border-top: 2px solid rgba(#fff, .2)
+	border-bottom: 2px solid rgba(#fff, .2)
+	margin: 46px 0 0
+	line-height: 160%
+	.box-text
+		max-width: 990px
+		color: #fff
+
+.wrapperContactFooterBox
+	margin: 32px 0 0
+	line-height: 100%
+	&:first-child
+		margin: 0
+	a
+		margin: 0 0 14px
+		font-size: 16px
+		font-weight: 500
+		text-decoration: underline
+		color: #fff
+		&:hover
+			color: $blue
+	span
+		opacity: 0.6
+
+.application-links
+	margin: 26px 0 0
+	display: flex
+	align-items: flex-start
+	&__item
+		@include d-flex
+		border-radius: 4px
+		border: 1px solid #E5E7EA
+		margin: 0 14px 0 0
+		&:last-child
+			margin: 0
+
+.wrapperDownFooter
+	align-items: center
+	padding: 48px 0
+	.contentTextUpFooter
+		max-width: 440px
