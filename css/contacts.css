@@ -1,0 +1,65 @@
+.page-contacts {
+  z-index: -1;
+}
+.page-contacts::before {
+  content: "";
+  position: absolute;
+  right: 60px;
+  top: -20px;
+  width: 636px;
+  height: 654px;
+  background: url("../img/herb.png") no-repeat center;
+  background-size: 100%;
+}
+
+.site-contact-box {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+}
+.site-contact-box .box-text {
+  max-width: 501px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 130%;
+  margin: 0 0 24px;
+}
+
+.contacts-item {
+  margin: 0 0 24px;
+  font-size: 18px;
+  font-weight: 300;
+}
+.contacts-item:last-child {
+  margin: 0;
+}
+.contacts-item p {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0 0 8px;
+}
+.contacts-item p span {
+  margin: 0 0 0 5px;
+  color: #5A5A5A;
+  font-weight: normal;
+  text-transform: none;
+}
+.contacts-item a {
+  color: #2862AC;
+  text-decoration: underline;
+}
+.contacts-item a:hover {
+  color: #007BFF;
+}
+
+.link-map {
+  margin: 8px 0 0;
+  font-size: 14px;
+}
+
+.address-box {
+  color: #5A5A5A;
+}

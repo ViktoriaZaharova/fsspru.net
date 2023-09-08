@@ -1,10 +1,5 @@
 @import 'vars'
 
-.mainWrapper
-	padding: 76px 0 0
-	display: flex
-	flex-direction: column
-	min-height: 100%
 
 // home
 .home
@@ -91,9 +86,31 @@
 	[type="submit"]
 		width: 100%			
 
-// home
-.home
-	margin: 54px 0 0	
+.dropdown-menu-result
+	max-height: 178px
+	overflow-y: auto
+	margin: 0		
+	padding: 16px 12px
+	color: #5A5A5A
+	&__head
+		margin: 0 0 16px
+		font-size: 12px
+
+.list-result
+	width: 100%
+	font-size: 14px
+	font-weight: 300
+	border-top: 2px solid #E5E7EA
+	li
+		border-bottom: 2px solid #E5E7EA
+		a
+			padding: 8px 0
+			color: #5A5A5A
+			.color-accent
+				color: $accent
+
+
+
 
 // causes
 .causes
@@ -268,10 +285,6 @@
 			width: 592px
 			height: 296px
 			border-radius: 592px 592px 0 0
-<<<<<<< HEAD
-=======
-		
->>>>>>> 2a648f3da25860291d2073d020cf988572599681
 
 .payments-advantages-box
 	display: flex
@@ -295,11 +308,8 @@
 		@include d-flex
 	&__body
 		width: calc(100% - 36px)
-<<<<<<< HEAD
 		padding: 0 0 0 8px
-=======
-		padding: 0 0 0 8px	
->>>>>>> 2a648f3da25860291d2073d020cf988572599681
+
 
 // regions
 .regions

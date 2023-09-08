@@ -1,0 +1,70 @@
+.technical-box {
+  width: 100%;
+  height: 100%;
+  background: #fff url("../img/settings.svg") no-repeat right center;
+  background-size: 250px;
+  border-radius: 12px;
+  padding: 24px;
+}
+.technical-box .btn-group {
+  margin: 24px 0 0;
+}
+.technical-box .btn {
+  padding: 10px 48px;
+}
+.technical-box .box-text {
+  font-size: 18px;
+  font-weight: 300;
+  max-width: 462px;
+  line-height: 130%;
+}
+.technical-box .box-text p {
+  margin: 0 0 12px;
+}
+.technical-box .box-text p:last-child {
+  margin: 0;
+}
+
+.fault-box {
+  background: #fff url("../img/404.svg") no-repeat right center;
+  background-size: 401px;
+}
+
+.oferta-box {
+  background: #fff;
+}
+.oferta-box .box-text {
+  max-width: none;
+  font-size: 16px;
+  margin: 0 0 24px;
+  line-height: 140%;
+}
+.oferta-box .box-text:last-child {
+  margin: 0;
+}
+.oferta-box .box-text a {
+  display: inline;
+  text-decoration: underline;
+  color: #2862AC;
+}
+.oferta-box .box-text a:hover {
+  color: #007BFF;
+}
+.oferta-box .box-text ol {
+  margin: 12px 0;
+}
+.oferta-box .box-text ol li {
+  margin: 0 0 5px;
+}
+.oferta-box .box-text ol li:last-child {
+  margin: 0;
+}
+
+.titleHome {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: normal;
+  color: #0E0E0E;
+  margin: 24px 0 14px;
+}

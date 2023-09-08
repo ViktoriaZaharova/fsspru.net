@@ -46,6 +46,10 @@ body
 	background: #F4F6F8
 	color: #0E0E0E
 
+html, body
+	overflow-x: hidden
+	height: 100%	
+
 img
 	display: block
 	max-width: 100%
@@ -192,10 +196,24 @@ button, .btn
 		background: #007BFF
 		box-shadow: 0px 0px 14px 0px rgba(0, 123, 255, 0.40)
 		color: #fff
+		border-color: #007BFF
 	&.disabled
 		border: 1px solid #5A5A5A
 		background: #FFF
 		color: #5A5A5A
+
+.btn-group
+	width: 100%
+	flex-wrap: wrap
+	.btn
+		width: fit-content
+		margin: 0 24px 0 0
+		flex: none
+		&:last-child
+			margin: 0		
+
+.btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn:not(:last-child):not(.dropdown-toggle), .btn-group>.btn-group:not(:first-child)>.btn, .btn-group>.btn:not(:first-child)
+	border-radius: 8px
 
 .svg-icon
 	display: inline-block
@@ -220,10 +238,20 @@ h1
 	font-size: 36px
 	text-transform: uppercase
 
+.content
+	h1
+		font-weight: bold
+		margin: 0 0 24px	
+
 h2
 	font-size: 32px
 	text-transform: uppercase
 	margin: 0 0 24px
+
+.h3
+	font-size: 24px
+	font-weight: 500
+	width: 100%	
 
 .descCardsInfo
 	color: #5A5A5A
@@ -267,11 +295,8 @@ a.color-accent
 	font-weight: 500
 
 .box-text
-<<<<<<< HEAD
 	color: #5A5A5A
-=======
-	color: #5A5A5A	
->>>>>>> 2a648f3da25860291d2073d020cf988572599681
+
 
 .dropdown
 	&.show
@@ -300,6 +325,8 @@ a.color-accent
 	&::-webkit-resizer
 		background-color: $accent
 		border-radius: 2px
+
+
 
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link
 	color: $accent
@@ -463,3 +490,41 @@ a.color-accent
 		border-color: #007BFF
 
 //checkbox my end
+.mainWrapper
+	padding: 76px 0 0
+	display: flex
+	flex-direction: column
+	min-height: 100%	
+
+.content
+	padding: 48px 0 0	
+	flex: 1 0 auto
+
+.page
+	position: relative	
+
+.breadcrumbs
+	width: 100%
+	display: flex
+	align-items: center
+	color: #5A5A5A
+	font-size: 16px
+	font-weight: 300
+	margin: 0 0 48px
+	li
+		display: flex
+		align-items: center
+		&::after
+			content: '/'
+			margin: 0 8px
+			font-size: 16px
+			font-weight: 500
+			color: $accent
+		&:last-child
+			&::after
+				display: none	
+		a
+			color: $accent
+			text-decoration: underline
+			&:hover
+				color: $blue		

@@ -78,11 +78,11 @@
   height: 2px;
   background: transparent;
 }
-.navbar-nav .nav-item.active .nav-link {
+.navbar-nav .nav-item .nav-link.active {
   color: #2862AC;
   font-weight: 500;
 }
-.navbar-nav .nav-item.active .nav-link::before {
+.navbar-nav .nav-item .nav-link.active::before {
   background: #2862AC;
 }
 .navbar-nav .nav-item.show .dropdown-toggle {

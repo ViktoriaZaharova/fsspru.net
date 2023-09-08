@@ -1,16 +1,4 @@
 @charset "UTF-8";
-.mainWrapper {
-  padding: 76px 0 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  min-height: 100%;
-}
-
 .home {
   margin: 54px 0 0;
   position: relative;
@@ -107,8 +95,33 @@
   width: 100%;
 }
 
-.home {
-  margin: 54px 0 0;
+.dropdown-menu-result {
+  max-height: 178px;
+  overflow-y: auto;
+  margin: 0;
+  padding: 16px 12px;
+  color: #5A5A5A;
+}
+.dropdown-menu-result__head {
+  margin: 0 0 16px;
+  font-size: 12px;
+}
+
+.list-result {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 300;
+  border-top: 2px solid #E5E7EA;
+}
+.list-result li {
+  border-bottom: 2px solid #E5E7EA;
+}
+.list-result li a {
+  padding: 8px 0;
+  color: #5A5A5A;
+}
+.list-result li a .color-accent {
+  color: #2862AC;
 }
 
 .causes .card {

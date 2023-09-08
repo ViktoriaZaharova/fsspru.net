@@ -49,6 +49,11 @@ body {
   color: #0E0E0E;
 }
 
+html, body {
+  overflow-x: hidden;
+  height: 100%;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -270,11 +275,34 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 123, 255, 0.4);
           box-shadow: 0px 0px 14px 0px rgba(0, 123, 255, 0.4);
   color: #fff;
+  border-color: #007BFF;
 }
 .btn-border.disabled {
   border: 1px solid #5A5A5A;
   background: #FFF;
   color: #5A5A5A;
+}
+
+.btn-group {
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.btn-group .btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 24px 0 0;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
+.btn-group .btn:last-child {
+  margin: 0;
+}
+
+.btn-group > .btn-group:not(:last-child) > .btn, .btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-group:not(:first-child) > .btn, .btn-group > .btn:not(:first-child) {
+  border-radius: 8px;
 }
 
 .svg-icon {
@@ -306,10 +334,21 @@ h1 {
   text-transform: uppercase;
 }
 
+.content h1 {
+  font-weight: bold;
+  margin: 0 0 24px;
+}
+
 h2 {
   font-size: 32px;
   text-transform: uppercase;
   margin: 0 0 24px;
+}
+
+.h3 {
+  font-size: 24px;
+  font-weight: 500;
+  width: 100%;
 }
 
 .descCardsInfo {
@@ -618,4 +657,66 @@ a.color-accent:hover {
 }
 .checkbox-custom:hover {
   border-color: #007BFF;
+}
+
+.mainWrapper {
+  padding: 76px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+}
+
+.content {
+  padding: 48px 0 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.page {
+  position: relative;
+}
+
+.breadcrumbs {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #5A5A5A;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0 0 48px;
+}
+.breadcrumbs li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.breadcrumbs li::after {
+  content: "/";
+  margin: 0 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #2862AC;
+}
+.breadcrumbs li:last-child::after {
+  display: none;
+}
+.breadcrumbs li a {
+  color: #2862AC;
+  text-decoration: underline;
+}
+.breadcrumbs li a:hover {
+  color: #007BFF;
 }
