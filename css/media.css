@@ -1,2 +1,44 @@
-/*==========  Desktop First  ==========*/
+/*==========	Desktop First	==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1300px) {
+  .navbar-nav {
+    font-size: 12px;
+  }
+  .navbar-nav .nav-item {
+    margin: 0 15px 0 0;
+  }
+  .phoneHeader {
+    font-size: 12px;
+  }
+  .dropdown-menu {
+    min-width: 260px;
+    max-width: 260px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .navbar-light .navbar-toggler {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .wrapperLogoAndBtn {
+    margin: 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navbar-header {
+    padding: 12px 0;
+  }
+  .wrapperHeader {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}

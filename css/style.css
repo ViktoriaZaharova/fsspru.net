@@ -369,12 +369,20 @@ h2 {
   padding: 0 12px;
 }
 
+.m-24 {
+  margin: 24px 0;
+}
+
 .mb-16 {
   margin-bottom: 16px;
 }
 
 .mb-24 {
   margin-bottom: 24px;
+}
+
+.mb-64 {
+  margin-bottom: 64px;
 }
 
 .mt-24 {
@@ -407,6 +415,10 @@ a.color-accent:hover {
 
 .box-text {
   color: #5A5A5A;
+}
+
+.color-black {
+  color: #0E0E0E;
 }
 
 .dropdown.show .dropdown-toggle {
@@ -719,4 +731,34 @@ a.color-accent:hover {
 }
 .breadcrumbs li a:hover {
   color: #007BFF;
+}
+
+.list-stages {
+  position: relative;
+  padding: 0 0 0 28px;
+}
+.list-stages::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  width: 14px;
+  height: 100%;
+  background: url("../img/list-stages-dots.svg") no-repeat center;
+}
+.list-stages li {
+  margin: 0 0 14px;
+}
+.list-stages li:last-child {
+  margin: 0;
+}
+
+.list-stages-5::before {
+  background: url("../img/list-stages-dots2.svg") no-repeat center top;
+}
+
+.list-stages-4::before {
+  background: url("../img/list-stages-dots3.svg") no-repeat center top;
 }

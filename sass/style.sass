@@ -267,11 +267,17 @@ h2
 	>*
 		padding: 0 12px
 
+.m-24	
+	margin: 24px 0
+
 .mb-16
 	margin-bottom: 16px
 
 .mb-24
 	margin-bottom: 24px
+
+.mb-64
+	margin-bottom: 64px	
 
 .mt-24
 	margin-top: 24px
@@ -297,6 +303,9 @@ a.color-accent
 .box-text
 	color: #5A5A5A
 
+
+.color-black
+	color: #0E0E0E	
 
 .dropdown
 	&.show
@@ -528,3 +537,30 @@ a.color-accent
 			text-decoration: underline
 			&:hover
 				color: $blue		
+
+.list-stages
+	position: relative
+	padding: 0 0 0 28px
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		top: 50%
+		transform: translate(0,-50%)
+		width: 14px
+		height: 100%
+		background: url('../img/list-stages-dots.svg') no-repeat center
+
+	li
+		margin: 0 0 14px
+		&:last-child
+			margin: 0
+
+.list-stages-5
+	&::before
+		background: url('../img/list-stages-dots2.svg') no-repeat center top
+
+.list-stages-4
+	&::before
+		background: url('../img/list-stages-dots3.svg') no-repeat center top		
+

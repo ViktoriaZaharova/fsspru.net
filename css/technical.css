@@ -68,3 +68,69 @@
   color: #0E0E0E;
   margin: 24px 0 14px;
 }
+
+.page-payments {
+  position: relative;
+  background: url("../img/herb-grey.png") no-repeat calc(100% - 60px) 26px;
+  background-size: 636px;
+}
+.page-payments .titleHome {
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: normal;
+  margin: 0 0 36px;
+  line-height: 100%;
+}
+.page-payments .titleHome strong {
+  font-weight: bold;
+}
+
+.payments-box .titleHome {
+  border-bottom: 2px solid #5A5A5A;
+  padding: 0 0 24px;
+  margin: 0 0 24px;
+}
+.payments-box .box-text {
+  line-height: 160%;
+}
+
+.list-requisites {
+  background: #fff;
+  border-radius: 12px;
+  font-size: 14px;
+  color: #5A5A5A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.list-requisites ul {
+  width: 50%;
+}
+.list-requisites ul li {
+  border-bottom: 2px solid #E5E7EA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 24px;
+}
+.list-requisites ul li:last-child {
+  border: none;
+}
+.list-requisites ul li p {
+  min-width: 196px;
+  max-width: 196px;
+  font-weight: bold;
+}
+.list-requisites ul:last-child li:last-child {
+  border-bottom: 2px solid #E5E7EA;
+}
+.list-requisites ul:last-child li p {
+  min-width: 110px;
+  max-width: 110px;
+}
