@@ -38,7 +38,7 @@ $('.home-form input').on('keyup change', function () {
 });
 
 // активная ссылка меню
-$('.wrapperLinksHeader li .nav-link').each(function () {
+$('.wrapperLinksHeader .nav-item li .nav-link').each(function () {
 	let location = window.location.href;
 	let link = this.href;
 	if (location === link) {
@@ -46,3 +46,38 @@ $('.wrapperLinksHeader li .nav-link').each(function () {
 	}
 });
 // end
+
+
+// hidden list > 3
+$('.departmens-box').each(function () {
+	if ($(this).find('.departmens-box-item').length > 3) {
+		$(this).find('.departmens-box-item').slice(3).hide();
+		$(this).find('.departmens-box__body').append('<a href="#" class="departmens-box__toggle"><span>Узнать подробнее</span><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-bottom"></use></svg></a>');
+	}
+});
+
+// hidden list > 3
+
+// show list all
+$('.departmens-box__toggle').on('click', function (e) {
+	e.preventDefault();
+
+	var
+		$this = $(this),
+		content = $(this).parents('.departmens-box__body').find('.departmens-box-item');
+
+
+	if (!$this.hasClass('trigger')) {
+		$this.addClass('trigger');
+		$this.find('span').html('Скрыть');
+
+		content.slideDown();
+	} else {
+		$this.removeClass('trigger');
+		$this.find('span').html('Узнать подробнее');
+
+		content.slice(3).slideUp();
+	}
+});
+// show list all
+

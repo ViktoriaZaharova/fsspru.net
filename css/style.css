@@ -381,6 +381,10 @@ h2 {
   margin-bottom: 24px;
 }
 
+.mb-36 {
+  margin-bottom: 36px;
+}
+
 .mb-64 {
   margin-bottom: 64px;
 }
@@ -391,6 +395,10 @@ h2 {
 
 .m-64 {
   margin: 64px 0;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .cardWhite {
@@ -733,32 +741,115 @@ a.color-accent:hover {
   color: #007BFF;
 }
 
-.list-stages {
+.application-advantages-list {
   position: relative;
-  padding: 0 0 0 28px;
+  z-index: 1;
+  color: #5A5A5A;
+  font-weight: 300;
+  line-height: 100%;
+  font-size: 16px;
 }
-.list-stages::before {
+.application-advantages-list::before {
   content: "";
   position: absolute;
-  left: 0;
+  left: 6px;
   top: 50%;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
-  width: 14px;
-  height: 100%;
-  background: url("../img/list-stages-dots.svg") no-repeat center;
+  background: #2862AC;
+  width: 2px;
+  height: calc(100% - 10px);
 }
-.list-stages li {
-  margin: 0 0 14px;
+.application-advantages-list li {
+  position: relative;
+  padding: 0 0 0 28px;
+  margin: 0 0 29px;
 }
-.list-stages li:last-child {
+.application-advantages-list li:last-child {
   margin: 0;
 }
-
-.list-stages-5::before {
-  background: url("../img/list-stages-dots2.svg") no-repeat center top;
+.application-advantages-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 14px;
+  height: 14px;
+  background: #2862AC;
+  border-radius: 50%;
 }
 
-.list-stages-4::before {
-  background: url("../img/list-stages-dots3.svg") no-repeat center top;
+.general-box {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+}
+.general-box .titleHome {
+  border-bottom: 2px solid #000;
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  font-size: 14px;
+  margin: 12px 0 0;
+}
+.pagination li {
+  margin: 0 5px 0 0;
+}
+.pagination li:last-child {
+  margin: 0;
+}
+.pagination li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 0.14px;
+  color: #0E0E0E;
+  fill: #0E0E0E;
+  background: #fff;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  border-radius: 8px;
+}
+.pagination li a:hover, .pagination li a.active {
+  background: #2862AC;
+  color: #fff;
+}
+.pagination li a:hover .svg-icon, .pagination li a.active .svg-icon {
+  fill: #fff;
+}
+.pagination li .svg-icon {
+  fill: #0E0E0E;
+  width: 16px;
+  height: 16px;
+}
+.pagination li span {
+  background: #fff;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 8px;
 }

@@ -73,7 +73,7 @@
   font-weight: 300;
   line-height: 140%;
   font-size: 12px;
-  margin: 24px 0 0;
+  margin: 25px 0 0;
 }
 .formDescIndividual::before {
   content: "";
@@ -268,44 +268,6 @@
 .application-mobile {
   max-width: 333px;
   margin: 0 0 0 90px;
-}
-
-.application-advantages-list {
-  position: relative;
-  z-index: 1;
-  color: #5A5A5A;
-  font-weight: 300;
-  line-height: 100%;
-  font-size: 16px;
-}
-.application-advantages-list::before {
-  content: "";
-  position: absolute;
-  left: 7px;
-  top: 50%;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-  background: #2862AC;
-  width: 2px;
-  height: calc(100% - 10px);
-}
-.application-advantages-list li {
-  position: relative;
-  padding: 0 0 0 28px;
-  margin: 0 0 29px;
-}
-.application-advantages-list li:last-child {
-  margin: 0;
-}
-.application-advantages-list li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 14px;
-  height: 14px;
-  background: #2862AC;
-  border-radius: 50%;
 }
 
 .payments-advantages__content {

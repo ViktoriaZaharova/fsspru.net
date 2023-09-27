@@ -98,8 +98,14 @@
           transform: rotate(180deg);
 }
 
+.form-group {
+  margin: 0;
+}
+
 .dropdown-menu {
   min-width: 303px;
+  max-width: 100%;
+  width: 100%;
   border: none;
   border-radius: 12px;
   background: #FFF;

@@ -1,0 +1,42 @@
+.oferta-box .box-text {
+  max-width: none;
+  font-size: 16px;
+  margin: 0 0 24px;
+  line-height: 140%;
+  font-weight: 300;
+}
+.oferta-box .box-text:last-child {
+  margin: 0;
+}
+.oferta-box .box-text a {
+  display: inline;
+  text-decoration: underline;
+  color: #2862AC;
+}
+.oferta-box .box-text a:hover {
+  color: #007BFF;
+}
+.oferta-box .box-text ol {
+  margin: 12px 0;
+}
+.oferta-box .box-text ol li {
+  margin: 0 0 5px;
+}
+.oferta-box .box-text ol li:last-child {
+  margin: 0;
+}
+.oferta-box .box-text p {
+  margin: 0 0 12px;
+}
+.oferta-box .box-text p:last-child {
+  margin: 0;
+}
+
+.titleHome {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: normal;
+  color: #0E0E0E;
+  margin: 24px 0 14px;
+}
