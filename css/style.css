@@ -155,6 +155,9 @@ label {
   font-weight: 300;
   line-height: 100%;
 }
+.input-title__text {
+  margin: 0 0 0 auto;
+}
 
 [type=radio], [type=checkbox] {
   -webkit-appearance: auto;
@@ -270,6 +273,9 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   background: #2862AC;
   color: #fff;
 }
+.btn-border:hover .svg-icon {
+  fill: #fff;
+}
 .btn-border:focus, .btn-border.active {
   background: #007BFF;
   -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 123, 255, 0.4);
@@ -281,6 +287,24 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   border: 1px solid #5A5A5A;
   background: #FFF;
   color: #5A5A5A;
+}
+.btn-border .svg-icon {
+  width: 13px;
+  height: 12px;
+  margin: 0 0 0 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  fill: #2862AC;
+}
+.btn-border .svg-icon-prev {
+  margin: 0 8px 0 0;
 }
 
 .btn-group {
@@ -427,6 +451,10 @@ a.color-accent:hover {
 
 .color-black {
   color: #0E0E0E;
+}
+
+.color-red {
+  color: #D92A2A;
 }
 
 .dropdown.show .dropdown-toggle {
@@ -852,4 +880,97 @@ a.color-accent:hover {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 8px;
+}
+
+.table {
+  width: 100%;
+  font-size: 14px;
+  color: #5A5A5A;
+  text-align: left;
+}
+
+.table-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  background: #F4F6F8;
+  padding: 0 24px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.table-row:hover {
+  background: #fff;
+}
+.table-row:hover .itemTableTravelBan {
+  border-color: transparent;
+}
+
+.nameInTable {
+  color: #fff;
+  border-radius: 12px 12px 0px 0px;
+  background: #2862AC;
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+}
+.nameInTable:hover {
+  background: #2862AC;
+}
+.nameInTable .itemTableTravelBan {
+  border: none;
+}
+
+.itemTableTravelBan {
+  width: 100%;
+  padding: 22px 0 20px;
+  border-bottom: 4px solid #E5E7EA;
+}
+
+.descHome {
+  color: #5A5A5A;
+  font-weight: 300;
+  line-height: 140%;
+}
+
+.title-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.progress-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 0 auto;
+}
+
+.progress-steps {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  color: #2862AC;
+}
+
+.js-tab-content {
+  display: none;
+  width: 100%;
+}
+.js-tab-content.active {
+  display: block;
 }

@@ -81,3 +81,51 @@ $('.departmens-box__toggle').on('click', function (e) {
 });
 // show list all
 
+
+$(".bailiff-next-step").click(function (e) {
+	e.preventDefault();
+	var id = $(this).attr('data-tab'),
+		content = $('.form-bailiff .js-tab-content[data-tab="' + id + '"]');
+
+	$('.form-bailiff .js-tab-content.active').removeClass('active'); // 3
+	content.addClass('active'); // 4
+});
+
+$(function () {
+	var next = $('.next-step');
+	var prev = $('.prev-step');
+	var stepsCount = $('.bailiff-item').length;
+	var currentStep = 1;
+
+	$('.progress-steps__cp').text(currentStep); // устанавливаем ширину полосы после изменения шага
+	$('.progress-steps__default').text(stepsCount);
+
+	next.on('click', function () {
+		$('.progress-steps__cp').text(++currentStep); // устанавливаем ширину полосы после изменения шага
+		$('.progress-steps__default').text(stepsCount);
+	});
+
+	prev.on('click', function () {
+		$('.progress-steps__cp').text(--currentStep);
+		$('.progress-steps__default').text(stepsCount);
+	});
+});
+
+$('#additionalOrder').on('click', function () {
+	
+	var
+		$this = $(this),
+		content = $('.add-applicant');
+
+	if (!$this.hasClass('trigger')) {
+		$this.addClass('trigger');
+		$this.find('span').html('Убрать заявителя ');
+		$('.form-bailiff__price').slideUp();
+		content.slideDown();
+	} else {
+		$this.removeClass('trigger');
+		$this.find('span').html('Добавить заявителя за 99р');
+		$('.form-bailiff__price').slideDown();
+		content.slideUp();
+	}
+});

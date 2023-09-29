@@ -1,0 +1,256 @@
+.examination h1 {
+  font-weight: normal;
+}
+.examination .title-wrapper {
+  margin: 0 0 36px;
+}
+.examination .title-wrapper .descHome {
+  width: 100%;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.formDescTravelBan {
+  width: 100%;
+  border-radius: 12px;
+  background: #F4F6F8 url("../img/warning.svg") no-repeat right center;
+  background-size: 61px;
+  padding: 14px 64px 14px 14px;
+  font-size: 12px;
+  line-height: 140%;
+  font-weight: 300;
+  margin: 25px 0 0 0;
+}
+
+.bailiff-next-step {
+  width: 100%;
+}
+
+.bailiff-next-step-first {
+  margin: 8px 0 0;
+}
+
+.form-bailiff__body {
+  border-bottom: 2px solid #2862AC;
+}
+.form-bailiff .btn {
+  width: 100%;
+}
+.form-bailiff__footer {
+  margin: 24px 0 0;
+}
+.form-bailiff__price {
+  padding: 14px;
+  border-radius: 12px;
+  background: #F4F6F8;
+  width: 100%;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: center;
+}
+.form-bailiff__price strong {
+  font-weight: 500;
+  color: #2862AC;
+}
+
+.types-checks {
+  width: 100%;
+  margin: 0 0 36px;
+  background: #F4F6F8;
+  border-radius: 12px;
+  padding: 24px 24px 12px;
+}
+.types-checks .h3 {
+  width: 100%;
+  text-transform: uppercase;
+  border-bottom: 2px solid #5A5A5A;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0 0 14px;
+  margin: 0 0 24px;
+}
+
+.types-checks-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 14px;
+}
+.types-checks-item img {
+  margin: 0 8px 0 0;
+  width: 24px;
+}
+
+.add-applicant {
+  display: none;
+}
+.add-applicant__price {
+  width: 100%;
+  margin: 0 0 24px;
+  text-align: center;
+  border-radius: 12px;
+  background: #F4F6F8;
+  color: #5A5A5A;
+  padding: 14px;
+}
+.add-applicant__price .color-accent {
+  color: #2862AC;
+}
+
+.how-to-check {
+  margin: 64px 0 40px;
+}
+.how-to-check .box-text {
+  margin: 0 0 36px;
+  color: #5A5A5A;
+  font-weight: 300;
+}
+.how-to-check .box-text p {
+  margin: 0 0 8px;
+}
+.how-to-check .box-text p:last-child {
+  margin: 0;
+}
+
+.descCardsCheckBan {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #5A5A5A;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 140%;
+}
+.descCardsCheckBan__body {
+  width: calc(100% - 86px);
+  padding: 24px 30px 24px 14px;
+}
+.descCardsCheckBan__number {
+  width: 86px;
+  height: 100%;
+  color: #fff;
+  padding: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 64px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 12px 0 0 12px;
+}
+.descCardsCheckBan__number::before {
+  content: "";
+  width: 220px;
+  height: 220px;
+  position: absolute;
+  z-index: -1;
+  background: #2862AC;
+  border-radius: 220px;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+.descCardsCheckBan .box-text {
+  max-width: 470px;
+  margin: 0;
+}
+
+.wrapperWarning {
+  border-radius: 12px;
+  background: #F4F6F8 url("../img/warning.svg") no-repeat right center;
+  background-size: 77px;
+  width: 100%;
+  margin: 36px 0 0;
+  padding: 24px 14px;
+  font-size: 14px;
+}
+.wrapperWarning__body {
+  max-width: 466px;
+}
+.wrapperWarning a {
+  margin: 14px 0 0;
+  font-weight: 500;
+}
+.wrapperWarning .box-text {
+  line-height: 140%;
+  font-weight: 300;
+}
+
+.wrapperResultCheckTravelBan {
+  color: #5A5A5A;
+  font-weight: 300;
+  font-size: 14px;
+}
+.wrapperResultCheckTravelBan p {
+  margin: 0 0 14px;
+}
+.wrapperResultCheckTravelBan p span {
+  font-weight: 400;
+}
+.wrapperResultCheckTravelBan p.mb-24 {
+  margin-bottom: 24px;
+}
+
+.resultTitle {
+  text-transform: uppercase;
+  color: #0E0E0E;
+  font-weight: normal;
+  margin: 0 0 14px;
+}
+
+.banDeparture {
+  font-weight: 500;
+  color: #D92A2A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.banDeparture img {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0 0 0 4px;
+}
+
+.wrapperImgPrimerOtcheta {
+  margin: -90px auto 0;
+}
+
+.sample-report .payments-advantages__content {
+  padding: 36px 24px;
+}
+
+.statistics-online {
+  margin: 64px 0 154px;
+}
+.statistics-online .descCardsInfo {
+  max-width: 856px;
+  line-height: 140%;
+  margin: 0 0 36px;
+}
