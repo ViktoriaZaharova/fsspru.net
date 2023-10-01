@@ -158,6 +158,10 @@ label {
 .input-title__text {
   margin: 0 0 0 auto;
 }
+.input-title sup {
+  font-weight: bold;
+  margin: 0px 0 -10px 2px;
+}
 
 [type=radio], [type=checkbox] {
   -webkit-appearance: auto;
@@ -428,6 +432,10 @@ h2 {
 .cardWhite {
   background: #fff;
   border-radius: 12px;
+}
+
+.color-accent {
+  color: #2862AC;
 }
 
 a.color-accent {

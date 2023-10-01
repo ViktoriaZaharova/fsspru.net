@@ -183,22 +183,22 @@
 						<div class="col-12">
 							<ul class="breadcrumbs my-ul">
 								<li><a href="index.html">Главная</a></li>
-								<li><span>Запрет на выезд</span></li>
+								<li><span>Запрета на въезд</span></li>
 							</ul>
 						</div>
-
 
 						<div class="col-12">
 							<div class="debtОfBailiffs card">
 								<div class="title-wrapper">
 									<h1 class="titleHome">
-										<strong>Проверка запрета</strong> на выезд за границу по фамилии
+										<strong>Проверка запрета</strong> на въезд в РФ
 									</h1>
 									<div class="descHome">
 										<p>Для проверки запрета или ограничений заполните данные ниже. Отчет будет сформирован из
-											официальных баз данных ФТС,
-											ФССП,
-											ФНП. Формирование регламентируется статьей №67 постановления №229-ФЗ от 02.10.2007
+											официальных баз данных МВД, ФМС.
+											Формирование регламентируется ФЗ 109: «О миграционном учете иностранных граждан и лиц без
+											гражданства в Российской
+											Федерации»
 										</p>
 									</div>
 									<div class="progress-wrapper">
@@ -434,40 +434,134 @@
 									<div class="bailiff-item js-tab-content" data-tab="2">
 										<div class="form-bailiff__body">
 											<div class="row">
-												<div class="col-12">
-													<div class="types-checks">
-														<div class="h3">Виды проверок:</div>
+												<div class="col-12 col-sm-6 col-lg-4 mb-24">
+													<div class="form-group">
+														<label for="country">
+															<span class="input-title">
+																Гражданство: <sup class="color-accent">*</sup>
+															</span>
+														</label>
+														<div class="dropdown dropdown-regions">
+															<input type="text" class="form-control input-dropdown" name="country" id="country"
+																required="required" value="Абхазия">
+															<div class="dropdown-menu">
+																<div class="scroll-vertical">
+																	<a class="dropdown-item" href="#">АБХАЗИЯ</a>
+																	<a class="dropdown-item" href="#">АВСТРАЛИЯ</a>
+																	<a class="dropdown-item" href="#">АБХАЗИЯ</a>
+																	<a class="dropdown-item" href="#">АВСТРАЛИЯ</a>
+																	<a class="dropdown-item" href="#">АБХАЗИЯ</a>
+																	<a class="dropdown-item" href="#">АВСТРАЛИЯ</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-lg-4 mb-24">
+													<div class="form-group">
+														<label for="document_type">
+															<span class="input-title">
+																Тип документа: <sup class="color-accent">*</sup>
+															</span>
+														</label>
+														<div class="dropdown dropdown-regions">
+															<input type="text" class="form-control input-dropdown" name="document_type"
+																id="document_type" required="required" value="Заграничный биометрический">
+															<div class="dropdown-menu">
+																<div class="scroll-vertical">
+																	<a class="dropdown-item" href="#">Заграничный биометрический</a>
+																	<a class="dropdown-item" href="#">Заграничный паспорт</a>
+																	<a class="dropdown-item" href="#">Национальный паспорт</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-lg-4 mb-24">
+													<div class="form-group">
+														<label for="document_num">
+															<span class="input-title">
+																Номер документа: <sup class="color-accent">*</sup>
+															</span>
+														</label>
 
-														<div class="row">
-															<div class="col-12 col-sm-6">
-																<div class="types-checks-item">
-																	<img src="img/lock3.svg" class="icoTravelBanShag2" alt="">
-																	<p>Проверка задолженностей: <strong class="color-red">Возможен запрет!</strong></p>
-																</div>
-															</div>
-															<div class="col-12 col-sm-6">
-																<div class="types-checks-item">
-																	<img src="img/lock.svg" class="icoTravelBanShag2" alt="">
-																	<p>Итоговый отчет: готов на 100%</p>
-																</div>
-															</div>
-															<div class="col-12 col-sm-6">
-																<div class="types-checks-item">
-																	<img src="img/lock.svg" class="icoTravelBanShag2" alt="">
-																	<p>Проверка в реестре совершенных преступлений</p>
-																</div>
-															</div>
-															<div class="col-12 col-sm-6">
-																<div class="types-checks-item">
-																	<img src="img/lock.svg" class="icoTravelBanShag2" alt="">
-																	<p>Проверка по базе судебных делопроизводств</p>
+														<input type="text" class="form-control" name="document_num" id="document_num"
+															required="required" placeholder="Введите номер документа">
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-lg-4 mb-24">
+													<div class="form-group">
+														<label for="inputDocumentExpired">
+															<span class="input-title">Дата действительности документа:</span>
+														</label>
+														<input type="text" class="form-control" placeholder="ДД.ММ.ГГ" name="inputDocumentExpired"
+															id="inputDocumentExpired">
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-lg-4 mb-24">
+													<div class="form-group">
+														<label for="given_country">
+															<span class="input-title">
+																Выдавшая страна или организация: <sup class="color-accent">*</sup>
+															</span>
+														</label>
+														<div class="dropdown dropdown-regions">
+															<input type="text" class="form-control input-dropdown" name="given_country"
+																id="given_country" required="required" value="Абхазия">
+															<div class="dropdown-menu">
+																<div class="scroll-vertical">
+																	<a class="dropdown-item" href="#">АБХАЗИЯ</a>
+																	<a class="dropdown-item" href="#">АВСТРАЛИЯ</a>
+																	<a class="dropdown-item" href="#">АБХАЗИЯ</a>
+																	<a class="dropdown-item" href="#">АВСТРАЛИЯ</a>
+																	<a class="dropdown-item" href="#">АБХАЗИЯ</a>
+																	<a class="dropdown-item" href="#">АВСТРАЛИЯ</a>
 																</div>
 															</div>
 														</div>
 													</div>
 												</div>
 
-												<div class="col-12 col-lg-6 mb-24">
+												<div class="col-12 col-sm-6 col-lg-4 mb-24">
+													<a href="#"
+														class="btn btn-border bailiff-next-step bailiff-next-step-first next-step js-tab-trigger"
+														data-tab="3"><span>Следующий шаг</span><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#next"></use>
+														</svg></a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="bailiff-item js-tab-content" data-tab="3">
+										<div class="form-bailiff__body">
+											<div class="row">
+												<div class="col-12">
+													<div class="types-checks">
+														<div class="h3">Для чего нужна справка:</div>
+
+														<div class="types-checks-list">
+															<div class="checked-box">
+																<img src="img/check.svg" class="icoTravelBanShag2" alt="">
+																<p>Трудоустройство в РФ</p>
+															</div>
+															<div class="checked-box">
+																<img src="img/check.svg" class="icoTravelBanShag2" alt="">
+																<p>На границе РФ</p>
+															</div>
+															<div class="checked-box">
+																<img src="img/check.svg" class="icoTravelBanShag2" alt="">
+																<p>Получение ВНЖ, РВП</p>
+															</div>
+															<div class="checked-box">
+																<img src="img/check.svg" class="icoTravelBanShag2" alt="">
+																<p>Взаимодействие с сотрудниками МВД</p>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="col-12 col-lg-8 mb-24">
 													<div class="form-group">
 														<label for="client">
 															<span class="input-title">
@@ -494,7 +588,7 @@
 														</div>
 													</div>
 												</div>
-												<div class="col-12 col-lg-3 mb-24">
+												<div class="col-12 col-lg-4 mb-24">
 													<div class="form-group">
 														<label for="fio">
 															<span class="input-title">
@@ -521,240 +615,8 @@
 														</div>
 													</div>
 												</div>
-												<div class="col-12 col-lg-3 mb-24">
-													<button class="btn btn-border btn-add-additional bailiff-next-step-first"
-														id="additionalOrder">
-														<span id="additionalSwitcher">Добавить заявителя за 99р</span>
-													</button>
-												</div>
-
-												<div class="col-12 mb-24">
-													<div class="form-bailiff__price">
-														<p>Проверку запрета для двух граждан Вы получите за 398 руб <strong>(вместо 598 руб-скидка
-																200 руб!)</strong></p>
-													</div>
-
-													<div id="additionalOrderContainer" class="add-applicant">
-														<div class="row">
-															<div class="col-12">
-																<div class="add-applicant__price">
-																	<p>Укажите дополнительно данные второго заявителя за 398 руб <span class="color-accent">(вместо 598 руб-скидка 200 руб!)</span></p>
-																</div>
-															</div>
-															<div class="col-12 col-sm-6 col-lg-3 mb-24">
-																<div class="form-group">
-																	<label for="fio">
-																		<span class="input-title">
-																			Укажите ваше ФИО
-																		</span>
-																	</label>
-																	<input type="text" class="form-control" placeholder="Иванов Иван Иванович" id="fio" name="fio"
-																		required="required">
-														
-																	<div class="dropdown-menu dropdown-menu-result">
-																		<div class="dropdown-menu-result__head">
-																			<p>Выберите вариант или продолжите ввод</p>
-																		</div>
-														
-																		<ul class="list-result my-ul">
-																			<li><a href="#"><span class="color-accent">Эду</span>ард</a></li>
-																			<li><a href="#"><span class="color-accent">Эду</span>ард</a></li>
-																			<li><a href="#"><span class="color-accent">Эду</span>ард</a></li>
-																			<li><a href="#"><span class="color-accent">Эду</span>ард</a></li>
-																			<li><a href="#"><span class="color-accent">Эду</span>ард</a></li>
-																		</ul>
-																	</div>
-																</div>
-															</div>
-															<div class="col-12 col-sm-6 col-lg-3 mb-24">
-																<div class="form-group">
-																	<label for="regionNumberID">
-																		<span class="input-title">
-																			Ваш регион <span class="tooltip-wrapper"><span class="btn-tooptip">?</span><span class="tooltip-box">Укажите
-																					один из
-																					вариантов: регион проживания, временного нахождения или постоянной
-																					регистрации!</span></span>
-																		</span>
-																	</label>
-																	<div class="dropdown dropdown-regions">
-																		<input type="text" class="form-control input-dropdown" name="regionNumberID" id="regionNumberID"
-																			required="required" placeholder="Выберите регион">
-																		<div class="dropdown-menu">
-																			<div class="scroll-vertical">
-																				<a class="dropdown-item" href="region/altayskiy-kray.html">Алтайский край</a>
-																				<a class="dropdown-item" href="region/amurskaya-oblast.html">Амурская область</a>
-																				<a class="dropdown-item" href="region/arkhangelskaya-oblast.html">Архангельская
-																					область</a>
-																				<a class="dropdown-item" href="region/astrakhanskaya-oblast.html">Астраханская
-																					область</a>
-																				<a class="dropdown-item" href="region/belgorodskaya-oblast.html">Белгородская
-																					область</a>
-																				<a class="dropdown-item" href="region/bryanskaya-oblast.html">Брянская область</a>
-																				<a class="dropdown-item" href="region/vladimirskaya-oblast.html">Владимирская
-																					область</a>
-																				<a class="dropdown-item" href="region/volgogradskaya-oblast.html">Волгоградская
-																					область</a>
-																				<a class="dropdown-item" href="region/vologodskaya-oblast.html">Вологодская
-																					область</a>
-																				<a class="dropdown-item" href="region/voronezhskaya-oblast.html">Воронежская
-																					область</a>
-																				<a class="dropdown-item" href="region/yevreyskaya-avtonomnaya-oblast.html">Еврейская
-																					А.обл.</a>
-																				<a class="dropdown-item" href="region/zabaykalskiy-kray.html">Забайкальский
-																					край</a>
-																				<a class="dropdown-item" href="region/ivanovskaya-oblast.html">Ивановская
-																					область</a>
-																				<a class="dropdown-item" href="region/irkutskaya-oblast.html">Иркутская
-																					область</a>
-																				<a class="dropdown-item" href="region/kabardino-balkarskaya-respublika.html">Кабардино-Балкарская
-																					Республика</a>
-																				<a class="dropdown-item" href="region/kaliningradskaya-oblast.html">Калининградская
-																					область</a>
-																				<a class="dropdown-item" href="region/kaluzhskaya-oblast.html">Калужская
-																					область</a>
-																				<a class="dropdown-item" href="region/kamchatskiy-kray.html">Камчатский край</a>
-																				<a class="dropdown-item" href="region/karachayevo-cherkesskaya-respublika.html">Карачаево-Черкесская
-																					Республика</a>
-																				<a class="dropdown-item" href="region/kemerovskaya-oblast.html">Кемеровская
-																					область</a>
-																				<a class="dropdown-item" href="region/kirovskaya-oblast.html">Кировская
-																					область</a>
-																				<a class="dropdown-item" href="region/kostromskaya-oblast.html">Костромская
-																					область</a>
-																				<a class="dropdown-item" href="region/krasnodarskiy-kray.html">Краснодарский
-																					край</a>
-																				<a class="dropdown-item" href="region/krasnoyarskiy-kray.html">Красноярский
-																					край</a>
-																				<a class="dropdown-item" href="region/kurganskaya-oblast.html">Курганская
-																					область</a>
-																				<a class="dropdown-item" href="region/kurskaya-oblast.html">Курская область</a>
-																				<a class="dropdown-item" href="region/leningradskaya-oblast.html">Ленинградская
-																					область</a>
-																				<a class="dropdown-item" href="region/lipetskaya-oblast.html">Липецкая область</a>
-																				<a class="dropdown-item" href="region/magadanskaya-oblast.html">Магаданская
-																					область</a>
-																				<a class="dropdown-item" href="region/moskva.html">Москва</a>
-																				<a class="dropdown-item" href="region/moskovskaya-oblast.html">Московская
-																					область</a>
-																				<a class="dropdown-item" href="region/murmanskaya-oblast.html">Мурманская
-																					область</a>
-																				<a class="dropdown-item" href="region/nenetskiy-avtonomnyy-okrug.html">Ненецкий
-																					АО</a>
-																				<a class="dropdown-item" href="region/nizhegorodskaya-oblast.html">Нижегородская
-																					область</a>
-																				<a class="dropdown-item" href="region/novgorodskaya-oblast.html">Новгородская
-																					область</a>
-																				<a class="dropdown-item" href="region/novosibirskaya-oblast.html">Новосибирская
-																					область</a>
-																				<a class="dropdown-item" href="region/omskaya-oblast.html">Омская область</a>
-																				<a class="dropdown-item" href="region/orenburgskaya-oblast.html">Оренбургская
-																					область</a>
-																				<a class="dropdown-item" href="region/orlovskaya-oblast.html">Орловская
-																					область</a>
-																				<a class="dropdown-item" href="region/penzenskaya-oblast.html">Пензенская
-																					область</a>
-																				<a class="dropdown-item" href="region/permskiy-kray.html">Пермский край</a>
-																				<a class="dropdown-item" href="region/primorskiy-kray.html">Приморский край</a>
-																				<a class="dropdown-item" href="region/pskovskaya-oblast.html">Псковская
-																					область</a>
-																				<a class="dropdown-item" href="region/adygey-respublika.html">Республика Адыгея
-																					(Адыгея)</a>
-																				<a class="dropdown-item" href="region/altay-respublika.html">Республика Алтай</a>
-																				<a class="dropdown-item" href="region/bashkortostan-respublika.html">Республика
-																					Башкортостан</a>
-																				<a class="dropdown-item" href="region/buryatiya-respublika.html">Республика
-																					Бурятия</a>
-																				<a class="dropdown-item" href="region/dagestan-respublika.html">Республика
-																					Дагестан</a>
-																				<a class="dropdown-item" href="region/ingushetiya-respublika.html">Республика
-																					Ингушетия</a>
-																				<a class="dropdown-item" href="region/kalmykiya-respublika.html">Республика
-																					Калмыкия</a>
-																				<a class="dropdown-item" href="region/kareliya-respublika.html">Республика
-																					Карелия</a>
-																				<a class="dropdown-item" href="region/komi-respublika.html">Республика Коми</a>
-																				<a class="dropdown-item" href="region/avtonomnaya-respublika-krym.html">Республика
-																					Крым</a>
-																				<a class="dropdown-item" href="region/mariy-el-respublika.html">Республика Марий
-																					Эл</a>
-																				<a class="dropdown-item" href="region/mordoviya-respublika.html">Республика
-																					Мордовия</a>
-																				<a class="dropdown-item" href="region/saha-respublika.html">Республика Саха
-																					(Якутия)</a>
-																				<a class="dropdown-item" href="region/severnaya-osetiya-respublika.html">Республика
-																					Северная Осетия</a>
-																				<a class="dropdown-item" href="region/tatarstan-respublika.html">Республика
-																					Татарстан</a>
-																				<a class="dropdown-item" href="region/tyva-respublika.html">Республика Тыва</a>
-																				<a class="dropdown-item" href="region/khakasiya-respublika.html">Республика
-																					Хакасия</a>
-																				<a class="dropdown-item" href="region/rostovskaya-oblast.html">Ростовская
-																					область</a>
-																				<a class="dropdown-item" href="region/ryazanskaya-oblast.html">Рязанская
-																					область</a>
-																				<a class="dropdown-item" href="region/samarskaya-oblast.html">Самарская
-																					область</a>
-																				<a class="dropdown-item" href="region/sankt-peterburg.html">Санкт-Петербург</a>
-																				<a class="dropdown-item" href="region/saratovskaya-oblast.html">Саратовская
-																					область</a>
-																				<a class="dropdown-item" href="region/sakhalinskaya-oblast.html">Сахалинская
-																					область</a>
-																				<a class="dropdown-item" href="region/sverdlovskaya-oblast.html">Свердловская
-																					область</a>
-																				<a class="dropdown-item" href="region/sevastopol.html">Севастополь</a>
-																				<a class="dropdown-item" href="region/smolenskaya-oblast.html">Смоленская
-																					область</a>
-																				<a class="dropdown-item" href="region/stavropolskiy-kray.html">Ставропольский
-																					край</a>
-																				<a class="dropdown-item" href="region/tambovskaya-oblast.html">Тамбовская
-																					область</a>
-																				<a class="dropdown-item" href="region/tverskaya-oblast.html">Тверская область</a>
-																				<a class="dropdown-item" href="region/tomskaya-oblast.html">Томская область</a>
-																				<a class="dropdown-item" href="region/tulskaya-oblast.html">Тульская область</a>
-																				<a class="dropdown-item" href="region/tyumenskaya-oblast.html">Тюменская
-																					область</a>
-																				<a class="dropdown-item" href="region/udmurtskaya-respublika.html">Удмуртская
-																					Республика</a>
-																				<a class="dropdown-item" href="region/ulyanovskaya-oblast.html">Ульяновская
-																					область</a>
-																				<a class="dropdown-item" href="region/khabarovskiy-kray.html">Хабаровский край</a>
-																				<a class="dropdown-item" href="region/khanty-mansiyskiy-avtonomnyy-okrug.html">Ханты-Мансийский АО</a>
-																				<a class="dropdown-item" href="region/chelyabinskaya-oblast.html">Челябинская
-																					область</a>
-																				<a class="dropdown-item" href="region/chechenskaya-respublika.html">Чеченская
-																					Республика</a>
-																				<a class="dropdown-item" href="region/chuvashskaya-respublika.html">Чувашская
-																					Республика</a>
-																				<a class="dropdown-item" href="region/chukotskiy-avtonomnyy-okrug.html">Чукотский
-																					АО</a>
-																				<a class="dropdown-item" href="region/yamalo-nenetskiy-avtonomnyy-okrug.html">Ямало-Ненецкий АО</a>
-																				<a class="dropdown-item" href="region/yaroslavskaya-oblast.html">Ярославская
-																					область</a>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-															<div class="col-12 col-sm-6 col-lg-3 mb-24">
-																<div class="form-group">
-																	<label for="inputBirthDay">
-																		<span class="input-title">Дата рождения</span>
-																	</label>
-																	<input type="date" class="form-control datepicker" placeholder="ДД.ММ.ГГ" name="inputBirthDay" id="inputBirthDay">
-																</div>
-															</div>
-															<div class="col-12 col-sm-6 col-lg-3 mb-24">
-																<a href="#" class="btn btn-border bailiff-next-step bailiff-next-step-first next-step js-tab-trigger"
-																	data-tab="2"><span>Следующий шаг</span><svg class="svg-icon">
-																		<use xlink:href="img/sprite.svg#next"></use>
-																	</svg></a>
-															</div>
-														</div>
-													</div>
-												</div>
 											</div>
-										</div>
-										<div class="form-bailiff__footer">
+
 											<div class="row">
 												<div class="col-12 col-md-6 col-lg-3 col-xl-2 mb-24"><a href="#"
 														class="btn  bailiff-next-step prev-step btn-border" data-tab="1"><svg
@@ -766,12 +628,34 @@
 												<div class="col-12 col-md-6 col-lg-6 col-xl-3 mb-24"><a href="#" class="btn btn-accent">Получить
 														отчёт — 399 ₽</a></div>
 
-												<div class="col-12">
+												<div class="col-12 mb-24">
 													<label class="form-check-label">
 														<input class="form-check-input checkBoxAgreePrivacy" type="checkbox" required="required">
 														<span class="checkbox-custom"></span>
-														<span class="checkbox-text">Согласен(а) с политикой конфиденциальности и пользовательским соглашением</span>
+														<span class="checkbox-text">Согласен(а) с политикой конфиденциальности и пользовательским
+															соглашением</span>
 													</label>
+												</div>
+											</div>
+										</div>
+										<div class="form-bailiff__footer">
+											<div class="row">
+												<div class="col-12">
+													<div class="important-information">
+														<div class="important-information__top">
+															<div class="box-text">
+																<p>Иностранным гражданам при посещении Российской Федерации согласно ФЗ "О миграционном учете иностранных граждан и лиц без
+																гражданства в Российской Федерации" от 18.07.2006 N 109-ФЗ рекомендуется иметь справку о законном основании нахождении
+																на территории РФ</p>
+															</div>
+														</div>
+														<div class="important-information__bottom">
+															<div class="box-text">
+																<p>Без справки у иностранного гражданина въезд на территорию РФ может быть ограничен. Получите справку чтобы проверить
+																запрет на въезд на территорию РФ!</p>
+															</div>
+														</div>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -779,19 +663,13 @@
 
 									<div class="row">
 										<div class="col-12">
-											<div class="formDescTravelBan">
+											<div class="formDescTravelBan formDescTravelBan-v2">
 												<div class="logoText">
-													<p>Согласно ФЗ "О порядке выезда из Российской Федерации и въезда в Российскую Федерацию" от
-														15.08.1996 N 114-Ф, гражданин
-														вправе покинуть РФ, за исключением ряда случае, таких как: долги по кредитам, (ипотеке,
-														потребительским кредитам),
-														неоплаченные штрафы ГИБДД, налоголовая задолженность, судебные дела, при наличии уголовного
-														розыска, прохождение военной
-														службы и работа в гос. органах, самая частая ситуация - задолженность у судебных приставов.
-														Как узнать есть ли запрет на
-														выезд из России по фамилии и есть ли ограничения у судебных приставов - для проверки
-														ограничений онлайн заполните форму
-														выше и мы направим вам отчет с полной информацией по ограничения у судебных приставов!</p>
+													<p>ФЗ 109: «О миграционном учете иностранных граждан и лиц без гражданства в Российской
+														Федерации», каждый иностранный
+														гражданин вправе въехать на территорию Российской Федерации, за исключением ряда случаев.
+														Для проверки каждому
+														иностранному гражданину доступа онлайн проверка запрета въезда на территорию РФ.</p>
 												</div>
 											</div>
 										</div>
@@ -804,15 +682,14 @@
 				</div>
 			</div>
 
-
 			<section class="statistics-online">
 				<div class="container">
 					<div class="row">
 						<div class="col-12">
-							<h2 class="titleCardsInfo"><strong>Онлайн статистика</strong> проверок запрета выезда из РФ</h2>
-							<div class="descCardsInfo">Cтатистика fsspru, статистика обновляется каждые 20 минут. Данные формируются
-								исходя из запросов пользователей на
-								проверку ограничения на выезд за границу.</div>
+							<h2 class="titleCardsInfo"><strong>Статистика проверок</strong> запрета въезда в РФ</h2>
+							<div class="descCardsInfo">Статистика обновляется каждые 20 минут. Данные формируются исходя из запросов
+								<br>пользователей на проверку ограничения на
+								въезд на территорию РФ.</div>
 						</div>
 
 						<div class="col-12">
@@ -829,14 +706,14 @@
 									<div class="itemTableTravelBan">Республика Башкортостан</div>
 									<div class="itemTableTravelBan">20.10.****</div>
 									<div class="itemTableTravelBan">12:38 31.07.2023</div>
-									<div class="itemTableTravelBan">Разрешен</div>
+									<div class="itemTableTravelBan color-red">Выезд запрещен!</div>
 								</div>
 								<div class="table-row">
 									<div class="itemTableTravelBan">***нова С. В.</div>
 									<div class="itemTableTravelBan">Республика Башкортостан</div>
 									<div class="itemTableTravelBan">20.10.****</div>
 									<div class="itemTableTravelBan">12:38 31.07.2023</div>
-									<div class="itemTableTravelBan">Разрешен</div>
+									<div class="itemTableTravelBan color-red">Выезд запрещен!</div>
 								</div>
 								<div class="table-row">
 									<div class="itemTableTravelBan">***нова С. В.</div>
@@ -865,7 +742,7 @@
 							<div class="cardWhite">
 								<div class="row">
 									<div class="col-12 col-lg-6">
-										<div class="payments-advantages__image wrapperImgPrimerOtcheta"><img src="img/primer-otcheta.png"
+										<div class="payments-advantages__image wrapperImgPrimerOtcheta"><img src="img/vezd-inquiry.png"
 												alt="">
 											<a href="#" download="report.pdf" class="btn btn-accent btnViewExample"><span>Смотреть
 													пример</span><img class="icoTravelBan" src="img/pdf.svg" alt=""></a>
@@ -874,29 +751,28 @@
 									<div class="col-12 col-lg-6">
 										<div class="payments-advantages__content">
 											<h2 class="titleCardsInfo">
-												<strong>Пример отчёта</strong> об ограничениях на выезд из РФ
+												<strong>Пример справки</strong> “Разрешение на въезд в РФ”
 											</h2>
 											<div class="descCardsInfo">
 												<p>Пример сформированного отчета сервисом fsspru, в отчете отражено как приставы наложили
 													ограничения на выезда за границу,
-													все данные являются вымышленными любые совпадения с реальными людьми случайны
-												</p>
+													все данные являются вымышленными любые совпадения с реальными людьми случайны</p>
 											</div>
 
 											<div class="wrapperResultCheckTravelBan">
 												<div class="resultTitle text-transform">Результат проверки</div>
-												<p class="mb-24">Согласно данным полученым вФССП от 12.04.2020 в 12:48</p>
+												<p class="mb-24">Согласно данным полученым вМВД от 12.04.2020 в 12:48</p>
 												<p>Гражданину: <span>Иванову Ивану Ивановичу</span></p>
 												<p>Дата рождения: <span>12.04.1967 г.р.</span></p>
 												<p>Регион: <span>Московская область</span></p>
-												<div class="banDeparture color-red">Выезд за границу: ЗАПРЕЩЕН! <img src="img/ban.svg" alt=""></div>
+												<div class="banDeparture color-accent">Въезд в РФ: Разрешен</div>
 											</div>
 
 											<div class="wrapperWarning">
 												<div class="wrapperWarning__body">
 													<div class="box-text">
-														<p>Согласно статистике ФССП РФ - 65% граждан имееют запрет на выезд за границу. Рекомендуем
-															произвести проверку запрета</p>
+														<p>Согласно статистике ФМС - 65% граждан имеют запрет на въезд на территорию РФ. Рекомендуем
+															произвести проверку запрета.</p>
 													</div>
 													<a class="go_to color-accent text-decoration-line" href="#checkBlock">Сделать проверку</a>
 												</div>
@@ -911,16 +787,18 @@
 				</div>
 			</section>
 
-			<section class="how-to-check">
+			<section class="how-to-check how-to-check-v2">
 				<div class="container">
 					<div class="row">
 						<div class="col-12">
-							<h2 class="titleCardsInfo"><strong>Как проверить</strong> запрет на выезд за границу</h2>
+							<h2 class="titleCardsInfo"><strong>Как проверить</strong> на въезд на границу РФ</h2>
 							<div class="box-text">
-								<p>Для проверки ограничений на выезд из РФ направьте онлайн заявку в базу судебных приставов на наличие
-									задолженностей:</p>
-								<p>Если у вас остались вопросы, вы можете задать их направив письмо на адрес электронной почты
-									info@fsspru.net</p>
+								<p>Для проверки ограничений на въезд в РФ отправьте онлайн заявку в базу ФМС.</p>
+								<p>Если Вам потребуется справка для подтверждения возможности (разрешения) въезда на территорию
+									Российской Федерации, вы
+									сможете получить ее на последнем шаге. Если у вас остались вопросы, вы можете задать их отправив
+									письмо на адрес
+									электронной почты info@fsspru.net</p>
 							</div>
 						</div>
 						<div class="col-12 col-md-6 mb-24">
@@ -928,7 +806,7 @@
 								<div class="descCardsCheckBan__number">1</div>
 								<div class="descCardsCheckBan__body">
 									<div class="box-text">
-										<p>Укажите в заявке свои данные: ФИО, дату рождения и регион.</p>
+										<p>Укажите в заявке свои данные которые указаны выше в форме.</p>
 									</div>
 								</div>
 							</div>
@@ -938,157 +816,7 @@
 								<div class="descCardsCheckBan__number">2</div>
 								<div class="descCardsCheckBan__body">
 									<div class="box-text">
-										<p>Рекомендуется указывать полный список данных, бывают совпадения по ФИО по разным регионам</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-md-6 mb-24">
-							<div class="descCardsCheckBan">
-								<div class="descCardsCheckBan__number">3</div>
-								<div class="descCardsCheckBan__body">
-									<div class="box-text">
-										<p>Адрес электронной почты, мы направим вам на почту отчёт c результатом.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-md-6 mb-24">
-							<div class="descCardsCheckBan">
-								<div class="descCardsCheckBan__number">4</div>
-								<div class="descCardsCheckBan__body">
-									<div class="box-text">
-										<p>Произведите оплату пошлины за предоставление информации с со сводным отчётом о выезде за границу.
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="question">
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<h2 class="titleCardsInfo" id="test">
-								<strong>Вопросы и ответы</strong> к ФССП
-							</h2>
-							<div class="descCardsInfo">
-								<p>Если у вас останутся вопросы, вы можете задать их направив письмо на адрес эл. почты info@fsspru.net
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-
-						<div class="col-12 col-md-6 mb-24">
-							<div itemscope class="question-item" itemtype="http://schema.org/Question"
-								id="kak-proverit-zapret-na-vyezd-za-granitsu">
-								<h3 itemprop="name" class="questionInAnswerAndQuestion">
-									Как проверить запрет на выезд за границу
-								</h3>
-								<meta itemprop="upvoteCount" content="3" />
-								<div itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer">
-								</div>
-								<div class="card">
-									<div itemprop="text" class="box-text">
-										<p>Для того что бы проверить нет ли ограничений на выезд за границу, вам нужно сделать проверку
-											задолженности по базе
-											судебных приставов, либо подать запрос на сводный отчет. Отчет покажет весь список задолженостей в
-											федеральной службе
-											судебных приставов в нем будет указан информация есть ли запрет на выезд за границу или нет</p>
-									</div>
-
-									<a href="proverit-zapret-na-vyezd-za-granitsu.html"
-										class="color-accent text-decoration-line font-500 question-item__link">Проверить запрет на выезд за
-										границу</a>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-12 col-md-6 mb-24">
-							<div itemscope class="question-item" itemtype="http://schema.org/Question"
-								id="kak-snyat-zapret-na-vyezd-za-granitsu">
-								<h3 itemprop="name" class="questionInAnswerAndQuestion">
-									Как снять запрет на выезд за границу
-								</h3>
-								<meta itemprop="upvoteCount" content="3" />
-								<div itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer">
-								</div>
-								<div class="card">
-									<div itemprop="text" class="box-text">
-										<p>Для снятия ограничения на выезд нужно оплатить все имеющиеся задолженности по исполнительным
-											производствам, обращаем
-											ваше внимание что информация об оплате может обновляться в срок до 30 дней. Рекомендуем как можно
-											бысрее производить
-											оплату если ваша поездка планируется в ближайшие 2 -3 месяца.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-12 mb-24">
-							<div itemscope class="question-item" itemtype="http://schema.org/Question"
-								id="kakie-strany-otkryty-dlya-rossiyan">
-								<h3 itemprop="name" class="questionInAnswerAndQuestion">
-									Страны которые открыты для граждан РФ
-								</h3>
-								<meta itemprop="upvoteCount" content="3" />
-								<div itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"></div>
-								<div class="card">
-									<div itemprop="text" class="box-text">
-										<p>Дата обновления 27.09.2023 новые страны которые будут открыты с 9 апреля: Аргентина, Алжир,
-											Афганистан, Бахрейн, Босния
-											и Герцеговина, Ботсвана, Бразилия, Вьетнам, Венесуэла, Гонконг, Египет, Зимбабве, Израиль, Индия,
-											Индонезия, Иордания,
-											Ирак, Кения, Китай, КНДР, Коста-Рика, Кувейт, Ливан, Лесото, Маврикий, Мадагаскар, Малайзия,
-											Мальдивы, Марокко,
-											Мозамбик, Молдова, Монголия, Мьянма, Намибия, Оман, Пакистан, Перу, Саудовская Аравия, Сейшелы,
-											Сербия, Сирия, Таиланд,
-											Танзания, Тунис, Турция, Уругвай, Фиджи, Филиппины, Шри-Ланка, Эфиопия, ЮАР, Ямайка. Другие страны
-											открыты для туристов!</p>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-12 col-md-6 mb-24">
-							<div itemscope class="question-item" itemtype="http://schema.org/Question" id="zapret-po-oshibke">
-								<h3 itemprop="name" class="questionInAnswerAndQuestion">
-									Запрет по ошибке
-								</h3>
-								<meta itemprop="upvoteCount" content="3" />
-								<div itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer">
-								</div>
-								<div class="card mr_top_10">
-									<div itemprop="text" class="box-text">
-										<p>Если вы считаете действия судебного пристава неправомерными, исполнительный лист можно оспорить в
-											срок 30 дней.
-											Тридцатидневный срок считается со дня оглашения постановления, содержащего мотивирующую и
-											резолютивную часть решения.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-12 col-md-6 mb-24">
-							<div itemscope class="question-item" itemtype="http://schema.org/Question"
-								id="kakoy-srok-ispolnitelnogo-proizvodstva">
-								<h3 itemprop="name" class="questionInAnswerAndQuestion">
-									Как найти номер судебного пристава
-								</h3>
-								<meta itemprop="upvoteCount" content="3" />
-								<div itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer">
-								</div>
-								<div class="card">
-									<div itemprop="text" class="box-text">
-										<p>После оплаты отчета вы получите полный список задолженостей, справа в колонке будет указано ФИО
-											судебного пристава и его
-											номер телефона. Если вам не нужна информация о ограничениях на выезд, вы можете произвести
-											проверку задолженностей у
-											судебных приставов на главной странице сайта.</p>
+										<p>Рекомендуется указывать полный список данных, бывают совпадения по ФИО по разным регионам</p>
 									</div>
 								</div>
 							</div>
@@ -1097,7 +825,6 @@
 				</div>
 			</section>
 		</div>
-
 
 		<footer>
 			<div class="container-fluid">
