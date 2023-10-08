@@ -112,7 +112,6 @@ $(function () {
 });
 
 $('#additionalOrder').on('click', function () {
-	
 	var
 		$this = $(this),
 		content = $('.add-applicant');
@@ -126,6 +125,23 @@ $('#additionalOrder').on('click', function () {
 		$this.removeClass('trigger');
 		$this.find('span').html('Добавить заявителя за 99р');
 		$('.form-bailiff__price').slideDown();
+		content.slideUp();
+	}
+});
+
+$('.add-payment').on('click', function (e) {
+	e.preventDefault();
+	var
+		$this = $(this),
+		content = $('.wrapperPlashka');
+
+	if (!$this.hasClass('trigger')) {
+		$this.addClass('trigger');
+		$this.html('Убрать из оплаты');
+		content.slideDown();
+	} else {
+		$this.removeClass('trigger');
+		$this.html('Добавить к оплате');
 		content.slideUp();
 	}
 });

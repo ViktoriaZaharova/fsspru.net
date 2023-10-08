@@ -252,10 +252,6 @@
   margin: 0 0 0 4px;
 }
 
-.wrapperImgPrimerOtcheta {
-  margin: -90px auto 0;
-}
-
 .sample-report .payments-advantages__content {
   padding: 36px 24px;
 }
@@ -314,4 +310,8 @@
 }
 .important-information .box-text {
   max-width: 1111px;
+}
+
+.question {
+  margin: 40px 0 0;
 }

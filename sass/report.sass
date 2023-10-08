@@ -1,0 +1,176 @@
+@import 'vars'
+.page-report
+	margin: 64px 0
+
+.greenBorderReport
+	margin: 0 0 64px
+
+h1
+	margin: 0 0 36px
+
+h2.titleHome
+	padding: 0 0 24px
+	margin: 0 0 24px
+	border-bottom: 2px solid #5A5A5A
+
+.general-box
+	.box-text
+		strong
+			color: #0E0E0E
+			font-weight: 500
+
+	.titleHome
+		strong
+			font-weight: bold
+
+.wrapperUserInfoReport
+	ul
+		li
+			display: flex
+			align-items: flex-start
+			margin: 0 0 24px
+			strong
+				font-weight: 500
+			&:last-child
+				margin: 0
+			p
+				margin: 0 0 0 5px
+				&:last-child
+					margin: 0 0 0 5px
+			.tooltip-wrapper
+				margin: 0 0 0 8px
+				display: inline-block
+
+.infoDebtsReport
+	padding: 24px
+	border-radius: 12px
+	background: #F4F6F8
+	.h4
+		margin: 24px 0
+		text-transform: none
+	.btn
+		width: 100%
+
+.wrapperWarning
+	background: #F4F6F8
+	padding: 24px
+	border-radius: 12px
+	margin: 24px 0 0
+	position: relative
+	&::before
+		content: ""
+		position: absolute
+		right: 0
+		top: 0
+		width: 103px
+		height: 164px
+		background: url(../img/law.svg) no-repeat center
+		background-size: 100%
+		opacity: 0.1
+	.box-text
+		max-width: 1078px
+
+	&__footer
+		width: 100%
+		margin: 24px 0 0
+		padding: 24px 0 0
+		border-top: 2px solid #5A5A5A
+		.box-text
+			max-width: none
+			color: #000
+
+.departmens-box
+	&__title		
+		text-transform: none	
+
+.add-payment
+	color: #fff
+	text-decoration: underline
+	display: flex
+	align-items: center
+	font-size: 14px
+	font-weight: 500
+	margin: 0 0 0 auto
+	&:hover
+		color: #333
+	&::after
+		content: ''
+		display: inline-block
+		width: 10px
+		height: 10px
+		min-width: 10px
+		background: url('../img/plus.svg') no-repeat center
+		background-size: 100%	
+		margin: 0 0 0 4px	
+	&.trigger
+		&:after
+			background: #fff	
+			height: 2px
+
+.warning-section
+	margin: 40px 0 0
+
+.cardWarning
+	width: 100%
+	border-radius: 12px
+	border: 8px solid #D92A2A
+	background: #AB4040
+	position: relative
+	z-index: 1
+	color: #fff
+	padding: 24px
+	ul
+		line-height: 160%
+	.box-text
+		color: #fff
+	&::before
+		content: ""
+		position: absolute
+		right: 0
+		top: 16px
+		width: 376px
+		height: 506px
+		background: url(../img/warning2.svg) no-repeat center
+		background-size: 100%
+		opacity: 0.1
+	.application-advantages-list
+		&::before
+			height: calc(100% - 14px)
+		li
+			margin: 0 0 14px
+			&:last-child
+				margin: 0
+			&::before
+				top: 5px
+
+.cardWarning-total
+	width: 100%
+	padding: 24px
+	border-radius: 12px
+	background: #FFF
+	.box-text
+		color: #AB4040
+		font-weight: normal
+
+.wrapperPlashka
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 10
+	background: #fff
+	padding: 20px 0
+	background: 0 0 7px rgba(217,217,217,.5)
+	.btn
+		width: 100%
+
+.wrapperPlashkaInfo
+	li
+		display: flex
+		align-items: flex-start
+		margin: 0 0 12px
+		p
+			margin: 0 0 0 5px
+		&:last-child
+			margin: 0		

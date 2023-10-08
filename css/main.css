@@ -279,7 +279,7 @@
   max-width: 526px;
 }
 .payments-advantages__image {
-  margin: -60px auto 0;
+  margin: -36px auto 36px;
   position: relative;
   z-index: 1;
   padding: 13px 13px 0;
@@ -287,15 +287,13 @@
   border-radius: 12px 12px 0px 0px;
   max-width: 505px;
   width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
 }
 .payments-advantages__image img {
   border-radius: 12px 12px 0px 0px;
