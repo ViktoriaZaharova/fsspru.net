@@ -166,7 +166,7 @@ $('.departmens-box-form input').on('keyup change', function () {
 });
 
 // animate scroll
-$(document).ready(function () { 
+$(document).ready(function () {
 	$(".go_to").on("click", function (event) {
 		event.preventDefault();
 
@@ -176,4 +176,41 @@ $(document).ready(function () {
 
 		$('body,html').animate({ scrollTop: top - headerHeight }, 500);
 	});
+});
+
+// animate text block
+$(document).ready(function () {
+	var len = $(".welcome-text .box-text").length;
+	var intervalCounter = 1;
+	setInterval(function () {
+		intervalCounter++;
+		if (intervalCounter > len) intervalCounter = 1;
+		$(".welcome-text .box-text").removeClass("active");
+		$(".welcome-text .box-text").eq(intervalCounter - 1).addClass("active");
+	}, 5000);
+});
+
+// progressbar
+$(document).ready(function () {
+
+	var progress = $('.progressbar .progressbar__bg')
+
+	function counterInit(fValue, lValue) {
+
+		var counter_value = parseInt($('.progressbar__value').text());
+		counter_value++;
+
+		if (counter_value >= fValue && counter_value <= lValue) {
+
+			$('.progressbar__value').text(counter_value + '%');
+			progress.css({ 'width': counter_value + '%' });
+
+			setTimeout(function () {
+				counterInit(fValue, lValue);
+			}, 300);
+
+		}
+
+	}
+	counterInit(0, 100);
 });

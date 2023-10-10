@@ -46,8 +46,7 @@
   color: #2862AC;
   line-height: 15px;
 }
-
-.active {
+.textHeader .active {
   border-bottom: 1px solid #fff;
 }
 
@@ -192,4 +191,127 @@
 .navbar-light .navbar-toggler-icon {
   background: url("../img/burger.svg") no-repeat center;
   background-size: 100%;
+}
+
+.search-fixed {
+  background: rgba(14, 14, 14, 0.5);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 1031;
+}
+.search-fixed .title-wraper {
+  margin: 0 0 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+.search-fixed .h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 120%;
+  font-weight: 400;
+  margin: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.search-fixed__content {
+  position: relative;
+  max-width: 856px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 12px;
+  margin: auto;
+  padding: 24px;
+}
+.search-fixed__text {
+  margin: 24px 0 0;
+  position: relative;
+  width: 100%;
+  border-radius: 12px;
+  background: #F4F6F8;
+  padding: 24px 101px 24px 24px;
+  z-index: 1;
+}
+.search-fixed__text .h4 {
+  margin: 0 0 14px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.search-fixed__text .box-text {
+  color: #0E0E0E;
+  font-size: 12px;
+  line-height: 160%;
+}
+.search-fixed__text::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 101px;
+  height: 100%;
+  background: url("../img/warning.svg") no-repeat right center;
+  background-size: contain;
+}
+
+.progressbar {
+  width: 100%;
+  position: relative;
+  height: 12px;
+  border-radius: 100px;
+  background: rgba(133, 133, 133, 0.2);
+  overflow: hidden;
+}
+.progressbar__bg {
+  border-radius: 100px 0px 0px 100px;
+  background: #2862AC;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.progressbar__value {
+  margin: 0 0 0 auto;
+  font-size: 18px;
+  color: #2862AC;
+  text-transform: uppercase;
+  line-height: 120%;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.welcome-text {
+  margin: 17px 0 0;
+  position: relative;
+}
+.welcome-text .box-text {
+  opacity: 0;
+  height: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+.welcome-text .box-text.active {
+  opacity: 1;
+  visibility: visible;
+  height: auto;
 }

@@ -46,29 +46,36 @@
 
 <body>
 
-	<div id="pageloaderDebtsCheck" style="  background: rgba(100, 100, 100, 0.8);
-	  display: none;
-	  height: 100%;
-	  position: fixed;
-	  width: 100%;
-	  z-index: 1000;">
-		<div class="close-square" style="  position: relative;
-	  width: 25%;
-	  height: 300px;
-	  background-color: #EFF0F2;
-	  z-index: 1100;
-	  margin: 200px auto auto;
-	">
-			<div class="close-btn" id="close-btn" style="cursor: pointer; position: absolute; right: 0;">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title" aria-describedby="desc"
-					role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
-					<title>Exit</title>
-					<path fill="red" data-name="layer1"
-						d="M51 17.25L46.75 13 32 27.75 17.25 13 13 17.25 27.75 32 13 46.75 17.25 51 32 36.25 46.75 51 51 46.75 36.25 32 51 17.25z">
-					</path>
-				</svg>
+	<div id="pageloaderDebtsCheck" class="search-fixed">
+		<div class="search-fixed__content">
+			<div class="title-wraper">
+				<div class="h3"><strong>Поиск</strong> задолженностей</div>
+				<div class="progressbar__value">0%</div>
 			</div>
-			<div class="lds-dual-ring"></div>
+			<div class="progressbar">
+				<div class="progressbar__bg"></div>
+			</div>
+			<div class="search-fixed__text">
+				<div class="h4">А вы знали что что</div>
+				<div class="welcome-text">
+					<div class="box-text active">
+						<p>ФССП - это Федеральная служба судебных приставов, согласно утвержденным Указом Президента Российской
+							Федерации от
+							13.10.2004 № 1316 занимается организацей принудительного исполнения судебных актов , а также актов иных
+							органов,
+							предусмотренных законодательством Российской Федерации</p>
+					</div>
+					<div class="box-text">
+						<p>Вариантзаметки номер два и так по порядку они должны появляться</p>
+					</div>
+					<div class="box-text">
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus iure suscipit, veritatis aut cum,
+							numquam a aperiam non ullam maiores nostrum quibusdam aliquam. Sunt voluptatum atque nulla harum aliquam
+							et.</p>
+					</div>
+				</div>
+
+			</div>
 		</div>
 	</div>
 
@@ -1012,7 +1019,9 @@
 
 										<a href="#" class="toggle-regions color-accent">
 											<span>Раскрыть список</span>
-											<svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-bottom"></use></svg>
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+											</svg>
 										</a>
 									</div>
 									<div class="col-12 col-lg-2 d-none d-lg-block">
@@ -1257,10 +1266,11 @@
 								<div class="card">
 									<div itemprop="text" class="box-text">
 										<p>Срок исполнительго производства зависит от вида исполнительного листа (ИЛ). Максимальный срок
-										исполнительгого
-										производства составляет 2 года (он может быть увеличен в судебном порядке), заявитель может повторно
-										запросить открыть
-										исполнительное производство если это необходимо.</p>
+											исполнительгого
+											производства составляет 2 года (он может быть увеличен в судебном порядке), заявитель может
+											повторно
+											запросить открыть
+											исполнительное производство если это необходимо.</p>
 									</div>
 								</div>
 							</div>
@@ -1277,10 +1287,12 @@
 								</div>
 								<div class="card">
 									<div itemprop="text" class="box-text">
-										<p>Вам нужно перейти на официальный сайт ФССП, выбрать поиск по исполнительному производству, для этого
-										просто нажмите на
-										чек бокс "поиск по ИП", введите номер ИП,вот такого вида n..n/yy/dd/rr или n..n/yy/ddddd-ИП, нажмите
-										на кнопку "Поиск".</p>
+										<p>Вам нужно перейти на официальный сайт ФССП, выбрать поиск по исполнительному производству, для
+											этого
+											просто нажмите на
+											чек бокс "поиск по ИП", введите номер ИП,вот такого вида n..n/yy/dd/rr или n..n/yy/ddddd-ИП,
+											нажмите
+											на кнопку "Поиск".</p>
 									</div>
 								</div>
 							</div>
@@ -1298,9 +1310,9 @@
 								<div class="card">
 									<div itemprop="text" class="box-text">
 										<p>Согласно ст. 128 ГПК РФ в течение 10 дней с момента получения судебного приказа вы можете подать
-										письменный отказ.
-										Судебный приказ может быть Вами получен по почте, курьером и на приеме у судебного
-										пристава-исполнителя.</p>
+											письменный отказ.
+											Судебный приказ может быть Вами получен по почте, курьером и на приеме у судебного
+											пристава-исполнителя.</p>
 									</div>
 								</div>
 							</div>
