@@ -25,6 +25,7 @@ h2.titleHome
 
 .wrapperUserInfoReport
 	ul
+		line-height: 100%
 		li
 			display: flex
 			align-items: flex-start
@@ -34,9 +35,8 @@ h2.titleHome
 			&:last-child
 				margin: 0
 			p
-				margin: 0 0 0 5px
-				&:last-child
-					margin: 0 0 0 5px
+				span
+					margin: 0 5px 0 0
 			.tooltip-wrapper
 				margin: 0 0 0 8px
 				display: inline-block
@@ -46,7 +46,7 @@ h2.titleHome
 	border-radius: 12px
 	background: #F4F6F8
 	.h4
-		margin: 24px 0
+		margin: 15px 0 18px
 		text-transform: none
 	.btn
 		width: 100%
@@ -83,29 +83,7 @@ h2.titleHome
 	&__title		
 		text-transform: none	
 
-.add-payment
-	color: #fff
-	text-decoration: underline
-	display: flex
-	align-items: center
-	font-size: 14px
-	font-weight: 500
-	margin: 0 0 0 auto
-	&:hover
-		color: #333
-	&::after
-		content: ''
-		display: inline-block
-		width: 10px
-		height: 10px
-		min-width: 10px
-		background: url('../img/plus.svg') no-repeat center
-		background-size: 100%	
-		margin: 0 0 0 4px	
-	&.trigger
-		&:after
-			background: #fff	
-			height: 2px
+
 
 .warning-section
 	margin: 40px 0 0
@@ -152,25 +130,29 @@ h2.titleHome
 		color: #AB4040
 		font-weight: normal
 
-.wrapperPlashka
-	display: none
-	position: fixed
-	top: 0
-	left: 0
-	width: 100%
-	z-index: 10
-	background: #fff
-	padding: 20px 0
-	background: 0 0 7px rgba(217,217,217,.5)
-	.btn
-		width: 100%
+	
 
-.wrapperPlashkaInfo
-	li
-		display: flex
-		align-items: flex-start
-		margin: 0 0 12px
-		p
-			margin: 0 0 0 5px
-		&:last-child
-			margin: 0		
+.departmens-box-item 
+	.h3
+		text-transform: none
+
+.departmens-box-form
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	label
+		max-width: 270px
+		width: 100%
+	&.checked
+		&::after
+			content: ''
+			display: flex
+			align-items: center
+			justify-content: center
+			width: 34px
+			min-width: 34px
+			height: 34px
+			margin: 0 0 0 11px
+			background: url('../img/checked-form.svg') no-repeat center
+			background-size: 100%
+

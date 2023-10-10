@@ -69,7 +69,7 @@ $('.departmens-box__toggle').on('click', function (e) {
 
 	if (!$this.hasClass('trigger')) {
 		$this.addClass('trigger');
-		$this.find('span').html('Скрыть');
+		$this.find('span').html('Скрыть подробности');
 
 		content.slideDown();
 	} else {
@@ -129,6 +129,7 @@ $('#additionalOrder').on('click', function () {
 	}
 });
 
+// show fixed block added payment
 $('.add-payment').on('click', function (e) {
 	e.preventDefault();
 	var
@@ -144,4 +145,35 @@ $('.add-payment').on('click', function (e) {
 		$this.html('Добавить к оплате');
 		content.slideUp();
 	}
+});
+
+
+// if input = checked - box show
+$('.form-check-label-payment input:checkbox').change(function () {
+	if ($(this).is(":checked")) {
+		$(this).parents('.departmens-box').find('.departmens-box-item-checked').addClass('click');
+	} else {
+		$(this).parents('.departmens-box').find('.departmens-box-item-checked').removeClass('click');
+	}
+});
+
+$('.departmens-box-form input').on('keyup change', function () {
+	if (this.value.length > 0) {
+		$(this).parents('.departmens-box-form').addClass('checked');
+	} else {
+		$(this).parents('.departmens-box-form').removeClass('checked');
+	}
+});
+
+// animate scroll
+$(document).ready(function () { 
+	$(".go_to").on("click", function (event) {
+		event.preventDefault();
+
+		var id = $(this).attr('href'),
+			headerHeight = $('.navbar-header').height(),
+			top = $(id).offset().top;
+
+		$('body,html').animate({ scrollTop: top - headerHeight }, 500);
+	});
 });

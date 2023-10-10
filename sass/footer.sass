@@ -34,13 +34,12 @@ footer
 	margin: 0 0 24px
 	text-transform: uppercase
 
-
 .contentTextUpFooterLinks, .contentTextDownFooter
 	color: #fff
 	opacity: 0.5
 	text-decoration: underline
 	margin: 0 0 18px
-	font-size: 14px	
+	font-size: 14px
 	line-height: 100%
 	&:last-child
 		margin: 0
@@ -96,3 +95,49 @@ footer
 	padding: 48px 0
 	.contentTextUpFooter
 		max-width: 440px
+
+// modal
+.modal-backdrop
+	background: rgba(14, 14, 14, 0.35)
+	&.show
+		opacity: 1
+			
+.modal-dialog
+	max-width: 416px
+
+.modal-content
+	border: none
+	border-radius: 12px
+	background: #fff
+	padding: 36px 24px
+
+.modal-title
+	text-transform: uppercase
+	width: 100%
+	font-size: 18px
+	padding: 0 0 14px
+	text-align: center
+	border-bottom: 1px solid #2862AC
+
+.modal-header
+	padding: 0
+	border: none
+	border-radius: 0
+
+.modal-body
+	padding: 0
+	margin: 36px 0 0
+
+.form-modal
+	label
+		width: 100%
+	input
+		width: 100%
+	.btn-group
+		margin: 36px 0 0	
+	.btn
+		width: 100%
+		margin: 0 0 14px
+		&:last-child
+			margin: 0
+

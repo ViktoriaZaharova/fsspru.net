@@ -24,6 +24,9 @@ h2.titleHome {
   font-weight: bold;
 }
 
+.wrapperUserInfoReport ul {
+  line-height: 100%;
+}
 .wrapperUserInfoReport ul li {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -39,11 +42,8 @@ h2.titleHome {
 .wrapperUserInfoReport ul li:last-child {
   margin: 0;
 }
-.wrapperUserInfoReport ul li p {
-  margin: 0 0 0 5px;
-}
-.wrapperUserInfoReport ul li p:last-child {
-  margin: 0 0 0 5px;
+.wrapperUserInfoReport ul li p span {
+  margin: 0 5px 0 0;
 }
 .wrapperUserInfoReport ul li .tooltip-wrapper {
   margin: 0 0 0 8px;
@@ -56,7 +56,7 @@ h2.titleHome {
   background: #F4F6F8;
 }
 .infoDebtsReport .h4 {
-  margin: 24px 0;
+  margin: 15px 0 18px;
   text-transform: none;
 }
 .infoDebtsReport .btn {
@@ -97,37 +97,6 @@ h2.titleHome {
 
 .departmens-box__title {
   text-transform: none;
-}
-
-.add-payment {
-  color: #fff;
-  text-decoration: underline;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 14px;
-  font-weight: 500;
-  margin: 0 0 0 auto;
-}
-.add-payment:hover {
-  color: #333;
-}
-.add-payment::after {
-  content: "";
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  min-width: 10px;
-  background: url("../img/plus.svg") no-repeat center;
-  background-size: 100%;
-  margin: 0 0 0 4px;
-}
-.add-payment.trigger:after {
-  background: #fff;
-  height: 2px;
 }
 
 .warning-section {
@@ -185,33 +154,39 @@ h2.titleHome {
   font-weight: normal;
 }
 
-.wrapperPlashka {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10;
-  background: #fff;
-  padding: 20px 0;
-  background: 0 0 7px rgba(217, 217, 217, 0.5);
-}
-.wrapperPlashka .btn {
-  width: 100%;
+.departmens-box-item .h3 {
+  text-transform: none;
 }
 
-.wrapperPlashkaInfo li {
+.departmens-box-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin: 0 0 12px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-.wrapperPlashkaInfo li p {
-  margin: 0 0 0 5px;
+.departmens-box-form label {
+  max-width: 270px;
+  width: 100%;
 }
-.wrapperPlashkaInfo li:last-child {
-  margin: 0;
+.departmens-box-form.checked::after {
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 34px;
+  min-width: 34px;
+  height: 34px;
+  margin: 0 0 0 11px;
+  background: url("../img/checked-form.svg") no-repeat center;
+  background-size: 100%;
 }

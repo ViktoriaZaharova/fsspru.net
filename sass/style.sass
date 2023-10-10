@@ -327,6 +327,11 @@ a.color-accent
 	&:hover
 		color: $blue
 
+a.color-white
+	color: #fff
+	&:hover
+		color: $accent		
+
 .text-decoration-line
 	text-decoration: underline
 
@@ -717,7 +722,7 @@ a.color-accent
 .progress-wrapper
 	display: flex
 	align-items: center
-	margin: 0 0 0 auto
+	margin: 10px 0 0 auto
 
 .progress-steps
 	text-transform: uppercase
@@ -757,6 +762,8 @@ a.color-accent
 	&__body
 		width: 100%
 		padding: 24px
+		.box-text
+			font-weight: normal
 	.box-text
 		margin: 0 0 12px
 		&:last-child
@@ -780,6 +787,10 @@ a.color-accent
 			color: #5A5A5A
 			&:hover
 				color: $accent	
+		&-checked
+			display: none !important
+			&.click
+				display: block !important
 	&__toggle
 		display: flex
 		align-items: center
@@ -807,3 +818,73 @@ a.color-accent
 		color: #5A5A5A
 		font-size: 24px
 		font-weight: bold							
+
+.add-payment
+	color: #fff
+	text-decoration: underline
+	display: flex
+	align-items: center
+	font-size: 14px
+	font-weight: 500
+	margin: 0 0 0 auto
+	&:hover, &:focus
+		color: #fff
+	&:focus
+		text-decoration: underline	
+	&::after
+		content: ''
+		display: inline-block
+		width: 10px
+		height: 10px
+		min-width: 10px
+		background: url('../img/plus.svg') no-repeat center
+		background-size: 100%	
+		margin: 0 0 0 4px	
+	&.trigger
+		&:after
+			background: #fff	
+			height: 2px
+
+.wrapperPlashka
+	display: none
+	position: fixed
+	bottom: 0
+	left: 0
+	width: 100%
+	z-index: 10
+	background: #fff
+	box-shadow: 0px -4px 54px 0px rgba(0, 0, 0, 0.10)
+	padding: 36px 0
+	.btn
+		width: 100%
+
+.wrapperPlashkaInfo
+	color: #0E0E0E
+	span
+		color: #5A5A5A
+		.color-accent
+			color: $accent
+	li
+		display: flex
+		align-items: flex-start
+		margin: 0 0 12px
+		p
+			margin: 0 0 0 5px
+		&:last-child
+			margin: 0		
+
+.safeConnection
+	padding: 0 14px 0 0
+	border-right: 2px solid #E5E7EA
+	line-height: 120%
+	color: #5A5A5A
+	margin: 0 0 0 auto
+	text-align: right	
+	span
+		max-width: 152px	
+		display: block
+		
+
+.card
+	border: none
+	border-radius: 12px			

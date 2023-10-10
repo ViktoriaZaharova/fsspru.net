@@ -1,0 +1,244 @@
+@charset "UTF-8";
+.page-result {
+  position: relative;
+  margin: 0 0 64px;
+  z-index: 1;
+}
+.page-result::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 92px;
+  top: -18px;
+  width: 636px;
+  height: 654px;
+  background: url("../img/herb-grey.png") no-repeat center;
+  background-size: 100%;
+}
+.page-result h1 {
+  font-weight: normal;
+  margin: 0 0 36px;
+}
+
+.icoTravelBan {
+  width: 16px;
+  margin: 0 8px 0 0;
+  display: inline-block;
+}
+
+.general-box {
+  height: auto;
+}
+
+.infoDebts .h4 {
+  margin: 0 0 24px;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: none;
+}
+.infoDebts .btn-group {
+  margin: 24px 0 0;
+}
+.infoDebts .btn-group .btn {
+  padding: 10px 35px;
+}
+.infoDebts .btn-group .linksNewRequest {
+  padding: 10px 16px;
+}
+.infoDebts .btn-group .linksNewRequest .svg-icon {
+  margin: 0 8px 0 0;
+}
+.infoDebts .box-text {
+  font-size: 16px;
+  color: #0E0E0E;
+}
+.infoDebts ul {
+  margin: 0 0 24px;
+}
+.infoDebts ul:last-child {
+  margin: 0;
+}
+.infoDebts ul li {
+  margin: 0 0 8px;
+}
+.infoDebts ul li:last-child {
+  margin: 0;
+}
+.infoDebts ul li p span {
+  margin: 0 5px 0 0;
+}
+.infoDebts ul li p strong {
+  font-weight: 500;
+}
+.infoDebts ul li .tooltip-wrapper {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0 0 0 8px;
+}
+
+.wrapperWarningZapret {
+  width: 100%;
+  border-radius: 12px;
+  border: 8px solid #D92A2A;
+  background: #AB4040;
+  color: #fff;
+  padding: 42px 24px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  font-size: 14px;
+}
+.wrapperWarningZapret::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 17px;
+  background: url("../img/warning3.svg") no-repeat center;
+  background-size: 100%;
+  width: 140px;
+  height: 203px;
+}
+.wrapperWarningZapret .box-text {
+  color: #fff;
+  margin: 20px 0;
+  max-width: 356px;
+  font-size: 14px;
+  line-height: 140%;
+}
+.wrapperWarningZapret .h3 {
+  font-weight: normal;
+}
+
+.linkCheckBan {
+  text-decoration: underline;
+}
+
+.advantages-card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  padding: 24px;
+  border-radius: 12px;
+  background: #FFF;
+}
+.advantages-card__img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.advantages-card .h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.advantages-card .box-text {
+  font-size: 14px;
+  max-width: 257px;
+  line-height: 140%;
+}
+
+.information-credits {
+  margin: 40px 0 48px;
+}
+
+.cardWhiteForForm-section {
+  margin: 0 0 64px;
+}
+
+.cardWhiteForForm {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 24px;
+}
+.cardWhiteForForm__content {
+  width: calc(100% - 552px);
+}
+.cardWhiteForForm .btn {
+  margin: 24px 0 0;
+  padding: 10px 48px;
+}
+.cardWhiteForForm .box-text {
+  line-height: 100%;
+}
+.cardWhiteForForm .box-text strong {
+  color: #000;
+  font-weight: 500;
+}
+.cardWhiteForForm__image {
+  max-width: 552px;
+  position: absolute;
+  bottom: 0;
+  right: 24px;
+}
+.cardWhiteForForm__image img {
+  border-radius: 16px 16px 0 0;
+}
+.cardWhiteForForm__image .box-text {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  max-width: 452px;
+  width: 100%;
+  text-align: center;
+  background: #fff;
+  border-radius: 8px;
+  padding: 11px;
+  line-height: 100%;
+  font-size: 13px;
+  font-weight: normal;
+  color: #2862AC;
+}
+.cardWhiteForForm__image .box-text strong {
+  font-weight: bold;
+  color: #2862AC;
+}
+
+.debtОfBailiffs {
+  padding: 24px;
+}
+.debtОfBailiffs .title-wrapper {
+  margin: 0 0 36px;
+}
+.debtОfBailiffs .title-wrapper .descHome {
+  width: 100%;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.formDescTravelBan {
+  background-size: 39px;
+}
+
+.information-credits-not {
+  padding: 24px;
+}
+.information-credits-not .h3 {
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 150%;
+  max-width: 994px;
+}
