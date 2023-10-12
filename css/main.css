@@ -299,8 +299,6 @@
   margin: -36px auto 36px;
   position: relative;
   z-index: 1;
-  padding: 13px 13px 0;
-  background: #2862AC;
   border-radius: 12px 12px 0px 0px;
   max-width: 505px;
   width: 100%;
@@ -311,9 +309,13 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .payments-advantages__image img {
   border-radius: 12px 12px 0px 0px;
+  background: #2862AC;
+  padding: 13px 13px 0;
 }
 .payments-advantages__image::before {
   content: "";

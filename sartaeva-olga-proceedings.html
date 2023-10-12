@@ -50,7 +50,7 @@
 	<div class="wrapperPlashka">
 		<div class="container">
 			<div class="row">
-				<div class="col-12 col-md-6 col-lg-8 col-xl-9 d-flex align-items-center flex-wrap">
+				<div class="col-12 d-flex align-items-center flex-wrap">
 					<ul class="wrapperPlashkaInfo my-ul">
 						<li>
 							<p><strong>
@@ -71,8 +71,7 @@
 					<div class="safeConnection">
 						<span>Защищенное соединение</span>
 					</div>
-				</div>
-				<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+		
 					<button class="btn btn-accent btnCheckBan">Оплатить</button>
 				</div>
 			</div>
@@ -80,7 +79,7 @@
 	</div>
 
 	<div class="overlay-bg"></div>
-	<nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-header">
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-header">
 		<div class="wrapperHeader">
 			<div class="wrapperLogoAndBtn">
 				<a class="navbar-brand wrapperLogo" href="index.html">
@@ -98,10 +97,10 @@
 			<div class="collapse navbar-collapse justify-content-between" id="navbarText">
 				<ul class="nav navbar-nav wrapperLinksHeader align-items-center justify-content-between">
 					<li class="nav-item"><a class="nav-link itemHeader active" href="index.html">Задолженность по ФИО</a></li>
-					<li class="nav-item"><a class="nav-link itemHeader" href="proverit-zapret-na-vyezd-za-granitsu.html">Проверить
-							запрет на выезд за границу</a></li>
-					<li class="nav-item"><a class="nav-link itemHeader" href="proverit-zapret-na-vezd-v-rf.html">Проверка запрета
-							на въезд в РФ</a></li>
+					<li class="nav-item"><a class="nav-link itemHeader" href="proverit-zapret-na-vyezd-za-granitsu.html">Запрет на
+							выезд из РФ</a></li>
+					<li class="nav-item"><a class="nav-link itemHeader" href="proverit-zapret-na-vezd-v-rf.html">Въезд в РФ</a>
+					</li>
 					<li class="nav-item"><a class="nav-link itemHeader" href="kontakty.html">Контакты</a></li>
 					<li class="nav-item dropdown"><a class="nav-link itemHeader dropdown-toggle" href="index.html#"
 							data-toggle="dropdown">Регион
@@ -228,7 +227,8 @@
 								<div class="row">
 									<div class="col-12 col-lg-7">
 										<div class="infoDebts">
-											<div class="h4"><img src="img/poisk.svg" class="icoTravelBan" alt="">Запрос на данные <strong>на дату 20.07.2023
+											<div class="h4"><img src="img/poisk.svg" class="icoTravelBan" alt="">Запрос на данные <strong>на
+													дату 20.07.2023
 													15:44</strong></div>
 											<div class="row">
 												<div class="col-12">
@@ -238,29 +238,31 @@
 																<p><span>Номер испол. прои.:</span><strong>27881/20/63018-ИП</strong></p>
 															</li>
 														</ul>
-															<ul class="my-ul">
-																<li>
-																	<p>Задолженностей не обнаружено</p>
-																</li>
-																<li>
-																	<p><span>Кол-во задолженностей —</span><strong>1 шт</strong><span class="tooltip-wrapper"><span
-																				class="btn-tooptip">?</span><span class="tooltip-box">Укажите
-																				один из
-																				вариантов: регион проживания, временного нахождения или постоянной
-																				регистрации!</span></span></p>
-																</li>
-																<li>
-																	<p><span>Сумма задолженности —</span><strong>88537.1 руб.</strong><span class="tooltip-wrapper"><span
-																				class="btn-tooptip">?</span><span class="tooltip-box">Укажите
-																				один из
-																				вариантов: регион проживания, временного нахождения или постоянной
-																				регистрации!</span></span></p>
-																</li>
-															</ul>
+														<ul class="my-ul">
+															<li>
+																<p>Задолженностей не обнаружено</p>
+															</li>
+															<li>
+																<p><span>Кол-во задолженностей —</span><strong>1 шт</strong><span
+																		class="tooltip-wrapper"><span class="btn-tooptip">?</span><span
+																			class="tooltip-box"><span class="tooltip-box__close"></span>Укажите
+																			один из
+																			вариантов: регион проживания, временного нахождения или постоянной
+																			регистрации!</span></span></p>
+															</li>
+															<li>
+																<p><span>Сумма задолженности —</span><strong>88537.1 руб.</strong><span
+																		class="tooltip-wrapper"><span class="btn-tooptip">?</span><span
+																			class="tooltip-box"><span class="tooltip-box__close"></span>Укажите
+																			один из
+																			вариантов: регион проживания, временного нахождения или постоянной
+																			регистрации!</span></span></p>
+															</li>
+														</ul>
 													</div>
 												</div>
 											</div>
-							
+
 											<div class="btn-group">
 												<a href="proverit-zapret-na-vezd-v-rf.html" class="btn btn-border linksNewRequest">
 													<svg class="svg-icon">
@@ -268,21 +270,22 @@
 													</svg>
 													<span>Сделать новый запрос</span>
 												</a>
-							
-												<a href="#" class="btn btn-border btnCheckBan2" id="feedot--quiz-button-popup--19861" data-toggle="modal"
-													data-target="#debitModal">Списать долги</a>
-							
+
+												<a href="#" class="btn btn-border btnCheckBan2" id="feedot--quiz-button-popup--19861"
+													data-toggle="modal" data-target="#debitModal">Списать долги</a>
+
 												<a href="#" class="btn btn-accent btnCheckBan">Оплатить всё</a>
 											</div>
-							
+
 										</div>
 									</div>
-							
+
 									<div class="col-12 col-lg-5">
 										<div class="wrapperWarningZapret">
 											<div class="h3"><strong>Запрет</strong> на выезд за границу</div>
 											<div class="box-text">
-												<p>Внимание: сумма задолженностей составляет 2409490 руб , судебные приставы могли наложить запрет на выезд за
+												<p>Внимание: сумма задолженностей составляет 2409490 руб , судебные приставы могли наложить
+													запрет на выезд за
 													границу.</p>
 											</div>
 											<a href="#checkBlock" class="color-white linkCheckBan go_to">Проверить запрет на выезд</a>
@@ -1021,7 +1024,7 @@
 														<label for="regionNumberID">
 															<span class="input-title">
 																Ваш регион <span class="tooltip-wrapper"><span class="btn-tooptip">?</span><span
-																		class="tooltip-box">Укажите
+																		class="tooltip-box"><span class="tooltip-box__close"></span>Укажите
 																		один из
 																		вариантов: регион проживания, временного нахождения или постоянной
 																		регистрации!</span></span>
@@ -1351,7 +1354,7 @@
 																	<label for="regionNumberID">
 																		<span class="input-title">
 																			Ваш регион <span class="tooltip-wrapper"><span class="btn-tooptip">?</span><span
-																					class="tooltip-box">Укажите
+																					class="tooltip-box"><span class="tooltip-box__close"></span>Укажите
 																					один из
 																					вариантов: регион проживания, временного нахождения или постоянной
 																					регистрации!</span></span>
@@ -1556,7 +1559,7 @@
 										<div class="form-bailiff__footer">
 											<div class="row">
 												<div class="col-12 col-md-6 col-lg-3 col-xl-2 mb-24"><a href="#"
-														class="btn  bailiff-next-step prev-step btn-border" data-tab="1"><svg
+														class="btn bailiff-next-step prev-step btn-border" data-tab="1"><svg
 															class="svg-icon svg-icon-prev">
 															<use xlink:href="img/sprite.svg#prev"></use>
 														</svg><span>Назад</span></a></div>
@@ -1581,10 +1584,13 @@
 										<div class="col-12">
 											<div class="formDescTravelBan">
 												<div class="logoText">
-													<p>Официальный запрос на проверку запрета выезда за границу проводится согласно ФЗ "Об исполнительном производстве" от
-													02.10.2007 N 229. Основные причины ограничения выезда граждан из РФ: долги по кредитам (ипотеке), наличие уголовного
-													розыска, штрафы ГИБДД, налоговая задолженность, самая частая причина наложения запрета, это задолженность у судебных
-													приставов.</p>
+													<p>Официальный запрос на проверку запрета выезда за границу проводится согласно ФЗ "Об
+														исполнительном производстве" от
+														02.10.2007 N 229. Основные причины ограничения выезда граждан из РФ: долги по кредитам
+														(ипотеке), наличие уголовного
+														розыска, штрафы ГИБДД, налоговая задолженность, самая частая причина наложения запрета, это
+														задолженность у судебных
+														приставов.</p>
 												</div>
 											</div>
 										</div>
@@ -1601,7 +1607,7 @@
 		<footer>
 			<div class="container-fluid">
 				<div class="row wrapperFooter wrapperUpFooter">
-					<div class="col-lg-5 col-md-3 col-sm-6 сol-12">
+					<div class="col-lg-5 col-md-4 col-sm-6 сol-12">
 						<div class="wrapperLogoFooter">
 							<img src="img/logotip.png" class="logo" alt loading="lazy">
 							<div class="logoText">
@@ -1609,17 +1615,17 @@
 								Проверка долгов
 							</div>
 						</div>
-
+		
 						<div class="contentTextNameDownFooter">
 							<p><strong>FSSPRU.NET</strong> Сервис проверки задолженности не является официальным сайтом ФССП.</p>
 						</div>
-
+		
 						<div class="contentTextUpFooter">
 							<p>Безопасность операций подтверждена сертификатом соответствия международному стандарту PCI DSS.</p>
 						</div>
 					</div>
-
-					<div class="col-lg-4 col-md-3 col-sm-6 col-12">
+		
+					<div class="col-lg-4 col-md-4 col-sm-6 col-12">
 						<div class="wrapperSectionsFooter">
 							<div class="wrapperSectionsFooterTitle">
 								<strong>Разделы сайта</strong>
@@ -1643,19 +1649,19 @@
 							</div>
 						</div>
 					</div>
-
-					<div class="col-lg-3 col-md-3 col-sm-6 col-12">
+		
+					<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 						<div class="wrapperContactFooter">
 							<div class="wrapperContactFooterBox">
 								<a href="mailto:info@fsspru.net">info@fsspru.net</a>
 								<span>По всем вопросам:</span>
 							</div>
-
+		
 							<div class="wrapperContactFooterBox">
 								<a href="tel:88003503486">8 (800) 350 34 86</a>
 								<span>Бесплатная юр. консультация:</span>
 							</div>
-
+		
 							<div class="application-links">
 								<a href="https://play.google.com/store/apps/details?id=com.fssp.app" target="_blank" rel="nofollow"
 									onclick="ym(70699780,'reachGoal','and');return true;" class="application-links__item"><img
@@ -1667,7 +1673,7 @@
 							</div>
 						</div>
 					</div>
-
+		
 					<div class="col-12">
 						<div class="wrapperPaymentsFooter">
 							<div class="box-text">
@@ -1680,10 +1686,10 @@
 					</div>
 				</div>
 			</div>
-
+		
 			<div class="container-fluid">
 				<div class="row wrapperFooter wrapperDownFooter">
-					<div class="col-lg-9 col-md-3 col-sm-6 сol-12">
+					<div class="col-lg-9 col-md-8 col-sm-6 сol-12">
 						<div class="contentTextUpFooter">
 							<div>Расчеты по переводу денежных средств осуществляет ООО НКО «МОБИ.Деньги» (лицензия ЦБ РФ № 3523-К от
 								06.12.2013
@@ -1691,7 +1697,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-3 col-sm-6 сol-12">
+					<div class="col-lg-3 col-md-4 col-sm-6 сol-12">
 						<div class="documentsLinks">
 							<a href="oferta.html" class="contentTextDownFooter">
 								Договор оферты
@@ -1718,7 +1724,7 @@
 				</div>
 				<a href="#" class="tibrr-cookie-consent-button">Хорошо</a>
 			</div>
-			<div class="tibrr-cookie-consent-icon"><img src="img/cookie.svg" alt=""></div>
+			<div class="tibrr-cookie-consent-icon"><img src="img/cookie.svg" alt="Куки"></div>
 		</div>
 	</div>
 
@@ -1758,31 +1764,32 @@
 	<!-- Модальное окно -->
 	<div class="modal fade" id="debitModal" tabindex="-1" aria-labelledby="debitModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered"">
-			<div class="modal-content">
-				<div class="modal-header">
-					<div class="modal-title"><strong>дополнительная</strong> Информация</div>
-					<!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<div class=" modal-content">
+			<div class="modal-header">
+				<div class="modal-title"><strong>дополнительная</strong> Информация</div>
+				<!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button> -->
-				</div>
-				<div class="modal-body">
-					<form action="" method="post" class="form-modal">
-						<label for="fio">
-							<span class="input-title">
-								Укажите ваше ФИО
-							</span>
-						</label>
-						<input type="text" class="form-control" placeholder="Иванов Иван Иванович" id="fio" name="fio" required="required">
-
-						<div class="btn-group">
-							<button type="submit" class="btn btn-accent">Оплатить</button>
-							<a href="#" class="btn btn-border" data-dismiss="modal" aria-label="Close">Закрыть</a>
-						</div>
-					</form>
-				</div>
-				
 			</div>
+			<div class="modal-body">
+				<form action="" method="post" class="form-modal">
+					<label for="fio">
+						<span class="input-title">
+							Укажите ваше ФИО
+						</span>
+					</label>
+					<input type="text" class="form-control" placeholder="Иванов Иван Иванович" id="fio" name="fio"
+						required="required">
+
+					<div class="btn-group">
+						<button type="submit" class="btn btn-accent">Оплатить</button>
+						<a href="#" class="btn btn-border" data-dismiss="modal" aria-label="Close">Закрыть</a>
+					</div>
+				</form>
+			</div>
+
 		</div>
+	</div>
 	</div>
 
 

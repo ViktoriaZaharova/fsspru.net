@@ -10,7 +10,7 @@
   margin: 24px 0 0;
 }
 .technical-box .btn {
-  padding: 10px 48px;
+  padding: 10px 22px;
 }
 .technical-box .box-text {
   font-size: 18px;
@@ -26,7 +26,7 @@
 }
 
 .fault-box {
-  background: #fff url("../img/404.svg") no-repeat right center;
+  background: #fff url("../img/404.svg") no-repeat right bottom;
   background-size: 401px;
 }
 

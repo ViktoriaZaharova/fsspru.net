@@ -48,7 +48,7 @@
 <body>
 
 	<div class="overlay-bg"></div>
-	<nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-header">
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-header">
 		<div class="wrapperHeader">
 			<div class="wrapperLogoAndBtn">
 				<a class="navbar-brand wrapperLogo" href="index.html">
@@ -65,11 +65,11 @@
 			</div>
 			<div class="collapse navbar-collapse justify-content-between" id="navbarText">
 				<ul class="nav navbar-nav wrapperLinksHeader align-items-center justify-content-between">
-					<li class="nav-item"><a class="nav-link itemHeader active" href="index.html">Задолженность по ФИО</a></li>
-					<li class="nav-item"><a class="nav-link itemHeader" href="proverit-zapret-na-vyezd-za-granitsu.html">Проверить
-							запрет на выезд за границу</a></li>
-					<li class="nav-item"><a class="nav-link itemHeader" href="proverit-zapret-na-vezd-v-rf.html">Проверка запрета
-							на въезд в РФ</a></li>
+					<li class="nav-item"><a class="nav-link itemHeader" href="index.html">Задолженность по ФИО</a></li>
+					<li class="nav-item"><a class="nav-link itemHeader" href="proverit-zapret-na-vyezd-za-granitsu.html">Запрет на
+							выезд из РФ</a></li>
+					<li class="nav-item"><a class="nav-link itemHeader" href="proverit-zapret-na-vezd-v-rf.html">Въезд в РФ</a>
+					</li>
 					<li class="nav-item"><a class="nav-link itemHeader" href="kontakty.html">Контакты</a></li>
 					<li class="nav-item dropdown"><a class="nav-link itemHeader dropdown-toggle" href="index.html#"
 							data-toggle="dropdown">Регион
@@ -212,7 +212,7 @@
 								<form class="examination-form form-bailiff" id="checkAbroadBan" method="post">
 									<div class="bailiff-item js-tab-content active" data-tab="1">
 										<div class="form-bailiff__body">
-											<div class="row">
+											<div class="row align-items-center">
 												<div class="col-12 col-sm-6 col-lg-3 mb-24">
 													<div class="form-group">
 														<label for="fio">
@@ -243,7 +243,7 @@
 														<label for="regionNumberID">
 															<span class="input-title">
 																Ваш регион <span class="tooltip-wrapper"><span class="btn-tooptip">?</span><span
-																		class="tooltip-box">Укажите
+																		class="tooltip-box"><span class="tooltip-box__close"></span>Укажите
 																		один из
 																		вариантов: регион проживания, временного нахождения или постоянной
 																		регистрации!</span></span>
@@ -422,8 +422,7 @@
 													</div>
 												</div>
 												<div class="col-12 col-sm-6 col-lg-3 mb-24">
-													<a href="#"
-														class="btn btn-border bailiff-next-step bailiff-next-step-first next-step js-tab-trigger"
+													<a href="#" class="btn btn-border bailiff-next-step next-step js-tab-trigger"
 														data-tab="2"><span>Следующий шаг</span><svg class="svg-icon">
 															<use xlink:href="img/sprite.svg#next"></use>
 														</svg></a>
@@ -434,7 +433,7 @@
 
 									<div class="bailiff-item js-tab-content" data-tab="2">
 										<div class="form-bailiff__body">
-											<div class="row">
+											<div class="row align-items-center">
 												<div class="col-12 col-sm-6 col-lg-4 mb-24">
 													<div class="form-group">
 														<label for="country">
@@ -620,7 +619,7 @@
 
 											<div class="row">
 												<div class="col-12 col-md-6 col-lg-3 col-xl-2 mb-24"><a href="#"
-														class="btn  bailiff-next-step prev-step btn-border" data-tab="1"><svg
+														class="btn bailiff-next-step prev-step btn-border" data-tab="1"><svg
 															class="svg-icon svg-icon-prev">
 															<use xlink:href="img/sprite.svg#prev"></use>
 														</svg><span>Назад</span></a></div>
@@ -645,15 +644,18 @@
 													<div class="important-information">
 														<div class="important-information__top">
 															<div class="box-text">
-																<p>Иностранным гражданам при посещении Российской Федерации согласно ФЗ "О миграционном учете иностранных граждан и лиц без
-																гражданства в Российской Федерации" от 18.07.2006 N 109-ФЗ рекомендуется иметь справку о законном основании нахождении
-																на территории РФ</p>
+																<p>Иностранным гражданам при посещении Российской Федерации согласно ФЗ "О миграционном
+																	учете иностранных граждан и лиц без
+																	гражданства в Российской Федерации" от 18.07.2006 N 109-ФЗ рекомендуется иметь справку
+																	о законном основании нахождении
+																	на территории РФ</p>
 															</div>
 														</div>
 														<div class="important-information__bottom">
 															<div class="box-text">
-																<p>Без справки у иностранного гражданина въезд на территорию РФ может быть ограничен. Получите справку чтобы проверить
-																запрет на въезд на территорию РФ!</p>
+																<p>Без справки у иностранного гражданина въезд на территорию РФ может быть ограничен.
+																	Получите справку чтобы проверить
+																	запрет на въезд на территорию РФ!</p>
 															</div>
 														</div>
 													</div>
@@ -690,7 +692,8 @@
 							<h2 class="titleCardsInfo"><strong>Статистика проверок</strong> запрета въезда в РФ</h2>
 							<div class="descCardsInfo">Статистика обновляется каждые 20 минут. Данные формируются исходя из запросов
 								<br>пользователей на проверку ограничения на
-								въезд на территорию РФ.</div>
+								въезд на территорию РФ.
+							</div>
 						</div>
 
 						<div class="col-12">
@@ -742,14 +745,14 @@
 						<div class="col-12">
 							<div class="cardWhite">
 								<div class="row">
-									<div class="col-12 col-lg-6">
+									<div class="col-12 col-xl-6">
 										<div class="payments-advantages__image wrapperImgPrimerOtcheta"><img src="img/vezd-inquiry.png"
 												alt="">
 											<a href="#" download="report.pdf" class="btn btn-accent btnViewExample"><span>Смотреть
 													пример</span><img class="icoTravelBan" src="img/pdf.svg" alt=""></a>
 										</div>
 									</div>
-									<div class="col-12 col-lg-6">
+									<div class="col-12 col-xl-6">
 										<div class="payments-advantages__content">
 											<h2 class="titleCardsInfo">
 												<strong>Пример справки</strong> “Разрешение на въезд в РФ”
@@ -830,7 +833,7 @@
 		<footer>
 			<div class="container-fluid">
 				<div class="row wrapperFooter wrapperUpFooter">
-					<div class="col-lg-5 col-md-3 col-sm-6 сol-12">
+					<div class="col-lg-5 col-md-4 col-sm-6 сol-12">
 						<div class="wrapperLogoFooter">
 							<img src="img/logotip.png" class="logo" alt loading="lazy">
 							<div class="logoText">
@@ -848,7 +851,7 @@
 						</div>
 					</div>
 
-					<div class="col-lg-4 col-md-3 col-sm-6 col-12">
+					<div class="col-lg-4 col-md-4 col-sm-6 col-12">
 						<div class="wrapperSectionsFooter">
 							<div class="wrapperSectionsFooterTitle">
 								<strong>Разделы сайта</strong>
@@ -873,7 +876,7 @@
 						</div>
 					</div>
 
-					<div class="col-lg-3 col-md-3 col-sm-6 col-12">
+					<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 						<div class="wrapperContactFooter">
 							<div class="wrapperContactFooterBox">
 								<a href="mailto:info@fsspru.net">info@fsspru.net</a>
@@ -912,7 +915,7 @@
 
 			<div class="container-fluid">
 				<div class="row wrapperFooter wrapperDownFooter">
-					<div class="col-lg-9 col-md-3 col-sm-6 сol-12">
+					<div class="col-lg-9 col-md-8 col-sm-6 сol-12">
 						<div class="contentTextUpFooter">
 							<div>Расчеты по переводу денежных средств осуществляет ООО НКО «МОБИ.Деньги» (лицензия ЦБ РФ № 3523-К от
 								06.12.2013
@@ -920,7 +923,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-3 col-sm-6 сol-12">
+					<div class="col-lg-3 col-md-4 col-sm-6 сol-12">
 						<div class="documentsLinks">
 							<a href="oferta.html" class="contentTextDownFooter">
 								Договор оферты
@@ -946,7 +949,7 @@
 				</div>
 				<a href="#" class="tibrr-cookie-consent-button">Хорошо</a>
 			</div>
-			<div class="tibrr-cookie-consent-icon"><img src="img/cookie.svg" alt=""></div>
+			<div class="tibrr-cookie-consent-icon"><img src="img/cookie.svg" alt="Куки"></div>
 		</div>
 	</div>
 

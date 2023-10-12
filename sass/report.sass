@@ -35,6 +35,7 @@ h2.titleHome
 			&:last-child
 				margin: 0
 			p
+				margin: 0
 				span
 					margin: 0 5px 0 0
 			.tooltip-wrapper
@@ -82,7 +83,8 @@ h2.titleHome
 .departmens-box
 	&__title		
 		text-transform: none	
-
+		display: flex
+		align-items: center
 
 
 .warning-section
@@ -112,14 +114,14 @@ h2.titleHome
 		background-size: 100%
 		opacity: 0.1
 	.application-advantages-list
-		&::before
-			height: calc(100% - 14px)
 		li
 			margin: 0 0 14px
 			&:last-child
 				margin: 0
-			&::before
+			&::before, &::after
 				top: 5px
+	.h3
+		margin: 0 0 20px			
 
 .cardWarning-total
 	width: 100%

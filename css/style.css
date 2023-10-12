@@ -143,6 +143,7 @@ label {
 
 .input-title {
   width: 100%;
+  min-height: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -341,7 +342,7 @@ button:hover, button:focus, .btn:hover, .btn:focus {
 
 strong, b {
   font-weight: bold;
-  display: inline-block;
+  display: inline;
 }
 
 ul, ol {
@@ -787,9 +788,9 @@ a.color-white:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   color: #5A5A5A;
   font-size: 16px;
   font-weight: 300;
@@ -829,24 +830,16 @@ a.color-white:hover {
   line-height: 100%;
   font-size: 16px;
 }
-.application-advantages-list::before {
-  content: "";
-  position: absolute;
-  left: 6px;
-  top: 50%;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-  background: #2862AC;
-  width: 2px;
-  height: calc(100% - 10px);
-}
 .application-advantages-list li {
   position: relative;
   padding: 0 0 0 28px;
-  margin: 0 0 29px;
+  margin: 0 0 24px;
 }
 .application-advantages-list li:last-child {
   margin: 0;
+}
+.application-advantages-list li:last-child::after {
+  display: none;
 }
 .application-advantages-list li::before {
   content: "";
@@ -858,14 +851,20 @@ a.color-white:hover {
   background: #2862AC;
   border-radius: 50%;
 }
+.application-advantages-list li::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 0;
+  background: #2862AC;
+  width: 2px;
+  height: calc(100% + 24px);
+}
 
 .list-dots-white {
   color: #fff;
 }
-.list-dots-white::before {
-  background: #fff;
-}
-.list-dots-white li::before {
+.list-dots-white li::before, .list-dots-white li:after {
   background: #fff;
 }
 
@@ -949,6 +948,7 @@ a.color-white:hover {
   font-size: 14px;
   color: #5A5A5A;
   text-align: left;
+  margin: 0;
 }
 
 .table-row {
@@ -1159,6 +1159,11 @@ a.color-white:hover {
   color: #5A5A5A;
   font-size: 24px;
   font-weight: bold;
+}
+.departmens-box .tooltip-wrapper {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .add-payment {

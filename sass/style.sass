@@ -109,6 +109,7 @@ label
 
 .input-title
 	width: 100%
+	min-height: 14px
 	display: flex
 	align-items: center
 	margin: 0 0 4px
@@ -237,7 +238,7 @@ button, .btn
 
 strong, b
 	font-weight: bold
-	display: inline-block
+	display: inline
 
 ul, ol
 	padding: 0 0 0 20px
@@ -306,7 +307,7 @@ h2
 	margin-top: 24px
 
 .m-24
-	margin: 24px 0	
+	margin: 24px 0
 
 .m-64
 	margin: 64px 0
@@ -329,7 +330,7 @@ a.color-accent
 a.color-white
 	color: #fff
 	&:hover
-		color: $accent		
+		color: $accent
 
 .text-decoration-line
 	text-decoration: underline
@@ -467,7 +468,6 @@ a.color-white
 
 .btn-tooptip-white
 	background: #fff
-		
 
 .tooltip-box
 	position: absolute
@@ -525,7 +525,7 @@ a.color-white
 
 .select-tab
 	background: url('../img/arrow-bottom.svg') no-repeat calc( 100% - 10px ) center
-	background-size: 8px	
+	background-size: 8px
 
 //checkbox my
 .form-check-label
@@ -577,7 +577,7 @@ a.color-white
 .breadcrumbs
 	width: 100%
 	display: flex
-	align-items: center
+	align-items: start
 	color: #5A5A5A
 	font-size: 16px
 	font-weight: 300
@@ -608,20 +608,15 @@ a.color-white
 	line-height: 100%
 	font-size: 16px
 	&::before
-		content: ''
-		position: absolute
-		left: 6px
-		top: 50%
-		transform: translate(0,-50%)
-		background: $accent
-		width: 2px
-		height: calc(100% - 10px)
+
 	li
 		position: relative
 		padding: 0 0 0 28px
-		margin: 0 0 29px
+		margin: 0 0 24px
 		&:last-child
 			margin: 0
+			&::after
+				display: none
 		&::before
 			content: ''
 			position: absolute
@@ -631,15 +626,22 @@ a.color-white
 			height: 14px
 			background: $accent
 			border-radius: 50%
+		&::after
+			content: ''
+			position: absolute
+			left: 6px
+			top: 0
+			background: $accent
+			width: 2px
+			height: calc(100% + 24px)
+		
 
 .list-dots-white
 	color: #fff
-	
-	&::before
-		background: #fff
 	li
-		&::before
+		&::before, &:after
 			background: #fff
+	
 
 .general-box
 	width: 100%
@@ -691,6 +693,7 @@ a.color-white
 	font-size: 14px
 	color: #5A5A5A
 	text-align: left
+	margin: 0
 
 .table-row
 	display: flex
@@ -750,7 +753,6 @@ a.color-white
 	&.active
 		display: block
 
-
 .departmens-box
 	width: 100%
 	background: #fff
@@ -781,7 +783,7 @@ a.color-white
 	.box-text
 		margin: 0 0 12px
 		&:last-child
-			margin: 0	
+			margin: 0
 	&-item
 		margin: 0 0 24px
 		&:last-child
@@ -800,7 +802,7 @@ a.color-white
 		a
 			color: #5A5A5A
 			&:hover
-				color: $accent	
+				color: $accent
 		&-checked
 			display: none !important
 			&.click
@@ -819,7 +821,7 @@ a.color-white
 			margin: 0 0 0 4px
 		&.trigger
 			.svg-icon
-				transform: rotate(180deg)	
+				transform: rotate(180deg)
 	&__sum
 		display: flex
 		align-items: center
@@ -831,7 +833,9 @@ a.color-white
 	.sum-value
 		color: #5A5A5A
 		font-size: 24px
-		font-weight: bold							
+		font-weight: bold
+	.tooltip-wrapper
+		display: inline-flex	
 
 .add-payment
 	color: #fff
@@ -844,7 +848,7 @@ a.color-white
 	&:hover, &:focus
 		color: #fff
 	&:focus
-		text-decoration: underline	
+		text-decoration: underline
 	&::after
 		content: ''
 		display: inline-block
@@ -852,11 +856,11 @@ a.color-white
 		height: 10px
 		min-width: 10px
 		background: url('../img/plus.svg') no-repeat center
-		background-size: 100%	
-		margin: 0 0 0 4px	
+		background-size: 100%
+		margin: 0 0 0 4px
 	&.trigger
 		&:after
-			background: #fff	
+			background: #fff
 			height: 2px
 
 .wrapperPlashka
@@ -885,7 +889,7 @@ a.color-white
 		p
 			margin: 0 0 0 5px
 		&:last-child
-			margin: 0		
+			margin: 0
 
 .safeConnection
 	padding: 0 14px 0 0
@@ -893,12 +897,11 @@ a.color-white
 	line-height: 120%
 	color: #5A5A5A
 	margin: 0 0 0 auto
-	text-align: right	
+	text-align: right
 	span
-		max-width: 152px	
+		max-width: 152px
 		display: block
-		
 
 .card
 	border: none
-	border-radius: 12px			
+	border-radius: 12px

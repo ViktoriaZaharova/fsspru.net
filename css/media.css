@@ -39,6 +39,18 @@
   .application-mobile {
     max-width: 320px;
   }
+  .advantages-card__img {
+    max-width: 100px;
+  }
+  .cardWhiteForForm__image {
+    max-width: 450px;
+  }
+  .cardWhiteForForm__image .box-text {
+    max-width: 400px;
+  }
+  .cardWhiteForForm__content {
+    width: calc(100% - 450px);
+  }
 }
 @media only screen and (max-width: 1200px) {
   .tooltip-box {
@@ -92,9 +104,11 @@
   }
   .payments-advantages__image {
     max-width: 400px;
-    padding: 7px 7px 0 7px;
     margin: -64px auto 0;
     height: auto;
+  }
+  .payments-advantages__image img {
+    padding: 7px 7px 0 7px;
   }
   .payments-advantages__image::before {
     width: 500px;
@@ -106,6 +120,27 @@
   .payments-advantages .descCardsInfo {
     margin: 14px 0 24px;
     max-width: none;
+  }
+  .page-payments {
+    background-size: 400px;
+  }
+  .add-payment {
+    margin: 14px 0 0;
+    width: 100%;
+  }
+  .departmens-box__head {
+    padding: 24px 14px;
+  }
+  .departmens-box__body {
+    padding: 24px 14px;
+  }
+  .page-result::before {
+    width: 500px;
+    right: 0;
+  }
+  .wrapperWarningZapret::before {
+    width: 70px;
+    height: 95px;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -312,6 +347,111 @@
   .wrapperDownFooter {
     padding: 36px 0;
   }
+  .page-payments {
+    background: transparent;
+  }
+  .list-requisites ul {
+    width: 100%;
+  }
+  .list-requisites ul:last-child {
+    border-top: 2px solid #E5E7EA;
+  }
+  .list-requisites ul:last-child li p {
+    min-width: 150px;
+    max-width: 150px;
+  }
+  .list-requisites ul li p {
+    min-width: 150px;
+    max-width: 150px;
+  }
+  .infoDebtsReport {
+    margin: 36px 0 0;
+  }
+  .nameInTable {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 14px;
+  }
+  .table {
+    font-size: 12px;
+  }
+  .itemTableTravelBan {
+    padding: 14px 0;
+  }
+  .progress-wrapper {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin: 0 0 14px;
+    width: 100%;
+  }
+  .examination h1 {
+    margin: 0 0 14px;
+  }
+  .examination .title-wrapper {
+    margin: 0 0 24px;
+  }
+  .table-row {
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .wrapperWarningZapret {
+    margin: 24px 0 0;
+  }
+  .page-result::before {
+    display: none;
+  }
+  .advantages-card__img {
+    display: none;
+  }
+  .advantages-card .h3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .advantages-card .h3 img {
+    margin: 0 14px 0 0;
+  }
+  .advantages-card .box-text {
+    max-width: none;
+  }
+  .cardWhiteForForm__image {
+    max-width: 304px;
+    height: 152px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin: -86px auto 20px;
+  }
+  .cardWhiteForForm__image .box-text {
+    font-size: 13px;
+    padding: 8px 15px;
+    max-width: 276px;
+  }
+  .cardWhiteForForm__content {
+    width: 100%;
+    padding: 0;
+  }
+  .information-credits-not {
+    margin: 0 auto 36px;
+  }
+  .safeConnection {
+    width: 100%;
+    max-width: none;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 14px auto 0;
+    text-align: center;
+  }
 }
 @media only screen and (max-width: 768px) {
   .causes .card {
@@ -386,6 +526,48 @@
     margin: 36px 0 0;
     padding: 36px 0;
   }
+  .fault-box {
+    background-size: 300px;
+  }
+  .page-report {
+    margin: 48px 0;
+  }
+  .statistics-online .descCardsInfo {
+    margin: 0 0 24px;
+  }
+  .form-bailiff__price {
+    text-align: left;
+    font-size: 14px;
+    padding: 14px;
+  }
+  .form-bailiff__price strong {
+    display: block;
+    margin: 8px 0 0;
+  }
+  .formDescTravelBan {
+    padding: 14px;
+    background: #F4F6F8;
+  }
+  .modal-title {
+    font-size: 16px;
+  }
+  .modal-content {
+    padding: 24px 14px;
+  }
+  .infoDebts .btn-group .btn {
+    margin: 0 0 24px;
+    width: 100%;
+  }
+  .infoDebts .btn-group .btn:last-child {
+    margin: 0;
+  }
+  .information-credits-not {
+    padding: 24px;
+  }
+  .information-credits-not .h3 {
+    font-size: 18px;
+    line-height: 150%;
+  }
 }
 @media only screen and (max-width: 576px) {
   h1 {
@@ -394,6 +576,9 @@
   h2 {
     font-size: 26px;
     margin: 0 0 14px;
+  }
+  .h3 {
+    font-size: 18px;
   }
   .box-text, .descHome {
     font-size: 14px;
@@ -484,6 +669,193 @@
   .contentTextDownFooter {
     margin: 0 0 24px;
   }
+  .fault-box {
+    background: #fff url(../img/404-mobile.svg) no-repeat right 24px;
+    background-size: 188px;
+    padding: 24px 14px;
+  }
+  .fault-box .box-text {
+    max-width: none;
+    font-size: 14px;
+    line-height: 160%;
+  }
+  .fault-box .box-text p {
+    margin: 0 0 12px;
+  }
+  .fault-box .box-text p:last-child {
+    margin: 0;
+  }
+  .breadcrumbs {
+    margin: 0 0 36px;
+  }
+  .general-box {
+    padding: 24px 14px;
+  }
+  .oferta-box .box-text {
+    font-size: 14px;
+  }
+  .oferta-box .titleHome {
+    font-size: 20px;
+  }
+  .site-contact-box {
+    padding: 24px 14px;
+  }
+  .technical-box {
+    padding: 24px 14px;
+    background: #fff url(../img/settings-mobile.svg) no-repeat right top;
+    background-size: 143px;
+  }
+  .technical-box .box-text {
+    font-size: 14px;
+  }
+  .technical-box .btn {
+    width: 100%;
+  }
+  .technical-box .btn-group .btn {
+    margin: 0 0 12px;
+  }
+  .technical-box .btn-group .btn:last-child {
+    margin: 0;
+  }
+  .page-payments .titleHome {
+    font-size: 24px;
+  }
+  .page-payments .box-text, .page-payments .application-advantages-list {
+    font-size: 14px;
+  }
+  .list-requisites ul:last-child li p {
+    min-width: auto;
+    max-width: 100%;
+  }
+  .list-requisites ul li {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 14px;
+  }
+  .list-requisites ul li p {
+    min-width: auto;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 0 14px;
+  }
+  .wrapperUserInfoReport ul li {
+    line-height: 150%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .wrapperUserInfoReport ul li .tooltip-wrapper {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin: 0 8px 0 0;
+  }
+  .infoDebtsReport .h4 {
+    margin: 24px 0;
+  }
+  .infoDebtsReport .tooltip-box {
+    left: 0;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .wrapperWarning {
+    padding: 24px 14px;
+  }
+  .wrapperWarning::before {
+    display: none;
+  }
+  .cardWarning::before {
+    display: none;
+  }
+  .cardWarning .box-text ul {
+    font-size: 14px;
+  }
+  .cardWarning-total {
+    padding: 24px 20px;
+  }
+  .progress-steps {
+    font-size: 14px;
+  }
+  .table, .nameInTable {
+    font-size: 9px;
+  }
+  .nameInTable {
+    border-radius: 0;
+  }
+  .statistics-online {
+    margin: 64px 0 119px;
+  }
+  .btnViewExample {
+    position: relative;
+    margin: 24px auto 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .wrapperImgPrimerOtcheta img {
+    padding: 6px 6px 0;
+  }
+  .wrapperImgPrimerOtcheta::before {
+    bottom: 68px;
+  }
+  .payments-advantages .wrapperWarning {
+    padding: 14px;
+    background: #F4F6F8;
+  }
+  .sample-report .payments-advantages__content {
+    padding: 24px 14px;
+  }
+  .how-to-check .box-text {
+    margin: 0 0 24px;
+  }
+  .descCardsCheckBan .box-text {
+    margin: 0;
+  }
+  .types-checks {
+    padding: 24px 14px 12px;
+  }
+  .checked-box {
+    margin: 0 0 17px;
+    font-size: 14px;
+  }
+  .types-checks .h3 {
+    font-size: 16px;
+  }
+  .wrapperWarningZapret {
+    margin: 24px 0 0;
+    padding: 24px 14px;
+  }
+  .wrapperWarningZapret::before {
+    width: 46px;
+    height: 46px;
+    left: 14px;
+    top: 24px;
+    right: auto;
+    background: url("../img/warning3-mobile.svg") no-repeat center;
+    background-size: 100%;
+  }
+  .wrapperWarningZapret .h3 {
+    padding: 0 0 0 54px;
+  }
+  .wrapperWarningZapret .h3 strong {
+    display: block;
+  }
+  .wrapperWarningZapret .box-text {
+    margin: 14px 0;
+  }
+  .types-checks-item {
+    font-size: 14px;
+  }
+  .cardWhiteForForm .btn {
+    width: 100%;
+  }
+  .debtОfBailiffs .title-wrapper {
+    margin: 0 0 24px;
+  }
+  .modal-dialog {
+    margin: 20px auto;
+  }
 }
 @media only screen and (max-width: 480px) {
   .tibrr-cookie-consent {
@@ -523,5 +895,28 @@
   .application-section__images::before {
     width: 260px;
     height: 260px;
+  }
+  .breadcrumbs {
+    font-size: 14px;
+  }
+  .oferta-box h1 {
+    font-size: 20px;
+  }
+  .departmens-box .sum-value {
+    font-size: 20px;
+  }
+  .tooltip-box {
+    min-width: 250px;
+    max-width: 250px;
+  }
+  .table-row {
+    padding: 0 10px;
+  }
+  .cardWhiteForForm__image {
+    height: auto;
+    max-width: 270px;
+  }
+  .cardWhiteForForm__image .box-text {
+    max-width: 220px;
   }
 }

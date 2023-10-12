@@ -232,6 +232,7 @@ $('.select-tab').on('change', function (e) {
 	$('.tabs-form .nav-tabs li a').eq($(this).val()).tab('show');
 });
 
+// проверка окна загрузки. удалить при необходимости!!!
 $('.btn-loader').click(function (e) {
 	e.preventDefault();
 	$('#pageloaderDebtsCheck').css('display', 'flex');

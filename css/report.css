@@ -42,6 +42,9 @@ h2.titleHome {
 .wrapperUserInfoReport ul li:last-child {
   margin: 0;
 }
+.wrapperUserInfoReport ul li p {
+  margin: 0;
+}
 .wrapperUserInfoReport ul li p span {
   margin: 0 5px 0 0;
 }
@@ -97,6 +100,12 @@ h2.titleHome {
 
 .departmens-box__title {
   text-transform: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .warning-section {
@@ -130,17 +139,17 @@ h2.titleHome {
   background-size: 100%;
   opacity: 0.1;
 }
-.cardWarning .application-advantages-list::before {
-  height: calc(100% - 14px);
-}
 .cardWarning .application-advantages-list li {
   margin: 0 0 14px;
 }
 .cardWarning .application-advantages-list li:last-child {
   margin: 0;
 }
-.cardWarning .application-advantages-list li::before {
+.cardWarning .application-advantages-list li::before, .cardWarning .application-advantages-list li::after {
   top: 5px;
+}
+.cardWarning .h3 {
+  margin: 0 0 20px;
 }
 
 .cardWarning-total {
