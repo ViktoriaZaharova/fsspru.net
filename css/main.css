@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .home {
-  margin: 54px 0 0;
+  margin: 6px 0 0;
   position: relative;
   z-index: 0;
   padding: 0 0 40px;
@@ -83,8 +83,8 @@
   bottom: 0;
   width: 39px;
   height: 57px;
-  background: url("../img/law.svg") no-repeat center;
-  background-size: 100%;
+  background: url("../img/law.svg") no-repeat right top;
+  background-size: contain;
   opacity: 0.1;
 }
 .formDescIndividual .logoText {
@@ -130,13 +130,12 @@
   border-radius: 12px;
   background: #FFF;
   border: none;
-  border-radius: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -144,7 +143,6 @@
 }
 .causes .card-icon {
   width: 176px;
-  height: 100%;
   border-radius: 12px;
   position: relative;
   z-index: 1;
@@ -159,6 +157,11 @@
           justify-content: center;
   padding: 32px 37px 33px 19px;
   overflow: hidden;
+}
+.causes .card-icon img {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+  width: 120px;
 }
 .causes .card-icon::before {
   content: "";
@@ -177,6 +180,19 @@
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .causes .box-text {
   font-weight: 300;

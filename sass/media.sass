@@ -1,9 +1,9 @@
 /*==========	Desktop First	==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width: 1300px)
+@media only screen and (max-width: 1350px)
 	.navbar-nav
-		font-size: 12px
+		font-size: 14px
 		.nav-item
 			margin: 0 15px 0 0
 
@@ -14,7 +14,91 @@
 		min-width: 260px
 		max-width: 260px
 
+	.application-advantages-list li
+		margin: 0 0 15px
+		&:last-child
+			margin: 0
+
+	.application-section__images
+		width: 615px
+		&::before
+			width: 700px
+			height: 300px
+
+	.application-section .application-links
+		bottom: 140px
+
+	.application-qr
+		width: 174px
+		bottom: 53px
+		left: -109px
+
+	.application-mobile
+		max-width: 320px
+
 @media only screen and (max-width: 1200px)
+
+	.tooltip-box
+		min-width: 303px
+		max-width: 303px
+		padding: 14px 44px 14px 14px
+		&__close
+			display: flex
+
+	.blockCheck-box__icon
+		max-width: 119px
+
+	.causes
+		.card-icon
+			padding: 20px 10px
+			border-radius: 0
+			&::before
+				width: 100%
+				height: 100%
+				top: 0
+				border-radius: 12px 30% 30% 12px
+
+	.application-section__images
+		width: 500px
+		margin: auto auto 0
+		&::before
+			width: 100%
+			height: 220px
+			right: 0
+			background-position: center top
+
+	.application-mobile
+		max-width: 250px
+		margin: 0 0 0 121px
+
+	.application-qr
+		bottom: 45px
+		left: -52px
+
+	.application-section .application-links
+		width: 130px
+		right: 0
+		bottom: 100px
+
+	.application-section__content
+		padding: 40px 24px
+
+	.payments-advantages
+		&__image
+			max-width: 400px
+			padding: 7px 7px 0 7px
+			margin: -64px auto 0
+			height: auto
+			&::before
+				width: 500px
+				height: 250px
+		&__content
+			padding: 24px 14px
+		.descCardsInfo
+			margin: 14px 0 24px
+			max-width: none
+
+@media only screen and (max-width: 992px)
 	.navbar-light .navbar-toggler
 		display: flex
 
@@ -24,23 +108,343 @@
 		display: flex
 		align-items: center
 		justify-content: space-between
-		
+
 	.navbar-header
 		padding: 12px 0
+		.navbar-collapse
+			position: absolute
+			width: calc(100% + 30px)
+			left: 50%
+			top: 100%
+			transform: translate(-50%,0)
+			background: #fff
+			padding: 0 0 40px
+			&::before
+				content: ''
+				position: absolute
+				left: 50%
+				top: 0
+				transform: translate(-50%,0)
+				height: 2px
+				width: calc(100% + 30px)
+				background: #2862AC
+		.phoneHeader
+			display: none
 
 	.wrapperHeader
 		flex-wrap: wrap
-		.navbar-collapse
-						
 
-@media only screen and (max-width: 992px)
+	.navbar-nav
+		font-size: 14px
+		.nav-item
+			width: 100%
+			padding: 0 30px
+			margin: 0 auto
+
+			&.show
+				.nav-link
+					font-weight: normal
+
+			.nav-link
+				padding: 16px 0
+				width: 100%
+				text-align: right
+				border-bottom: 2px solid #E5E7EA
+				font-weight: normal
+				&::before
+					display: none
+				&.active
+					border-color: #2862AC
+					font-weight: normal
+
+		.dropdown-toggle
+			justify-content: flex-end
+		.dropdown-menu
+			max-width: none
+			margin: 24px 0 0
+			box-shadow: none
+			border-radius: 0
+			padding: 0 0 18px
+			border-bottom: 2px solid #E5E7EA
+			.scroll-vertical
+				max-height: 155px
+		.dropdown-item
+			padding: 6px 12px
+
+	.home
+		margin: 0
+		padding: 0 0 54px
+
+	.debtОfBailiffs
+		padding: 14px
+		margin: 0 0 24px
+
+	.blockCheck-box
+		width: 49%
+		max-width: none
+		margin: 0 auto 14px 0
+		&:last-child
+			margin: 0	0 14px
+
+	.formDescIndividual
+		padding: 14px 21px 14px 14px
+		margin: 48px 0 0
+		position: relative
+		z-index: 1
+		overflow: visible
+		&::after
+			content: ''
+			position: absolute
+			left: 0
+			top: -24px
+			width: 100%
+			height: 2px
+			background: #2862AC
+
+	.home::before
+		display: none
+
+	.application-section
+		.cardWhite
+			padding: 24px 14px
+		.application-links
+			position: relative
+			margin: 24px auto
+			width: 100%
+			max-width: none
+			bottom: 0
+			left: 0
+			top: 0
+			background: transparent
+			border-radius: 0
+			padding: 0
+			display: flex
+			align-items: flex-start
+			flex-wrap: wrap
+			flex-direction: row
+			&__item
+				width: 92px
+				margin: 0 14px 0 0
+				&:last-child
+					margin: 0
+		&__images
+			margin: -73px auto 24px
+			overflow: hidden
+			width: 100%
+			&::before
+				border-radius: 305px
+				background: #2862AC
+				width: 304px
+				height: 304px
+				top: 50%
+				left: 50%
+				transform: translate(-50%, 0)
+		&__content
+			padding: 0
+		.titleCardsInfo
+			margin: 0 0 24px
+
+	.titleCardsInfo
+		margin: 0 0 24px
+
+	.application-qr
+		display: none
+
+	.application-mobile
+		max-width: 215px
+		height: 289px
+		margin: 0 auto
+
+	.ulRegions
+		column-count: 5	
+
+	.wrapperDownFooter
+		padding: 36px 0	
 
 @media only screen and (max-width: 768px)
+	.causes
+		.card
+			padding: 14px
+		.card-icon
+			position: absolute
+			left: 14px
+			top: 14px
+			width: 64px
+			padding: 0
+			border-radius: 0
+			&::before
+				display: none
+			img
+				filter: none
+		.card-body
+			width: 100%
+			padding: 0
+
+	.titleCardDebtFCCP
+		padding: 0 0 0 78px
+		width: 100%
+		min-height: 64px
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+
+	.questionInAnswerAndQuestion
+		font-size: 16px
+
+	.descCardsInfo
+		font-size: 14px
+		line-height: 130%
+
+	.regions 
+		.cardWhite
+			padding: 24px 14px
+		.titleCardsInfo
+			margin: 0 0 14px
+
+	.toggle-regions
+		margin: 0 0 24px
+
+	.ulRegions-wrapper
+		padding: 24px 0 0		
+
+	.ulRegions
+		column-count: 4	
+		
+	.wrapperContactFooter
+		margin: 36px 0 0
+
+	.contentTextNameDownFooter
+		margin: 24px 0 14px
+
+	footer
+		.application-links__item
+			width: 110px
+
+	.wrapperPaymentsFooter
+		margin: 36px 0 0
+		padding: 36px 0
+
 
 @media only screen and (max-width: 576px)
+	h1
+		font-size: 24px
+
+	h2
+		font-size: 26px
+		margin: 0 0 14px
+
+	.box-text, .descHome
+		font-size: 14px
+		line-height: 140%
+
+	.content
+		padding: 36px 0 0
+
+	.wrapperRadioHome
+		display: none
+
+	.blockCheck-box
+		width: 100%
+
+	.formDescIndividual::before
+		width: 101px
+		height: 100%
+		bottom: auto
+		top: 50%
+		transform: translate(0,-50%)
+
+	.dropdown-menu
+		min-width: auto
+		max-width: 100%
+
+	.payments-advantages__image
+		max-width: 259px
+		&::before
+			width: 304px
+			height: 152px
+
+	.payments-advantages-box
+		margin: 0 0 14px
+		flex-wrap: wrap
+		&__icon
+			margin: 0 0 8px
+		&__body
+			width: 100%		
+			padding: 0
+
+	.ulRegions
+		font-size: 14px
+		column-count: 2
+		li
+			margin: 0 0 24px
+			display: none
+			&:nth-child(-n+36)
+				display: block
+			&:nth-child(-n+24)
+				display: block
+
+	.titleCardsInfo
+		margin: 0 0 14px
+
+	.question .descCardsInfo
+		margin: 0 0 24px
+
+	.question-item
+		padding: 24px 14px
+		&__link
+			margin: 14px 0 0
+			font-size: 14px
+		h3
+			font-size: 16px								
+				
+	footer
+		margin: 64px 0 0 
+		padding: 40px 0 0		
+
+	.wrapperSectionsFooter
+		margin: 36px 0 0
+
+	.documentsLinks
+		margin: 24px 0 0
+
+	.contentTextDownFooter
+		margin: 0 0 24px
 
 @media only screen and (max-width: 480px)
+	.tibrr-cookie-consent
+		left: 0
+		bottom: 0
+		width: 100%
+		max-width: none
+		border-radius: 0
+
+	.tibrr-cookie-consent-container
+		padding: 24px 28px 24px 24px
+
+	.tibrr-cookie-consent-icon
+		right: -35px
+
+		
 
 @media only screen and (max-width: 420px)
-
 @media only screen and (max-width: 370px)
+	.application-section .application-links__item
+		width: 82px
+		margin: 0 10px 0 0
+
+	.payments-advantages__image
+		max-width: 230px
+		&::before
+			width: 270px
+			height: 135px	
+
+@media only screen and (max-width: 350px)
+	.tibrr-cookie-consent-icon
+		right: -55px
+
+	.tibrr-cookie-consent-container
+		padding: 24px
+
+	.application-section__images::before
+		width: 260px
+		height: 260px

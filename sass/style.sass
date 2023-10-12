@@ -255,7 +255,6 @@ h1
 
 .content
 	h1
-		font-weight: bold
 		margin: 0 0 24px
 
 h2
@@ -425,10 +424,12 @@ a.color-white
 	position: absolute
 	z-index: -1
 	right: 0
-	top: 0
+	bottom: 0
 	height: 100%
 	width: 158px
-	@include d-flex
+	display: flex
+	align-items: flex-end
+	justify-content: flex-end
 	img
 		width: 100%
 
@@ -487,6 +488,15 @@ a.color-white
 	transform: translate(-27%,0)
 	margin: 4px 0 0
 	display: none
+	&__close
+		position: absolute
+		width: 16px
+		height: 16px
+		top: 14px
+		right: 14px
+		background: url('../img/close-blue.svg') no-repeat center
+		background-size: 100%
+		display: none
 
 .nav-tabs
 	width: 100%
@@ -512,6 +522,10 @@ a.color-white
 
 .tab-content
 	padding: 24px 0 0
+
+.select-tab
+	background: url('../img/arrow-bottom.svg') no-repeat calc( 100% - 10px ) center
+	background-size: 8px	
 
 //checkbox my
 .form-check-label

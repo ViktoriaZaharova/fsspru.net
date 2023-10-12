@@ -214,3 +214,25 @@ $(document).ready(function () {
 	}
 	counterInit(0, 100);
 });
+
+$('.navbar-toggler').click(function () {
+	$('.overlay-bg').fadeToggle();
+});
+
+$('.btn-tooptip').click(function () {
+	$(this).siblings('.tooltip-box').fadeIn();
+});
+
+$('.tooltip-box__close').click(function () {
+	$(this).parents('.tooltip-box').fadeOut();
+});
+
+// select tabs mobile
+$('.select-tab').on('change', function (e) {
+	$('.tabs-form .nav-tabs li a').eq($(this).val()).tab('show');
+});
+
+$('.btn-loader').click(function (e) {
+	e.preventDefault();
+	$('#pageloaderDebtsCheck').css('display', 'flex');
+});

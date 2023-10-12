@@ -2,7 +2,7 @@
 
 // home
 .home
-	margin: 54px 0 0
+	margin: 6px 0 0
 	position: relative
 	z-index: 0
 	padding: 0 0 40px
@@ -75,8 +75,8 @@
 		bottom: 0
 		width: 39px
 		height: 57px
-		background: url('../img/law.svg') no-repeat center
-		background-size: 100%
+		background: url('../img/law.svg') no-repeat right top
+		background-size: contain
 		opacity: 0.1
 	.logoText
 		margin: 0
@@ -117,19 +117,20 @@
 		border-radius: 12px
 		background: #FFF
 		border: none
-		border-radius: 0
 		display: flex
-		align-items: center
+		align-items: stretch
 		flex-direction: row
 	.card-icon
 		width: 176px
-		height: 100%
 		border-radius: 12px
 		position: relative
 		z-index: 1
 		@include d-flex
 		padding: 32px 37px 33px 19px
 		overflow: hidden
+		img
+			filter: brightness(0) invert(1)
+			width: 120px
 		&::before
 			content: ''
 			position: absolute
@@ -144,6 +145,10 @@
 		width: calc(100% - 176px)
 		padding: 22px 30px 23px 9px
 		flex: none
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		justify-content: center
 	.box-text
 		font-weight: 300
 		line-height: 160%

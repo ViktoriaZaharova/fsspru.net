@@ -46,40 +46,10 @@
 
 <body>
 
-	<div id="pageloaderDebtsCheck" class="search-fixed">
-		<div class="search-fixed__content">
-			<div class="title-wraper">
-				<div class="h3"><strong>Поиск</strong> задолженностей</div>
-				<div class="progressbar__value">0%</div>
-			</div>
-			<div class="progressbar">
-				<div class="progressbar__bg"></div>
-			</div>
-			<div class="search-fixed__text">
-				<div class="h4">А вы знали что что</div>
-				<div class="welcome-text">
-					<div class="box-text active">
-						<p>ФССП - это Федеральная служба судебных приставов, согласно утвержденным Указом Президента Российской
-							Федерации от
-							13.10.2004 № 1316 занимается организацей принудительного исполнения судебных актов , а также актов иных
-							органов,
-							предусмотренных законодательством Российской Федерации</p>
-					</div>
-					<div class="box-text">
-						<p>Вариантзаметки номер два и так по порядку они должны появляться</p>
-					</div>
-					<div class="box-text">
-						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus iure suscipit, veritatis aut cum,
-							numquam a aperiam non ullam maiores nostrum quibusdam aliquam. Sunt voluptatum atque nulla harum aliquam
-							et.</p>
-					</div>
-				</div>
+	
 
-			</div>
-		</div>
-	</div>
-
-	<nav class="navbar navbar-expand-md navbar-light fixed-top navbar-header">
+	<div class="overlay-bg"></div>
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-header">
 		<div class="wrapperHeader">
 			<div class="wrapperLogoAndBtn">
 				<a class="navbar-brand wrapperLogo" href="index.html">
@@ -89,7 +59,7 @@
 						<br>Проверка долгов
 					</div>
 				</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarText"
 					aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -97,10 +67,8 @@
 			<div class="collapse navbar-collapse justify-content-between" id="navbarText">
 				<ul class="nav navbar-nav wrapperLinksHeader align-items-center justify-content-between">
 					<li class="nav-item"><a class="nav-link itemHeader active" href="index.html">Задолженность по ФИО</a></li>
-					<li class="nav-item"><a class="nav-link itemHeader" href="proverit-zapret-na-vyezd-za-granitsu.html">Проверить
-							запрет на выезд за границу</a></li>
-					<li class="nav-item"><a class="nav-link itemHeader" href="proverit-zapret-na-vezd-v-rf.html">Проверка запрета
-							на въезд в РФ</a></li>
+					<li class="nav-item"><a class="nav-link itemHeader" href="proverit-zapret-na-vyezd-za-granitsu.html">Запрет на выезд из РФ</a></li>
+					<li class="nav-item"><a class="nav-link itemHeader" href="proverit-zapret-na-vezd-v-rf.html">Въезд в РФ</a></li>
 					<li class="nav-item"><a class="nav-link itemHeader" href="kontakty.html">Контакты</a></li>
 					<li class="nav-item dropdown"><a class="nav-link itemHeader dropdown-toggle" href="index.html#"
 							data-toggle="dropdown">Регион
@@ -245,6 +213,18 @@
 														aria-controls="pills-ipNumber" aria-selected="false">Номер ИП</a>
 												</li>
 											</ul>
+											<div class="d-block d-sm-none">
+												<label for="select-tab">
+													<span class="input-title">
+														Поиск по:
+													</span>
+												</label>
+												<select name="select-tab" class="select-tab" id="select-tab">
+													<option value="0">Физическое лицо</option>
+													<option value="1">Номер ИП</option>
+													<option value="2">Юридическое лицо</option>
+												</select>
+											</div>
 											<div class="tab-content tabs__content" id="pills-tabContent">
 												<div class="tab-pane fade show active" id="pills-individual" role="tabpanel"
 													aria-labelledby="individual">
@@ -279,7 +259,9 @@
 																<label for="regionNumberID">
 																	<span class="input-title">
 																		Ваш регион <span class="tooltip-wrapper"><span class="btn-tooptip">?</span><span
-																				class="tooltip-box">Укажите
+																				class="tooltip-box">
+																				<span class="tooltip-box__close"></span>
+																				Укажите
 																				один из
 																				вариантов: регион проживания, временного нахождения или постоянной
 																				регистрации!</span></span>
@@ -482,7 +464,8 @@
 																<label for="regionNumberID">
 																	<span class="input-title">
 																		Ваш регион <span class="tooltip-wrapper"><span class="btn-tooptip">?</span><span
-																				class="tooltip-box">Укажите
+																				class="tooltip-box"><span class="tooltip-box__close"></span>
+																				Укажите
 																				один из
 																				вариантов: регион проживания, временного нахождения или постоянной
 																				регистрации!</span></span>
@@ -695,7 +678,8 @@
 											<label class="form-check-label">
 												<input class="form-check-input checkBoxAgreePrivacy" type="checkbox" required="required">
 												<span class="checkbox-custom"></span>
-												<span class="checkbox-text">Согласен(а) с политикой и дог. оферты</span>
+												<span class="checkbox-text">Согласен(а) с политикой конфиденциальности и пользовательским
+													соглашением</span>
 											</label>
 										</div>
 									</div>
@@ -881,7 +865,7 @@
 											</div>
 											<div class="application-mobile"><img src="img/mobile-application.png" alt=""></div>
 											<div class="application-links d-none d-lg-flex">
-												<a href="https://play.google.com/store/apps/details?id=com.fssp.app" target="_blank"
+												<a href="https://play.google.com/store/apps/details?id=com.fssp.app" target="_blank" 
 													rel="nofollow" onclick="ym(70699780,'reachGoal','and');return true;"
 													class="application-links__item"><img src="img/android.webp"
 														alt="приложение судебные приставы на android" loading="lazy"></a>
@@ -942,10 +926,10 @@
 						<div class="col-12">
 							<div class="cardWhite">
 								<div class="row">
-									<div class="col-12 col-lg-6">
+									<div class="col-12 col-xl-6">
 										<div class="payments-advantages__image"><img src="img/payments-screen.png" alt=""></div>
 									</div>
-									<div class="col-12 col-lg-6">
+									<div class="col-12 col-xl-6">
 										<div class="payments-advantages__content">
 											<h2 class="titleCardsInfo">
 												<strong>Все платежи</strong> осуществляем в день оплаты и Без задержек
@@ -1360,10 +1344,11 @@
 				</div>
 			</section>
 		</div>
+
 		<footer>
 			<div class="container-fluid">
 				<div class="row wrapperFooter wrapperUpFooter">
-					<div class="col-lg-5 col-md-3 col-sm-6 сol-12">
+					<div class="col-lg-5 col-md-4 col-sm-6 сol-12">
 						<div class="wrapperLogoFooter">
 							<img src="img/logotip.png" class="logo" alt loading="lazy">
 							<div class="logoText">
@@ -1381,7 +1366,7 @@
 						</div>
 					</div>
 
-					<div class="col-lg-4 col-md-3 col-sm-6 col-12">
+					<div class="col-lg-4 col-md-4 col-sm-6 col-12">
 						<div class="wrapperSectionsFooter">
 							<div class="wrapperSectionsFooterTitle">
 								<strong>Разделы сайта</strong>
@@ -1406,7 +1391,7 @@
 						</div>
 					</div>
 
-					<div class="col-lg-3 col-md-3 col-sm-6 col-12">
+					<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 						<div class="wrapperContactFooter">
 							<div class="wrapperContactFooterBox">
 								<a href="mailto:info@fsspru.net">info@fsspru.net</a>
@@ -1445,7 +1430,7 @@
 
 			<div class="container-fluid">
 				<div class="row wrapperFooter wrapperDownFooter">
-					<div class="col-lg-9 col-md-3 col-sm-6 сol-12">
+					<div class="col-lg-9 col-md-8 col-sm-6 сol-12">
 						<div class="contentTextUpFooter">
 							<div>Расчеты по переводу денежных средств осуществляет ООО НКО «МОБИ.Деньги» (лицензия ЦБ РФ № 3523-К от
 								06.12.2013
@@ -1453,7 +1438,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-3 col-sm-6 сol-12">
+					<div class="col-lg-3 col-md-4 col-sm-6 сol-12">
 						<div class="documentsLinks">
 							<a href="oferta.html" class="contentTextDownFooter">
 								Договор оферты
@@ -1467,7 +1452,41 @@
 			</div>
 		</footer>
 	</div>
-
+	
+	<a href="#" class="btn btn-accent btn-loader">Лоадер</a>
+	
+	<div id="pageloaderDebtsCheck" class="search-fixed">
+		<div class="search-fixed__content">
+			<div class="title-wraper">
+				<div class="h3"><strong>Поиск</strong> задолженностей</div>
+				<div class="progressbar__value">0%</div>
+			</div>
+			<div class="progressbar">
+				<div class="progressbar__bg"></div>
+			</div>
+			<div class="search-fixed__text">
+				<div class="h4">А вы знали что что</div>
+				<div class="welcome-text">
+					<div class="box-text active">
+						<p>ФССП - это Федеральная служба судебных приставов, согласно утвержденным Указом Президента Российской
+							Федерации от
+							13.10.2004 № 1316 занимается организацей принудительного исполнения судебных актов , а также актов иных
+							органов,
+							предусмотренных законодательством Российской Федерации</p>
+					</div>
+					<div class="box-text">
+						<p>Вариантзаметки номер два и так по порядку они должны появляться</p>
+					</div>
+					<div class="box-text">
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus iure suscipit, veritatis aut cum,
+							numquam a aperiam non ullam maiores nostrum quibusdam aliquam. Sunt voluptatum atque nulla harum aliquam
+							et.</p>
+					</div>
+				</div>
+	
+			</div>
+		</div>
+	</div>
 
 	<!-- cookies -->
 	<div class="tibrr-cookie-consent">

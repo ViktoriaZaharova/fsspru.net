@@ -363,7 +363,6 @@ h1 {
 }
 
 .content h1 {
-  font-weight: bold;
   margin: 0 0 24px;
 }
 
@@ -579,18 +578,18 @@ a.color-white:hover {
   position: absolute;
   z-index: -1;
   right: 0;
-  top: 0;
+  bottom: 0;
   height: 100%;
   width: 158px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .tibrr-cookie-consent-icon img {
   width: 100%;
@@ -668,6 +667,16 @@ a.color-white:hover {
   margin: 4px 0 0;
   display: none;
 }
+.tooltip-box__close {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 14px;
+  right: 14px;
+  background: url("../img/close-blue.svg") no-repeat center;
+  background-size: 100%;
+  display: none;
+}
 
 .nav-tabs {
   width: 100%;
@@ -700,6 +709,11 @@ a.color-white:hover {
 
 .tab-content {
   padding: 24px 0 0;
+}
+
+.select-tab {
+  background: url("../img/arrow-bottom.svg") no-repeat calc(100% - 10px) center;
+  background-size: 8px;
 }
 
 .form-check-label {
