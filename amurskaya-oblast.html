@@ -49,7 +49,7 @@
 <body>
 
 	<div class="overlay-bg"></div>
-	<nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-header">
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-header">
 		<div class="wrapperHeader">
 			<div class="wrapperLogoAndBtn">
 				<a class="navbar-brand wrapperLogo" href="index.html">
@@ -67,10 +67,10 @@
 			<div class="collapse navbar-collapse justify-content-between" id="navbarText">
 				<ul class="nav navbar-nav wrapperLinksHeader align-items-center justify-content-between">
 					<li class="nav-item"><a class="nav-link itemHeader active" href="index.html">Задолженность по ФИО</a></li>
-					<li class="nav-item"><a class="nav-link itemHeader" href="proverit-zapret-na-vyezd-za-granitsu.html">Проверить
-							запрет на выезд за границу</a></li>
-					<li class="nav-item"><a class="nav-link itemHeader" href="proverit-zapret-na-vezd-v-rf.html">Проверка запрета
-							на въезд в РФ</a></li>
+					<li class="nav-item"><a class="nav-link itemHeader" href="proverit-zapret-na-vyezd-za-granitsu.html">Запрет на
+							выезд из РФ</a></li>
+					<li class="nav-item"><a class="nav-link itemHeader" href="proverit-zapret-na-vezd-v-rf.html">Въезд в РФ</a>
+					</li>
 					<li class="nav-item"><a class="nav-link itemHeader" href="kontakty.html">Контакты</a></li>
 					<li class="nav-item dropdown"><a class="nav-link itemHeader dropdown-toggle" href="index.html#"
 							data-toggle="dropdown">Регион
@@ -222,6 +222,18 @@
 														aria-controls="pills-ipNumber" aria-selected="false">Номер ИП</a>
 												</li>
 											</ul>
+											<div class="d-block d-sm-none">
+												<label for="select-tab">
+													<span class="input-title">
+														Поиск по:
+													</span>
+												</label>
+												<select name="select-tab" class="select-tab" id="select-tab">
+													<option value="0">Физическое лицо</option>
+													<option value="1">Номер ИП</option>
+													<option value="2">Юридическое лицо</option>
+												</select>
+											</div>
 											<div class="tab-content tabs__content" id="pills-tabContent">
 												<div class="tab-pane fade show active" id="pills-individual" role="tabpanel"
 													aria-labelledby="individual">
@@ -696,7 +708,7 @@
 							</div>
 						</div>
 
-						<div class="col-12 col-lg-3">
+						<div class="col-12 col-lg-3 d-flex flex-wrap">
 							<div class="wrapperIconsContact">
 								<div class="wrapperIconsContactTitle">
 									Телефон:
@@ -724,7 +736,7 @@
 				</div>
 			</div>
 
-			<section class="page-region" id="pjax-departments">
+			<section class="section-region" id="pjax-departments">
 				<div class="container">
 					<div class="row">
 						<div class="col-12 mb-36">
@@ -1353,7 +1365,7 @@
 				</div>
 			</section>
 
-			<section class="page-region" id="pjax-phones">
+			<section class="section-region" id="pjax-phones">
 				<div class="container">
 					<div class="row">
 						<div class="col-12 mb-36">
@@ -1824,7 +1836,7 @@
 		<footer>
 			<div class="container-fluid">
 				<div class="row wrapperFooter wrapperUpFooter">
-					<div class="col-lg-5 col-md-3 col-sm-6 сol-12">
+					<div class="col-lg-5 col-md-4 col-sm-6 сol-12">
 						<div class="wrapperLogoFooter">
 							<img src="img/logotip.png" class="logo" alt loading="lazy">
 							<div class="logoText">
@@ -1832,17 +1844,17 @@
 								Проверка долгов
 							</div>
 						</div>
-
+		
 						<div class="contentTextNameDownFooter">
 							<p><strong>FSSPRU.NET</strong> Сервис проверки задолженности не является официальным сайтом ФССП.</p>
 						</div>
-
+		
 						<div class="contentTextUpFooter">
 							<p>Безопасность операций подтверждена сертификатом соответствия международному стандарту PCI DSS.</p>
 						</div>
 					</div>
-
-					<div class="col-lg-4 col-md-3 col-sm-6 col-12">
+		
+					<div class="col-lg-4 col-md-4 col-sm-6 col-12">
 						<div class="wrapperSectionsFooter">
 							<div class="wrapperSectionsFooterTitle">
 								<strong>Разделы сайта</strong>
@@ -1866,19 +1878,19 @@
 							</div>
 						</div>
 					</div>
-
-					<div class="col-lg-3 col-md-3 col-sm-6 col-12">
+		
+					<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 						<div class="wrapperContactFooter">
 							<div class="wrapperContactFooterBox">
 								<a href="mailto:info@fsspru.net">info@fsspru.net</a>
 								<span>По всем вопросам:</span>
 							</div>
-
+		
 							<div class="wrapperContactFooterBox">
 								<a href="tel:88003503486">8 (800) 350 34 86</a>
 								<span>Бесплатная юр. консультация:</span>
 							</div>
-
+		
 							<div class="application-links">
 								<a href="https://play.google.com/store/apps/details?id=com.fssp.app" target="_blank" rel="nofollow"
 									onclick="ym(70699780,'reachGoal','and');return true;" class="application-links__item"><img
@@ -1890,7 +1902,7 @@
 							</div>
 						</div>
 					</div>
-
+		
 					<div class="col-12">
 						<div class="wrapperPaymentsFooter">
 							<div class="box-text">
@@ -1903,10 +1915,10 @@
 					</div>
 				</div>
 			</div>
-
+		
 			<div class="container-fluid">
 				<div class="row wrapperFooter wrapperDownFooter">
-					<div class="col-lg-9 col-md-3 col-sm-6 сol-12">
+					<div class="col-lg-9 col-md-8 col-sm-6 сol-12">
 						<div class="contentTextUpFooter">
 							<div>Расчеты по переводу денежных средств осуществляет ООО НКО «МОБИ.Деньги» (лицензия ЦБ РФ № 3523-К от
 								06.12.2013
@@ -1914,7 +1926,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-3 col-sm-6 сol-12">
+					<div class="col-lg-3 col-md-4 col-sm-6 сol-12">
 						<div class="documentsLinks">
 							<a href="oferta.html" class="contentTextDownFooter">
 								Договор оферты

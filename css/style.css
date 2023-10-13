@@ -1213,6 +1213,7 @@ a.color-white:hover {
   padding: 36px 0;
 }
 .wrapperPlashka .btn {
+  max-width: 306px;
   width: 100%;
 }
 
@@ -1246,7 +1247,7 @@ a.color-white:hover {
   border-right: 2px solid #E5E7EA;
   line-height: 120%;
   color: #5A5A5A;
-  margin: 0 0 0 auto;
+  margin: 0 14px 0 auto;
   text-align: right;
 }
 .safeConnection span {

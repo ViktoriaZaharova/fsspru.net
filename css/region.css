@@ -1,15 +1,19 @@
-.page-region {
+.page-region, .section-region {
   background: transparent;
   margin: 0;
 }
-.page-region .titleHome {
+.page-region .titleHome, .section-region .titleHome {
   margin: 0 0 24px;
   padding: 0 0 24px;
   font-weight: normal;
 }
-.page-region .descHome {
+.page-region .descHome, .section-region .descHome {
   max-width: 1003px;
   margin: 0 0 36px;
+}
+
+.page-region .titleHome {
+  padding: 0;
 }
 
 .wrapperIconsContact {
@@ -36,6 +40,7 @@
   font-size: 16px;
   font-weight: 300;
   color: #5A5A5A;
+  line-height: 130%;
 }
 
 .wrapperIconsContactTitle {
