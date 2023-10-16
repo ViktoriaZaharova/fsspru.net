@@ -139,6 +139,11 @@
 		height: 95px
 
 @media only screen and (max-width: 991px)
+	.btn-border
+		&:hover
+			border: 1px solid #2862AC
+			color: #2862AC
+			background: #fff
 	.navbar-light .navbar-toggler
 		display: flex
 
@@ -405,13 +410,13 @@
 		margin: 64px 0 110px
 
 	.search-fixed__content
-		max-width: 700px	
+		max-width: 700px
 
 	.wrapperIconsContact
 		max-width: 33%
 		margin: 0 auto 24px 0
 		&:last-child
-			margin: 0 0 24px	
+			margin: 0 0 24px
 
 @media only screen and (max-width: 768px)
 	.causes
@@ -517,7 +522,7 @@
 			line-height: 150%
 
 	.search-fixed__content
-		max-width: 550px		
+		max-width: 550px
 
 @media only screen and (max-width: 576px)
 	h1
@@ -537,8 +542,8 @@
 	.content
 		padding: 36px 0 0
 
-	.wrapperRadioHome
-		display: none
+	// .wrapperRadioHome
+	// 	display: none
 
 	.blockCheck-box
 		width: 100%
@@ -704,11 +709,40 @@
 	.progress-steps
 		font-size: 14px
 
-	.table, .nameInTable
-		font-size: 9px
+	.table
+		font-size: 14px
+
+	.table-row
+		flex-wrap: wrap
+		padding: 0
+		background: #fff
+		border-radius: 12px
+		margin: 0 0 24px
+		&:last-child
+			margin: 0
+
+	.itemTableTravelBan
+		padding: 0
+		margin: 0 0 24px
+		border: none
+		padding: 0 14px
+
+		&:first-child
+			color: #fff
+			background: #2862AC
+			padding: 24px 14px
+			border-radius: 12px 12px 0 0
+
+		&::before
+			content: attr(data-table)
+			text-transform: uppercase
+			display: block
+			margin: 0 0 12px
+			font-weight: 500
+			color: #0E0E0E
 
 	.nameInTable
-		border-radius: 0
+		display: none
 
 	.statistics-online
 		margin: 64px 0 119px
@@ -787,10 +821,10 @@
 		padding: 24px 14px
 		max-width: 332px
 
-	.search-fixed 
+	.search-fixed
 		.h3
 			max-width: 203px
-			font-size: 16px	
+			font-size: 16px
 
 	.search-fixed__text
 		padding: 14px
@@ -823,6 +857,9 @@
 
 	.tibrr-cookie-consent-icon
 		right: -35px
+
+	.tibrr-cookie-consent-button
+		margin: 0 auto
 
 // @media only screen and (max-width: 420px)
 
@@ -871,3 +908,4 @@
 		max-width: 270px
 		.box-text
 			max-width: 220px
+

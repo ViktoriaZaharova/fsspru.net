@@ -93,7 +93,7 @@ input, textarea, select, .form-control {
   background: #FFF;
   width: 100%;
   height: 36px;
-  color: #5A5A5A;
+  color: #0E0E0E;
   font-family: "Ubuntu", sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -123,16 +123,18 @@ input:hover, textarea:hover, select:hover, .form-control:hover {
   border: 1px solid #007BFF;
 }
 input:focus, textarea:focus, select:focus, .form-control:focus {
-  color: #5A5A5A;
+  color: #0E0E0E;
   border: 1px solid #007BFF;
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-
-.input-dropdown {
-  background: #FFF url("../img/arrow-bottom.svg") no-repeat calc(100% - 10px) center;
-  background-size: 8px;
+input:disabled, textarea:disabled, select:disabled, .form-control:disabled {
+  background: transparent;
+  cursor: inherit;
+}
+input:disabled:hover, textarea:disabled:hover, select:disabled:hover, .form-control:disabled:hover {
+  color: #0E0E0E;
 }
 
 label {
@@ -176,26 +178,26 @@ textarea {
   height: 103px;
 }
 
-.error-label input {
+.error-label ~ input {
   border: 1px solid #D92A2A;
   color: #5A5A5A;
 }
-.error-label input::-webkit-input-placeholder {
+.error-label ~ input::-webkit-input-placeholder {
   color: #5A5A5A;
 }
-.error-label input::-moz-placeholder {
+.error-label ~ input::-moz-placeholder {
   color: #5A5A5A;
 }
-.error-label input:-ms-input-placeholder {
+.error-label ~ input:-ms-input-placeholder {
   color: #5A5A5A;
 }
-.error-label input::-ms-input-placeholder {
+.error-label ~ input::-ms-input-placeholder {
   color: #5A5A5A;
 }
-.error-label input::placeholder {
+.error-label ~ input::placeholder {
   color: #5A5A5A;
 }
-.error-label input:hover, .error-label input:focus {
+.error-label ~ input:hover, .error-label ~ input:focus {
   border: 1px solid #D92A2A;
 }
 .error-label .error-box {
@@ -386,6 +388,33 @@ h2 {
   text-transform: uppercase;
 }
 
+.input-dropdown, .dropdown-toggle-tab {
+  background: #FFF url("../img/arrow-bottom.svg") no-repeat calc(100% - 10px) center;
+  background-size: 8px;
+  width: 100%;
+}
+
+.dropdown-toggle-tab {
+  text-align: left;
+  font-weight: 300;
+  padding: 5px 10px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid rgba(90, 90, 90, 0.5);
+  color: #5A5A5A;
+  height: auto;
+}
+.dropdown-toggle-tab:after {
+  display: none;
+}
+.dropdown-toggle-tab:fosus, .dropdown-toggle-tab:hover {
+  font-weight: 300;
+  color: #2862AC;
+}
+
 .descCardsInfo {
   color: #5A5A5A;
   font-weight: 300;
@@ -496,6 +525,11 @@ a.color-white:hover {
   font-weight: 500;
 }
 
+.dropdown-item.active, .dropdown-item:active {
+  color: #2862AC;
+  background: transparent;
+}
+
 .scroll-vertical {
   width: 100%;
 }
@@ -548,6 +582,9 @@ a.color-white:hover {
   width: 100%;
   -webkit-box-shadow: 0px -4px 54px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px -4px 54px 0px rgba(0, 0, 0, 0.1);
+}
+.tibrr-cookie-consent-text {
+  width: 100%;
 }
 .tibrr-cookie-consent-text-title {
   color: #0E0E0E;
@@ -615,9 +652,6 @@ a.color-white:hover {
   background: #2862AC;
   color: #fff;
 }
-.tooltip-wrapper:hover .tooltip-box {
-  display: block;
-}
 
 .btn-tooptip {
   cursor: pointer;
@@ -640,6 +674,9 @@ a.color-white:hover {
   min-width: 14px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+.btn-tooptip:hover ~ .tooltip-box {
+  display: block;
 }
 
 .btn-tooptip-white {
@@ -715,6 +752,12 @@ a.color-white:hover {
 .select-tab {
   background: url("../img/arrow-bottom.svg") no-repeat calc(100% - 10px) center;
   background-size: 8px;
+}
+
+.dropdown.show .dropdown-toggle-tab {
+  font-weight: 300;
+  color: #2862AC;
+  color: #5A5A5A;
 }
 
 .form-check-label {
@@ -1083,6 +1126,7 @@ a.color-white:hover {
 }
 .departmens-box-item {
   margin: 0 0 24px;
+  width: 100%;
 }
 .departmens-box-item:last-child {
   margin: 0;
@@ -1100,6 +1144,14 @@ a.color-white:hover {
 .departmens-box-item__body {
   font-weight: 300;
   line-height: 130%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .departmens-box-item a {
   color: #5A5A5A;
@@ -1109,9 +1161,6 @@ a.color-white:hover {
 }
 .departmens-box-item-checked {
   display: none !important;
-}
-.departmens-box-item-checked.click {
-  display: block !important;
 }
 .departmens-box__toggle {
   display: -webkit-box;
@@ -1159,11 +1208,45 @@ a.color-white:hover {
   color: #5A5A5A;
   font-size: 24px;
   font-weight: bold;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .departmens-box .tooltip-wrapper {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+}
+.departmens-box.click .departmens-box-item-checked {
+  display: block !important;
+}
+.departmens-box.active .departmens-box-form {
+  display: none;
+}
+.departmens-box.active .form-check-label-payment {
+  display: none;
+}
+.departmens-box.active .sum-value {
+  font-size: 14px;
+  font-weight: normal;
+}
+.departmens-box.active .sum-value-edit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.departmens-box.active .sum-value-paid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .add-payment {
@@ -1258,4 +1341,47 @@ a.color-white:hover {
 .card {
   border: none;
   border-radius: 12px;
+}
+
+.btn-report-sum__nosale {
+  display: none;
+}
+.btn-report-sum.sale-price .btn-report-sum__sale {
+  display: none;
+}
+.btn-report-sum.sale-price .btn-report-sum__nosale {
+  display: block;
+}
+
+.departmens-box-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+.departmens-box-form label {
+  max-width: 270px;
+  width: 100%;
+}
+.departmens-box-form.checked .checked-form {
+  display: block;
+}
+
+.checked-form {
+  margin: 0 0 0 11px;
+  display: none;
+  width: 34px;
+}
+
+.sum-value-paid, .sum-value-edit {
+  display: none;
+}
+
+.sum-value-edit {
+  margin: 0 0 0 auto;
 }

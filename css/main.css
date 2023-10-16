@@ -330,6 +330,11 @@
   height: 296px;
   border-radius: 592px 592px 0 0;
 }
+.payments-advantages__image .btn img {
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+}
 
 .btnViewExample {
   position: absolute;
@@ -465,6 +470,9 @@
   text-decoration: underline;
 }
 .ulRegions li a:hover {
+  color: #2862AC;
+}
+.ulRegions li a.color-accent {
   color: #2862AC;
 }
 

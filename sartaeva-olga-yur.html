@@ -232,7 +232,7 @@
 													дату 20.07.2023
 													15:44</strong></div>
 											<div class="row">
-												<div class="col-12 col-sm-5">
+												<div class="col-12 col-sm-5 mb-24">
 													<div class="box-text">
 														<ul class="my-ul">
 															<li>
@@ -410,7 +410,7 @@
 											<div class="h3">Оплачиваемая сумма</div>
 										</div>
 										<div class="departmens-box-item__body">
-											<form action="" method="post" class="departmens-box-form">
+											<form method="post" class="departmens-box-form">
 												<label><input type="text" placeholder="Введите сумму" required name="sum"></label>
 											</form>
 										</div>
@@ -507,7 +507,7 @@
 											<div class="h3">Оплачиваемая сумма</div>
 										</div>
 										<div class="departmens-box-item__body">
-											<form action="" method="post" class="departmens-box-form">
+											<form method="post" class="departmens-box-form">
 												<label><input type="text" placeholder="Введите сумму" required name="sum"></label>
 											</form>
 										</div>
@@ -604,7 +604,7 @@
 											<div class="h3">Оплачиваемая сумма</div>
 										</div>
 										<div class="departmens-box-item__body">
-											<form action="" method="post" class="departmens-box-form">
+											<form method="post" class="departmens-box-form">
 												<label><input type="text" placeholder="Введите сумму" required name="sum"></label>
 											</form>
 										</div>
@@ -703,7 +703,7 @@
 											<div class="h3">Оплачиваемая сумма</div>
 										</div>
 										<div class="departmens-box-item__body">
-											<form action="" method="post" class="departmens-box-form">
+											<form method="post" class="departmens-box-form">
 												<label><input type="text" placeholder="Введите сумму" required name="sum"></label>
 											</form>
 										</div>
@@ -800,7 +800,7 @@
 											<div class="h3">Оплачиваемая сумма</div>
 										</div>
 										<div class="departmens-box-item__body">
-											<form action="" method="post" class="departmens-box-form">
+											<form method="post" class="departmens-box-form">
 												<label><input type="text" placeholder="Введите сумму" required name="sum"></label>
 											</form>
 										</div>
@@ -897,7 +897,7 @@
 											<div class="h3">Оплачиваемая сумма</div>
 										</div>
 										<div class="departmens-box-item__body">
-											<form action="" method="post" class="departmens-box-form">
+											<form method="post" class="departmens-box-form">
 												<label><input type="text" placeholder="Введите сумму" required name="sum"></label>
 											</form>
 										</div>
@@ -1004,7 +1004,7 @@
 								<form class="examination-form form-bailiff" id="checkAbroadBan" method="post">
 									<div class="bailiff-item js-tab-content active" data-tab="1">
 										<div class="form-bailiff__body">
-											<div class="row align-items-center">
+											<div class="row">
 												<div class="col-12 col-sm-6 col-lg-3 mb-24">
 													<div class="form-group">
 														<label for="fio">
@@ -1042,7 +1042,7 @@
 															</span>
 														</label>
 														<div class="dropdown dropdown-regions">
-															<input type="text" class="form-control input-dropdown" name="regionNumberID" id="regionNumberID"
+															<input type="text" class="form-control input-dropdown" name="region" id="regionNumberID"
 																required="required" placeholder="Выберите регион">
 															<div class="dropdown-menu">
 																<div class="scroll-vertical">
@@ -1210,7 +1210,7 @@
 														<label for="inputBirthDay">
 															<span class="input-title">Дата рождения</span>
 														</label>
-														<input type="date" class="form-control datepicker" placeholder="ДД.ММ.ГГ" name="inputBirthDay"
+														<input type="date" class="form-control datepicker" name="inputBirthDay"
 															id="inputBirthDay">
 													</div>
 												</div>
@@ -1225,7 +1225,7 @@
 			
 									<div class="bailiff-item js-tab-content" data-tab="2">
 										<div class="form-bailiff__body">
-											<div class="row align-items-center">
+											<div class="row">
 												<div class="col-12">
 													<div class="types-checks">
 														<div class="h3">Виды проверок:</div>
@@ -1267,7 +1267,7 @@
 																<span id="spanOrderID" class="input-title__text">Отчет №: 2426025</span>
 															</span>
 														</label>
-														<input type="text" class="form-control" placeholder="Хайрутдинов Эдуард Мирдаянович 12.12.1992"
+														<input type="text" class="form-control" disabled value="Хайрутдинов Эдуард Мирдаянович 12.12.1992"
 															id="client" name="client" required="required">
 			
 														<div class="dropdown-menu dropdown-menu-result">
@@ -1287,15 +1287,17 @@
 												</div>
 												<div class="col-12 col-lg-3 mb-24">
 													<div class="form-group">
-														<label for="fio">
+														<label for="fio2">
 															<span class="input-title">
 																<strong>Отправить на E-mail</strong>
-																<a href="#" class="color-accent text-decoration-line input-title__text">Отправить в
+																<a href="#" class="color-accent text-decoration-line input-title__text link-code">Отправить в
 																	СМС</a>
 															</span>
 														</label>
-														<input type="text" class="form-control" placeholder="Иванов Иван Иванович" id="fio" name="fio"
-															required="required">
+														<input type="email" class="form-control" placeholder="ivanov@mail.ru" id="email" name="email" required="required">
+														<input type="tel" class="form-control" placeholder="+7(999)999-99-99" id="phone" name="phone" required="required"
+															hidden="hidden">
+
 			
 														<div class="dropdown-menu dropdown-menu-result">
 															<div class="dropdown-menu-result__head">
@@ -1325,7 +1327,7 @@
 													</div>
 			
 													<div id="additionalOrderContainer" class="add-applicant">
-														<div class="row align-items-center">
+														<div class="row">
 															<div class="col-12">
 																<div class="add-applicant__price">
 																	<p>Укажите дополнительно данные второго заявителя за 398 руб <span
@@ -1335,12 +1337,12 @@
 															</div>
 															<div class="col-12 col-sm-6 col-lg-4 mb-24">
 																<div class="form-group">
-																	<label for="fio">
+																	<label for="fio3">
 																		<span class="input-title">
 																			Укажите ваше ФИО
 																		</span>
 																	</label>
-																	<input type="text" class="form-control" placeholder="Иванов Иван Иванович" id="fio"
+																	<input type="text" class="form-control" placeholder="Иванов Иван Иванович" id="fio3"
 																		name="fio" required="required">
 			
 																	<div class="dropdown-menu dropdown-menu-result">
@@ -1360,7 +1362,7 @@
 															</div>
 															<div class="col-12 col-sm-6 col-lg-4 mb-24">
 																<div class="form-group">
-																	<label for="regionNumberID">
+																	<label for="regionNumberID2">
 																		<span class="input-title">
 																			Ваш регион <span class="tooltip-wrapper"><span class="btn-tooptip">?</span><span
 																					class="tooltip-box"><span class="tooltip-box__close"></span>Укажите
@@ -1370,8 +1372,8 @@
 																		</span>
 																	</label>
 																	<div class="dropdown dropdown-regions">
-																		<input type="text" class="form-control input-dropdown" name="regionNumberID"
-																			id="regionNumberID" required="required" placeholder="Выберите регион">
+																		<input type="text" class="form-control input-dropdown" name="region"
+																			id="regionNumberID2" required="required" placeholder="Выберите регион">
 																		<div class="dropdown-menu">
 																			<div class="scroll-vertical">
 																				<a class="dropdown-item" href="region/altayskiy-kray.html">Алтайский край</a>
@@ -1541,11 +1543,11 @@
 															</div>
 															<div class="col-12 col-sm-6 col-lg-4 mb-24">
 																<div class="form-group">
-																	<label for="inputBirthDay">
+																	<label for="inputBirthDay2">
 																		<span class="input-title">Дата рождения</span>
 																	</label>
-																	<input type="date" class="form-control datepicker" placeholder="ДД.ММ.ГГ"
-																		name="inputBirthDay" id="inputBirthDay">
+																	<input type="date" class="form-control datepicker"
+																		name="inputBirthDay" id="inputBirthDay2">
 																</div>
 															</div>
 															<!-- <div class="col-12 col-sm-6 col-lg-3 mb-24">
@@ -1561,16 +1563,19 @@
 											</div>
 										</div>
 										<div class="form-bailiff__footer">
-											<div class="row align-items-center">
-												<div class="col-12 col-md-6 col-lg-6 col-xl-3 mb-24 order-md-2"><a href="#"
-														class="btn btn-accent">Получить
-														отчёт — 399 ₽</a></div>
-												<div class="col-12 col-md-6 col-lg-3 col-xl-2 mb-24 order-md-1"><a href="#"
+											<div class="row">
+												<div class="col-12 col-md-6 col-lg-6 col-xl-3 mb-24 order-md-2"><a href="#" class="btn btn-accent btn-report-sum">
+													<span class="btn-report-sum__sale">Получить
+														отчёт — 399 ₽</span>
+													<span class="btn-report-sum__nosale">Получить
+														отчёт — 299 ₽</span>
+												</a></div>
+												<!-- <div class="col-12 col-md-6 col-lg-3 col-xl-2 mb-24 order-md-1"><a href="#"
 														class="btn btn-border">Пример
-														отчёта</a></div>
+														отчёта</a></div> -->
 												<div class="col-12 col-md-6 col-lg-3 col-xl-2 mb-24"><a href="#"
 														class="btn bailiff-next-step prev-step btn-border" data-tab="1"><svg
-															class="svg-icon svg-icon-prev">
+														class="svg-icon svg-icon-prev">
 															<use xlink:href="img/sprite.svg#prev"></use>
 														</svg><span>Назад</span></a></div>
 			
@@ -1578,7 +1583,7 @@
 											<div class="row">
 												<div class="col-12">
 													<label class="form-check-label">
-														<input class="form-check-input checkBoxAgreePrivacy" type="checkbox" required="required">
+														<input class="form-check-input checkBoxAgreePrivacy" checked type="checkbox" required="required">
 														<span class="checkbox-custom"></span>
 														<span class="checkbox-text">Согласен(а) с политикой конфиденциальности и пользовательским
 															соглашением</span>
@@ -1737,7 +1742,7 @@
 	</div>
 
 	<!-- Modal -->
-	<div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="resultModalLabel"
+	<div class="modal fade" id="resultModal" tabindex="-1" role="dialog" 
 		aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
@@ -1751,7 +1756,7 @@
 					</div>
 				</div>
 				<div class="modal-body">
-					<form action="" method="post" class="form-modal">
+					<form method="post" class="form-modal">
 						<div class="form-group">
 							<label for="mail">
 								<span class="input-title">Укажите ваш E-mail</span>
@@ -1770,8 +1775,8 @@
 
 
 	<!-- Модальное окно -->
-	<div class="modal fade" id="debitModal" tabindex="-1" aria-labelledby="debitModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered"">
+	<div class="modal fade" id="debitModal" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
 			<div class=" modal-content">
 			<div class="modal-header">
 				<div class="modal-title"><strong>дополнительная</strong> Информация</div>
@@ -1780,13 +1785,13 @@
 					</button> -->
 			</div>
 			<div class="modal-body">
-				<form action="" method="post" class="form-modal">
-					<label for="fio">
+				<form method="post" class="form-modal">
+					<label for="fio4">
 						<span class="input-title">
 							Укажите ваше ФИО
 						</span>
 					</label>
-					<input type="text" class="form-control" placeholder="Иванов Иван Иванович" id="fio" name="fio"
+					<input type="text" class="form-control" placeholder="Иванов Иван Иванович" id="fio4" name="fio"
 						required="required">
 
 					<div class="btn-group">

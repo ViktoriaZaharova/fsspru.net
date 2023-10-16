@@ -236,7 +236,6 @@
 		margin: -36px auto 36px
 		position: relative
 		z-index: 1
-		
 		border-radius: 12px 12px 0px 0px
 		max-width: 505px
 		width: 100%
@@ -259,6 +258,11 @@
 			width: 592px
 			height: 296px
 			border-radius: 592px 592px 0 0
+		.btn
+			img
+				padding: 0
+				background: transparent
+				border-radius: 0	
 
 .btnViewExample
 	position: absolute
@@ -355,6 +359,8 @@
 			color: #5A5A5A
 			text-decoration: underline
 			&:hover
+				color: $accent
+			&.color-accent
 				color: $accent
 
 // question

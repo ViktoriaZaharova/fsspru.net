@@ -205,467 +205,478 @@
 					<div class="row">
 						<div class="col-12 col-lg-9">
 							<div class="debtОfBailiffs card">
-								<form action="" class="tabs tabs-form home-form" id="fsspcheck" method="post">
+								<form class="tabs tabs-form home-form" id="fsspcheck" method="post">
 									<div class="row">
 										<div class="col-12">
-											<ul class="nav nav-pills nav-tabs wrapperRadioHome tabs__head" id="pills-tab" role="tablist">
-												<li class="nav-item" role="presentation">
-													<a class="nav-link active" id="individual" data-toggle="pill" href="#pills-individual"
-														role="tab" aria-controls="pills-individual" aria-selected="true">Физ. лицо</a>
-												</li>
-												<li class="nav-item" role="presentation">
-													<a class="nav-link" id="entity" data-toggle="pill" href="#pills-entity" role="tab"
-														aria-controls="pills-entity" aria-selected="false">Юр. лицо</a>
-												</li>
-												<li class="nav-item" role="presentation">
-													<a class="nav-link" id="ipNumber" data-toggle="pill" href="#pills-ipNumber" role="tab"
-														aria-controls="pills-ipNumber" aria-selected="false">Номер ИП</a>
-												</li>
-											</ul>
-											<div class="d-block d-sm-none">
-												<label for="select-tab">
-													<span class="input-title">
-														Поиск по:
-													</span>
-												</label>
-												<select name="select-tab" class="select-tab" id="select-tab">
-													<option value="0">Физическое лицо</option>
-													<option value="1">Номер ИП</option>
-													<option value="2">Юридическое лицо</option>
-												</select>
-											</div>
-											<div class="tab-content tabs__content" id="pills-tabContent">
-												<div class="tab-pane fade show active" id="pills-individual" role="tabpanel"
-													aria-labelledby="individual">
-													<div class="row">
-														<div class="col-12 col-sm-6 col-lg-4 mb-24">
-															<div class="form-group">
-																<label for="fio">
-																	<span class="input-title">
-																		Укажите ваше ФИО
-																	</span>
-																</label>
-																<input type="text" class="form-control" placeholder="Иванов Иван Иванович" id="fio"
-																	name="fio" required="required">
+											<div class="tabs-to-dropdown">
+												<div class="nav-wrapper">
+													<ul
+														class="nav nav-pills nav-pills-dropdown d-none d-sm-flex nav-tabs wrapperRadioHome tabs__head"
+														id="pills-tab" role="tablist">
+														<li class="nav-item" role="presentation">
+															<a class="nav-link active" id="individual" data-toggle="pill" href="#pills-individual"
+																role="tab" aria-controls="pills-individual" aria-selected="true">Физ. лицо</a>
+														</li>
+														<li class="nav-item" role="presentation">
+															<a class="nav-link" id="entity" data-toggle="pill" href="#pills-entity" role="tab"
+																aria-controls="pills-entity" aria-selected="false">Юр. лицо</a>
+														</li>
+														<li class="nav-item" role="presentation">
+															<a class="nav-link" id="ipNumber" data-toggle="pill" href="#pills-ipNumber" role="tab"
+																aria-controls="pills-ipNumber" aria-selected="false">Номер ИП</a>
+														</li>
+													</ul>
+												</div>
 
-																<div class="dropdown-menu dropdown-menu-result">
-																	<div class="dropdown-menu-result__head">
-																		<p>Выберите вариант или продолжите ввод</p>
+												<div class="tab-content tabs__content" id="pills-tabContent">
+													<div class="tab-pane fade show active" id="pills-individual" role="tabpanel"
+														aria-labelledby="individual">
+														<div class="row">
+															<div class="col-12 col-sm-6 col-lg-4 mb-24">
+																<div class="form-group">
+																	<label for="fio">
+																		<span class="input-title">
+																			Укажите ваше ФИО
+																		</span>
+																	</label>
+																	<input type="text" class="form-control" placeholder="Иванов Иван Иванович" id="fio"
+																		name="fio" required="required">
+
+																	<div class="dropdown-menu dropdown-menu-result">
+																		<div class="dropdown-menu-result__head">
+																			<p>Выберите вариант или продолжите ввод</p>
+																		</div>
+
+																		<ul class="list-result my-ul">
+																			<li><a href="#"><span class="color-accent">Эду</span>ард</a></li>
+																			<li><a href="#"><span class="color-accent">Эду</span>ард</a></li>
+																			<li><a href="#"><span class="color-accent">Эду</span>ард</a></li>
+																			<li><a href="#"><span class="color-accent">Эду</span>ард</a></li>
+																			<li><a href="#"><span class="color-accent">Эду</span>ард</a></li>
+																		</ul>
 																	</div>
-
-																	<ul class="list-result my-ul">
-																		<li><a href="#"><span class="color-accent">Эду</span>ард</a></li>
-																		<li><a href="#"><span class="color-accent">Эду</span>ард</a></li>
-																		<li><a href="#"><span class="color-accent">Эду</span>ард</a></li>
-																		<li><a href="#"><span class="color-accent">Эду</span>ард</a></li>
-																		<li><a href="#"><span class="color-accent">Эду</span>ард</a></li>
-																	</ul>
 																</div>
 															</div>
-														</div>
-														<div class="col-12 col-sm-6 col-lg-4 mb-24">
-															<div class="form-group">
-																<label>
-																	<span class="input-title">
-																		Ваш регион <span class="tooltip-wrapper"><span class="btn-tooptip">?</span><span
-																				class="tooltip-box"><span class="tooltip-box__close"></span>Укажите
-																				один из
-																				вариантов: регион проживания, временного нахождения или постоянной
-																				регистрации!</span></span>
-																	</span>
-																</label>
-																<div class="dropdown dropdown-regions">
-																	<input type="text" class="form-control input-dropdown" name="regionNumberID"
-																		required="required" placeholder="Выберите регион">
-																	<div class="dropdown-menu">
-																		<div class="scroll-vertical">
-																			<a class="dropdown-item" href="region/altayskiy-kray.html">Алтайский край</a>
-																			<a class="dropdown-item" href="region/amurskaya-oblast.html">Амурская область</a>
-																			<a class="dropdown-item" href="region/arkhangelskaya-oblast.html">Архангельская
-																				область</a>
-																			<a class="dropdown-item" href="region/astrakhanskaya-oblast.html">Астраханская
-																				область</a>
-																			<a class="dropdown-item" href="region/belgorodskaya-oblast.html">Белгородская
-																				область</a>
-																			<a class="dropdown-item" href="region/bryanskaya-oblast.html">Брянская область</a>
-																			<a class="dropdown-item" href="region/vladimirskaya-oblast.html">Владимирская
-																				область</a>
-																			<a class="dropdown-item" href="region/volgogradskaya-oblast.html">Волгоградская
-																				область</a>
-																			<a class="dropdown-item" href="region/vologodskaya-oblast.html">Вологодская
-																				область</a>
-																			<a class="dropdown-item" href="region/voronezhskaya-oblast.html">Воронежская
-																				область</a>
-																			<a class="dropdown-item"
-																				href="region/yevreyskaya-avtonomnaya-oblast.html">Еврейская
-																				А.обл.</a>
-																			<a class="dropdown-item" href="region/zabaykalskiy-kray.html">Забайкальский
-																				край</a>
-																			<a class="dropdown-item" href="region/ivanovskaya-oblast.html">Ивановская
-																				область</a>
-																			<a class="dropdown-item" href="region/irkutskaya-oblast.html">Иркутская
-																				область</a>
-																			<a class="dropdown-item"
-																				href="region/kabardino-balkarskaya-respublika.html">Кабардино-Балкарская
-																				Республика</a>
-																			<a class="dropdown-item"
-																				href="region/kaliningradskaya-oblast.html">Калининградская
-																				область</a>
-																			<a class="dropdown-item" href="region/kaluzhskaya-oblast.html">Калужская
-																				область</a>
-																			<a class="dropdown-item" href="region/kamchatskiy-kray.html">Камчатский край</a>
-																			<a class="dropdown-item"
-																				href="region/karachayevo-cherkesskaya-respublika.html">Карачаево-Черкесская
-																				Республика</a>
-																			<a class="dropdown-item" href="region/kemerovskaya-oblast.html">Кемеровская
-																				область</a>
-																			<a class="dropdown-item" href="region/kirovskaya-oblast.html">Кировская
-																				область</a>
-																			<a class="dropdown-item" href="region/kostromskaya-oblast.html">Костромская
-																				область</a>
-																			<a class="dropdown-item" href="region/krasnodarskiy-kray.html">Краснодарский
-																				край</a>
-																			<a class="dropdown-item" href="region/krasnoyarskiy-kray.html">Красноярский
-																				край</a>
-																			<a class="dropdown-item" href="region/kurganskaya-oblast.html">Курганская
-																				область</a>
-																			<a class="dropdown-item" href="region/kurskaya-oblast.html">Курская область</a>
-																			<a class="dropdown-item" href="region/leningradskaya-oblast.html">Ленинградская
-																				область</a>
-																			<a class="dropdown-item" href="region/lipetskaya-oblast.html">Липецкая область</a>
-																			<a class="dropdown-item" href="region/magadanskaya-oblast.html">Магаданская
-																				область</a>
-																			<a class="dropdown-item" href="region/moskva.html">Москва</a>
-																			<a class="dropdown-item" href="region/moskovskaya-oblast.html">Московская
-																				область</a>
-																			<a class="dropdown-item" href="region/murmanskaya-oblast.html">Мурманская
-																				область</a>
-																			<a class="dropdown-item" href="region/nenetskiy-avtonomnyy-okrug.html">Ненецкий
-																				АО</a>
-																			<a class="dropdown-item" href="region/nizhegorodskaya-oblast.html">Нижегородская
-																				область</a>
-																			<a class="dropdown-item" href="region/novgorodskaya-oblast.html">Новгородская
-																				область</a>
-																			<a class="dropdown-item" href="region/novosibirskaya-oblast.html">Новосибирская
-																				область</a>
-																			<a class="dropdown-item" href="region/omskaya-oblast.html">Омская область</a>
-																			<a class="dropdown-item" href="region/orenburgskaya-oblast.html">Оренбургская
-																				область</a>
-																			<a class="dropdown-item" href="region/orlovskaya-oblast.html">Орловская
-																				область</a>
-																			<a class="dropdown-item" href="region/penzenskaya-oblast.html">Пензенская
-																				область</a>
-																			<a class="dropdown-item" href="region/permskiy-kray.html">Пермский край</a>
-																			<a class="dropdown-item" href="region/primorskiy-kray.html">Приморский край</a>
-																			<a class="dropdown-item" href="region/pskovskaya-oblast.html">Псковская
-																				область</a>
-																			<a class="dropdown-item" href="region/adygey-respublika.html">Республика Адыгея
-																				(Адыгея)</a>
-																			<a class="dropdown-item" href="region/altay-respublika.html">Республика Алтай</a>
-																			<a class="dropdown-item" href="region/bashkortostan-respublika.html">Республика
-																				Башкортостан</a>
-																			<a class="dropdown-item" href="region/buryatiya-respublika.html">Республика
-																				Бурятия</a>
-																			<a class="dropdown-item" href="region/dagestan-respublika.html">Республика
-																				Дагестан</a>
-																			<a class="dropdown-item" href="region/ingushetiya-respublika.html">Республика
-																				Ингушетия</a>
-																			<a class="dropdown-item" href="region/kalmykiya-respublika.html">Республика
-																				Калмыкия</a>
-																			<a class="dropdown-item" href="region/kareliya-respublika.html">Республика
-																				Карелия</a>
-																			<a class="dropdown-item" href="region/komi-respublika.html">Республика Коми</a>
-																			<a class="dropdown-item" href="region/avtonomnaya-respublika-krym.html">Республика
-																				Крым</a>
-																			<a class="dropdown-item" href="region/mariy-el-respublika.html">Республика Марий
-																				Эл</a>
-																			<a class="dropdown-item" href="region/mordoviya-respublika.html">Республика
-																				Мордовия</a>
-																			<a class="dropdown-item" href="region/saha-respublika.html">Республика Саха
-																				(Якутия)</a>
-																			<a class="dropdown-item"
-																				href="region/severnaya-osetiya-respublika.html">Республика
-																				Северная Осетия</a>
-																			<a class="dropdown-item" href="region/tatarstan-respublika.html">Республика
-																				Татарстан</a>
-																			<a class="dropdown-item" href="region/tyva-respublika.html">Республика Тыва</a>
-																			<a class="dropdown-item" href="region/khakasiya-respublika.html">Республика
-																				Хакасия</a>
-																			<a class="dropdown-item" href="region/rostovskaya-oblast.html">Ростовская
-																				область</a>
-																			<a class="dropdown-item" href="region/ryazanskaya-oblast.html">Рязанская
-																				область</a>
-																			<a class="dropdown-item" href="region/samarskaya-oblast.html">Самарская
-																				область</a>
-																			<a class="dropdown-item" href="region/sankt-peterburg.html">Санкт-Петербург</a>
-																			<a class="dropdown-item" href="region/saratovskaya-oblast.html">Саратовская
-																				область</a>
-																			<a class="dropdown-item" href="region/sakhalinskaya-oblast.html">Сахалинская
-																				область</a>
-																			<a class="dropdown-item" href="region/sverdlovskaya-oblast.html">Свердловская
-																				область</a>
-																			<a class="dropdown-item" href="region/sevastopol.html">Севастополь</a>
-																			<a class="dropdown-item" href="region/smolenskaya-oblast.html">Смоленская
-																				область</a>
-																			<a class="dropdown-item" href="region/stavropolskiy-kray.html">Ставропольский
-																				край</a>
-																			<a class="dropdown-item" href="region/tambovskaya-oblast.html">Тамбовская
-																				область</a>
-																			<a class="dropdown-item" href="region/tverskaya-oblast.html">Тверская область</a>
-																			<a class="dropdown-item" href="region/tomskaya-oblast.html">Томская область</a>
-																			<a class="dropdown-item" href="region/tulskaya-oblast.html">Тульская область</a>
-																			<a class="dropdown-item" href="region/tyumenskaya-oblast.html">Тюменская
-																				область</a>
-																			<a class="dropdown-item" href="region/udmurtskaya-respublika.html">Удмуртская
-																				Республика</a>
-																			<a class="dropdown-item" href="region/ulyanovskaya-oblast.html">Ульяновская
-																				область</a>
-																			<a class="dropdown-item" href="region/khabarovskiy-kray.html">Хабаровский край</a>
-																			<a class="dropdown-item"
-																				href="region/khanty-mansiyskiy-avtonomnyy-okrug.html">Ханты-Мансийский АО</a>
-																			<a class="dropdown-item" href="region/chelyabinskaya-oblast.html">Челябинская
-																				область</a>
-																			<a class="dropdown-item" href="region/chechenskaya-respublika.html">Чеченская
-																				Республика</a>
-																			<a class="dropdown-item" href="region/chuvashskaya-respublika.html">Чувашская
-																				Республика</a>
-																			<a class="dropdown-item" href="region/chukotskiy-avtonomnyy-okrug.html">Чукотский
-																				АО</a>
-																			<a class="dropdown-item"
-																				href="region/yamalo-nenetskiy-avtonomnyy-okrug.html">Ямало-Ненецкий АО</a>
-																			<a class="dropdown-item" href="region/yaroslavskaya-oblast.html">Ярославская
-																				область</a>
+															<div class="col-12 col-sm-6 col-lg-4 mb-24">
+																<div class="form-group">
+																	<label>
+																		<span class="input-title">
+																			Ваш регион <span class="tooltip-wrapper"><span class="btn-tooptip">?</span><span
+																					class="tooltip-box"><span class="tooltip-box__close"></span>Укажите
+																					один из
+																					вариантов: регион проживания, временного нахождения или постоянной
+																					регистрации!</span></span>
+																		</span>
+																	</label>
+																	<div class="dropdown dropdown-regions">
+																		<input type="text" class="form-control input-dropdown" required="required"
+																			placeholder="Выберите регион" name="region">
+																		<div class="dropdown-menu">
+																			<div class="scroll-vertical">
+																				<a class="dropdown-item" href="region/altayskiy-kray.html">Алтайский край</a>
+																				<a class="dropdown-item" href="region/amurskaya-oblast.html">Амурская
+																					область</a>
+																				<a class="dropdown-item" href="region/arkhangelskaya-oblast.html">Архангельская
+																					область</a>
+																				<a class="dropdown-item" href="region/astrakhanskaya-oblast.html">Астраханская
+																					область</a>
+																				<a class="dropdown-item" href="region/belgorodskaya-oblast.html">Белгородская
+																					область</a>
+																				<a class="dropdown-item" href="region/bryanskaya-oblast.html">Брянская
+																					область</a>
+																				<a class="dropdown-item" href="region/vladimirskaya-oblast.html">Владимирская
+																					область</a>
+																				<a class="dropdown-item" href="region/volgogradskaya-oblast.html">Волгоградская
+																					область</a>
+																				<a class="dropdown-item" href="region/vologodskaya-oblast.html">Вологодская
+																					область</a>
+																				<a class="dropdown-item" href="region/voronezhskaya-oblast.html">Воронежская
+																					область</a>
+																				<a class="dropdown-item"
+																					href="region/yevreyskaya-avtonomnaya-oblast.html">Еврейская
+																					А.обл.</a>
+																				<a class="dropdown-item" href="region/zabaykalskiy-kray.html">Забайкальский
+																					край</a>
+																				<a class="dropdown-item" href="region/ivanovskaya-oblast.html">Ивановская
+																					область</a>
+																				<a class="dropdown-item" href="region/irkutskaya-oblast.html">Иркутская
+																					область</a>
+																				<a class="dropdown-item"
+																					href="region/kabardino-balkarskaya-respublika.html">Кабардино-Балкарская
+																					Республика</a>
+																				<a class="dropdown-item"
+																					href="region/kaliningradskaya-oblast.html">Калининградская
+																					область</a>
+																				<a class="dropdown-item" href="region/kaluzhskaya-oblast.html">Калужская
+																					область</a>
+																				<a class="dropdown-item" href="region/kamchatskiy-kray.html">Камчатский край</a>
+																				<a class="dropdown-item"
+																					href="region/karachayevo-cherkesskaya-respublika.html">Карачаево-Черкесская
+																					Республика</a>
+																				<a class="dropdown-item" href="region/kemerovskaya-oblast.html">Кемеровская
+																					область</a>
+																				<a class="dropdown-item" href="region/kirovskaya-oblast.html">Кировская
+																					область</a>
+																				<a class="dropdown-item" href="region/kostromskaya-oblast.html">Костромская
+																					область</a>
+																				<a class="dropdown-item" href="region/krasnodarskiy-kray.html">Краснодарский
+																					край</a>
+																				<a class="dropdown-item" href="region/krasnoyarskiy-kray.html">Красноярский
+																					край</a>
+																				<a class="dropdown-item" href="region/kurganskaya-oblast.html">Курганская
+																					область</a>
+																				<a class="dropdown-item" href="region/kurskaya-oblast.html">Курская область</a>
+																				<a class="dropdown-item" href="region/leningradskaya-oblast.html">Ленинградская
+																					область</a>
+																				<a class="dropdown-item" href="region/lipetskaya-oblast.html">Липецкая
+																					область</a>
+																				<a class="dropdown-item" href="region/magadanskaya-oblast.html">Магаданская
+																					область</a>
+																				<a class="dropdown-item" href="region/moskva.html">Москва</a>
+																				<a class="dropdown-item" href="region/moskovskaya-oblast.html">Московская
+																					область</a>
+																				<a class="dropdown-item" href="region/murmanskaya-oblast.html">Мурманская
+																					область</a>
+																				<a class="dropdown-item" href="region/nenetskiy-avtonomnyy-okrug.html">Ненецкий
+																					АО</a>
+																				<a class="dropdown-item" href="region/nizhegorodskaya-oblast.html">Нижегородская
+																					область</a>
+																				<a class="dropdown-item" href="region/novgorodskaya-oblast.html">Новгородская
+																					область</a>
+																				<a class="dropdown-item" href="region/novosibirskaya-oblast.html">Новосибирская
+																					область</a>
+																				<a class="dropdown-item" href="region/omskaya-oblast.html">Омская область</a>
+																				<a class="dropdown-item" href="region/orenburgskaya-oblast.html">Оренбургская
+																					область</a>
+																				<a class="dropdown-item" href="region/orlovskaya-oblast.html">Орловская
+																					область</a>
+																				<a class="dropdown-item" href="region/penzenskaya-oblast.html">Пензенская
+																					область</a>
+																				<a class="dropdown-item" href="region/permskiy-kray.html">Пермский край</a>
+																				<a class="dropdown-item" href="region/primorskiy-kray.html">Приморский край</a>
+																				<a class="dropdown-item" href="region/pskovskaya-oblast.html">Псковская
+																					область</a>
+																				<a class="dropdown-item" href="region/adygey-respublika.html">Республика Адыгея
+																					(Адыгея)</a>
+																				<a class="dropdown-item" href="region/altay-respublika.html">Республика
+																					Алтай</a>
+																				<a class="dropdown-item" href="region/bashkortostan-respublika.html">Республика
+																					Башкортостан</a>
+																				<a class="dropdown-item" href="region/buryatiya-respublika.html">Республика
+																					Бурятия</a>
+																				<a class="dropdown-item" href="region/dagestan-respublika.html">Республика
+																					Дагестан</a>
+																				<a class="dropdown-item" href="region/ingushetiya-respublika.html">Республика
+																					Ингушетия</a>
+																				<a class="dropdown-item" href="region/kalmykiya-respublika.html">Республика
+																					Калмыкия</a>
+																				<a class="dropdown-item" href="region/kareliya-respublika.html">Республика
+																					Карелия</a>
+																				<a class="dropdown-item" href="region/komi-respublika.html">Республика Коми</a>
+																				<a class="dropdown-item"
+																					href="region/avtonomnaya-respublika-krym.html">Республика
+																					Крым</a>
+																				<a class="dropdown-item" href="region/mariy-el-respublika.html">Республика Марий
+																					Эл</a>
+																				<a class="dropdown-item" href="region/mordoviya-respublika.html">Республика
+																					Мордовия</a>
+																				<a class="dropdown-item" href="region/saha-respublika.html">Республика Саха
+																					(Якутия)</a>
+																				<a class="dropdown-item"
+																					href="region/severnaya-osetiya-respublika.html">Республика
+																					Северная Осетия</a>
+																				<a class="dropdown-item" href="region/tatarstan-respublika.html">Республика
+																					Татарстан</a>
+																				<a class="dropdown-item" href="region/tyva-respublika.html">Республика Тыва</a>
+																				<a class="dropdown-item" href="region/khakasiya-respublika.html">Республика
+																					Хакасия</a>
+																				<a class="dropdown-item" href="region/rostovskaya-oblast.html">Ростовская
+																					область</a>
+																				<a class="dropdown-item" href="region/ryazanskaya-oblast.html">Рязанская
+																					область</a>
+																				<a class="dropdown-item" href="region/samarskaya-oblast.html">Самарская
+																					область</a>
+																				<a class="dropdown-item" href="region/sankt-peterburg.html">Санкт-Петербург</a>
+																				<a class="dropdown-item" href="region/saratovskaya-oblast.html">Саратовская
+																					область</a>
+																				<a class="dropdown-item" href="region/sakhalinskaya-oblast.html">Сахалинская
+																					область</a>
+																				<a class="dropdown-item" href="region/sverdlovskaya-oblast.html">Свердловская
+																					область</a>
+																				<a class="dropdown-item" href="region/sevastopol.html">Севастополь</a>
+																				<a class="dropdown-item" href="region/smolenskaya-oblast.html">Смоленская
+																					область</a>
+																				<a class="dropdown-item" href="region/stavropolskiy-kray.html">Ставропольский
+																					край</a>
+																				<a class="dropdown-item" href="region/tambovskaya-oblast.html">Тамбовская
+																					область</a>
+																				<a class="dropdown-item" href="region/tverskaya-oblast.html">Тверская
+																					область</a>
+																				<a class="dropdown-item" href="region/tomskaya-oblast.html">Томская область</a>
+																				<a class="dropdown-item" href="region/tulskaya-oblast.html">Тульская область</a>
+																				<a class="dropdown-item" href="region/tyumenskaya-oblast.html">Тюменская
+																					область</a>
+																				<a class="dropdown-item" href="region/udmurtskaya-respublika.html">Удмуртская
+																					Республика</a>
+																				<a class="dropdown-item" href="region/ulyanovskaya-oblast.html">Ульяновская
+																					область</a>
+																				<a class="dropdown-item" href="region/khabarovskiy-kray.html">Хабаровский
+																					край</a>
+																				<a class="dropdown-item"
+																					href="region/khanty-mansiyskiy-avtonomnyy-okrug.html">Ханты-Мансийский АО</a>
+																				<a class="dropdown-item" href="region/chelyabinskaya-oblast.html">Челябинская
+																					область</a>
+																				<a class="dropdown-item" href="region/chechenskaya-respublika.html">Чеченская
+																					Республика</a>
+																				<a class="dropdown-item" href="region/chuvashskaya-respublika.html">Чувашская
+																					Республика</a>
+																				<a class="dropdown-item"
+																					href="region/chukotskiy-avtonomnyy-okrug.html">Чукотский
+																					АО</a>
+																				<a class="dropdown-item"
+																					href="region/yamalo-nenetskiy-avtonomnyy-okrug.html">Ямало-Ненецкий АО</a>
+																				<a class="dropdown-item" href="region/yaroslavskaya-oblast.html">Ярославская
+																					область</a>
+																			</div>
 																		</div>
 																	</div>
 																</div>
 															</div>
-														</div>
-														<div class="col-12 col-sm-6 col-lg-4 mb-24">
-															<div class="form-group">
-																<label for="inputBirthDay">
-																	<span class="input-title">Дата рождения</span>
-																</label>
-																<input type="date" class="form-control datepicker" placeholder="ДД.ММ.ГГ"
-																	name="inputBirthDay" id="inputBirthDay">
+															<div class="col-12 col-sm-6 col-lg-4 mb-24">
+																<div class="form-group">
+																	<label for="inputBirthDay">
+																		<span class="input-title">Дата рождения</span>
+																	</label>
+																	<input type="date" class="form-control datepicker" name="inputBirthDay"
+																		id="inputBirthDay">
+																</div>
 															</div>
 														</div>
 													</div>
-												</div>
 
-												<div class="tab-pane fade" id="pills-entity" role="tabpanel" aria-labelledby="entity">
-													<div class="row">
-														<div class="col-12 col-sm-6 col-lg-4 mb-24">
-															<div class="form-group">
-																<label for="businessName" class="error-label">
-																	<span class="input-title">
-																		Наименование предприятия:
-																	</span>
-																</label>
-																<input type="text" class="form-control" placeholder="ООО “Ромашка”" name="businessName"
-																	id="businessName" required="required">
-																<div class="error-box">Неправильно заполненно имя</div>
+													<div class="tab-pane fade" id="pills-entity" role="tabpanel" aria-labelledby="entity">
+														<div class="row">
+															<div class="col-12 col-sm-6 col-lg-4 mb-24">
+																<div class="form-group">
+																	<label for="businessName" class="error-label">
+																		<span class="input-title">
+																			Наименование предприятия:
+																		</span>
+																	</label>
+																	<input type="text" class="form-control" placeholder="ООО “Ромашка”"
+																		name="businessName" id="businessName" required="required">
+																	<div class="error-box">Неправильно заполненно имя</div>
+																</div>
 															</div>
-														</div>
-														<div class="col-12 col-sm-6 col-lg-4 mb-24">
-															<div class="form-group">
-																<label>
-																	<span class="input-title">
-																		Ваш регион <span class="tooltip-wrapper"><span class="btn-tooptip">?</span><span
-																				class="tooltip-box"><span class="tooltip-box__close"></span>Укажите
-																				один из
-																				вариантов: регион проживания, временного нахождения или постоянной
-																				регистрации!</span></span>
-																	</span>
-																</label>
-																<div class="dropdown dropdown-regions">
-																	<input type="text" class="form-control input-dropdown" name="regionNumberID"
-																		required="required" placeholder="Выберите регион">
-																	<div class="dropdown-menu">
-																		<div class="scroll-vertical">
-																			<a class="dropdown-item" href="region/altayskiy-kray.html">Алтайский край</a>
-																			<a class="dropdown-item" href="region/amurskaya-oblast.html">Амурская область</a>
-																			<a class="dropdown-item" href="region/arkhangelskaya-oblast.html">Архангельская
-																				область</a>
-																			<a class="dropdown-item" href="region/astrakhanskaya-oblast.html">Астраханская
-																				область</a>
-																			<a class="dropdown-item" href="region/belgorodskaya-oblast.html">Белгородская
-																				область</a>
-																			<a class="dropdown-item" href="region/bryanskaya-oblast.html">Брянская область</a>
-																			<a class="dropdown-item" href="region/vladimirskaya-oblast.html">Владимирская
-																				область</a>
-																			<a class="dropdown-item" href="region/volgogradskaya-oblast.html">Волгоградская
-																				область</a>
-																			<a class="dropdown-item" href="region/vologodskaya-oblast.html">Вологодская
-																				область</a>
-																			<a class="dropdown-item" href="region/voronezhskaya-oblast.html">Воронежская
-																				область</a>
-																			<a class="dropdown-item"
-																				href="region/yevreyskaya-avtonomnaya-oblast.html">Еврейская
-																				А.обл.</a>
-																			<a class="dropdown-item" href="region/zabaykalskiy-kray.html">Забайкальский
-																				край</a>
-																			<a class="dropdown-item" href="region/ivanovskaya-oblast.html">Ивановская
-																				область</a>
-																			<a class="dropdown-item" href="region/irkutskaya-oblast.html">Иркутская
-																				область</a>
-																			<a class="dropdown-item"
-																				href="region/kabardino-balkarskaya-respublika.html">Кабардино-Балкарская
-																				Республика</a>
-																			<a class="dropdown-item"
-																				href="region/kaliningradskaya-oblast.html">Калининградская
-																				область</a>
-																			<a class="dropdown-item" href="region/kaluzhskaya-oblast.html">Калужская
-																				область</a>
-																			<a class="dropdown-item" href="region/kamchatskiy-kray.html">Камчатский край</a>
-																			<a class="dropdown-item"
-																				href="region/karachayevo-cherkesskaya-respublika.html">Карачаево-Черкесская
-																				Республика</a>
-																			<a class="dropdown-item" href="region/kemerovskaya-oblast.html">Кемеровская
-																				область</a>
-																			<a class="dropdown-item" href="region/kirovskaya-oblast.html">Кировская
-																				область</a>
-																			<a class="dropdown-item" href="region/kostromskaya-oblast.html">Костромская
-																				область</a>
-																			<a class="dropdown-item" href="region/krasnodarskiy-kray.html">Краснодарский
-																				край</a>
-																			<a class="dropdown-item" href="region/krasnoyarskiy-kray.html">Красноярский
-																				край</a>
-																			<a class="dropdown-item" href="region/kurganskaya-oblast.html">Курганская
-																				область</a>
-																			<a class="dropdown-item" href="region/kurskaya-oblast.html">Курская область</a>
-																			<a class="dropdown-item" href="region/leningradskaya-oblast.html">Ленинградская
-																				область</a>
-																			<a class="dropdown-item" href="region/lipetskaya-oblast.html">Липецкая область</a>
-																			<a class="dropdown-item" href="region/magadanskaya-oblast.html">Магаданская
-																				область</a>
-																			<a class="dropdown-item" href="region/moskva.html">Москва</a>
-																			<a class="dropdown-item" href="region/moskovskaya-oblast.html">Московская
-																				область</a>
-																			<a class="dropdown-item" href="region/murmanskaya-oblast.html">Мурманская
-																				область</a>
-																			<a class="dropdown-item" href="region/nenetskiy-avtonomnyy-okrug.html">Ненецкий
-																				АО</a>
-																			<a class="dropdown-item" href="region/nizhegorodskaya-oblast.html">Нижегородская
-																				область</a>
-																			<a class="dropdown-item" href="region/novgorodskaya-oblast.html">Новгородская
-																				область</a>
-																			<a class="dropdown-item" href="region/novosibirskaya-oblast.html">Новосибирская
-																				область</a>
-																			<a class="dropdown-item" href="region/omskaya-oblast.html">Омская область</a>
-																			<a class="dropdown-item" href="region/orenburgskaya-oblast.html">Оренбургская
-																				область</a>
-																			<a class="dropdown-item" href="region/orlovskaya-oblast.html">Орловская
-																				область</a>
-																			<a class="dropdown-item" href="region/penzenskaya-oblast.html">Пензенская
-																				область</a>
-																			<a class="dropdown-item" href="region/permskiy-kray.html">Пермский край</a>
-																			<a class="dropdown-item" href="region/primorskiy-kray.html">Приморский край</a>
-																			<a class="dropdown-item" href="region/pskovskaya-oblast.html">Псковская
-																				область</a>
-																			<a class="dropdown-item" href="region/adygey-respublika.html">Республика Адыгея
-																				(Адыгея)</a>
-																			<a class="dropdown-item" href="region/altay-respublika.html">Республика Алтай</a>
-																			<a class="dropdown-item" href="region/bashkortostan-respublika.html">Республика
-																				Башкортостан</a>
-																			<a class="dropdown-item" href="region/buryatiya-respublika.html">Республика
-																				Бурятия</a>
-																			<a class="dropdown-item" href="region/dagestan-respublika.html">Республика
-																				Дагестан</a>
-																			<a class="dropdown-item" href="region/ingushetiya-respublika.html">Республика
-																				Ингушетия</a>
-																			<a class="dropdown-item" href="region/kalmykiya-respublika.html">Республика
-																				Калмыкия</a>
-																			<a class="dropdown-item" href="region/kareliya-respublika.html">Республика
-																				Карелия</a>
-																			<a class="dropdown-item" href="region/komi-respublika.html">Республика Коми</a>
-																			<a class="dropdown-item" href="region/avtonomnaya-respublika-krym.html">Республика
-																				Крым</a>
-																			<a class="dropdown-item" href="region/mariy-el-respublika.html">Республика Марий
-																				Эл</a>
-																			<a class="dropdown-item" href="region/mordoviya-respublika.html">Республика
-																				Мордовия</a>
-																			<a class="dropdown-item" href="region/saha-respublika.html">Республика Саха
-																				(Якутия)</a>
-																			<a class="dropdown-item"
-																				href="region/severnaya-osetiya-respublika.html">Республика
-																				Северная Осетия</a>
-																			<a class="dropdown-item" href="region/tatarstan-respublika.html">Республика
-																				Татарстан</a>
-																			<a class="dropdown-item" href="region/tyva-respublika.html">Республика Тыва</a>
-																			<a class="dropdown-item" href="region/khakasiya-respublika.html">Республика
-																				Хакасия</a>
-																			<a class="dropdown-item" href="region/rostovskaya-oblast.html">Ростовская
-																				область</a>
-																			<a class="dropdown-item" href="region/ryazanskaya-oblast.html">Рязанская
-																				область</a>
-																			<a class="dropdown-item" href="region/samarskaya-oblast.html">Самарская
-																				область</a>
-																			<a class="dropdown-item" href="region/sankt-peterburg.html">Санкт-Петербург</a>
-																			<a class="dropdown-item" href="region/saratovskaya-oblast.html">Саратовская
-																				область</a>
-																			<a class="dropdown-item" href="region/sakhalinskaya-oblast.html">Сахалинская
-																				область</a>
-																			<a class="dropdown-item" href="region/sverdlovskaya-oblast.html">Свердловская
-																				область</a>
-																			<a class="dropdown-item" href="region/sevastopol.html">Севастополь</a>
-																			<a class="dropdown-item" href="region/smolenskaya-oblast.html">Смоленская
-																				область</a>
-																			<a class="dropdown-item" href="region/stavropolskiy-kray.html">Ставропольский
-																				край</a>
-																			<a class="dropdown-item" href="region/tambovskaya-oblast.html">Тамбовская
-																				область</a>
-																			<a class="dropdown-item" href="region/tverskaya-oblast.html">Тверская область</a>
-																			<a class="dropdown-item" href="region/tomskaya-oblast.html">Томская область</a>
-																			<a class="dropdown-item" href="region/tulskaya-oblast.html">Тульская область</a>
-																			<a class="dropdown-item" href="region/tyumenskaya-oblast.html">Тюменская
-																				область</a>
-																			<a class="dropdown-item" href="region/udmurtskaya-respublika.html">Удмуртская
-																				Республика</a>
-																			<a class="dropdown-item" href="region/ulyanovskaya-oblast.html">Ульяновская
-																				область</a>
-																			<a class="dropdown-item" href="region/khabarovskiy-kray.html">Хабаровский край</a>
-																			<a class="dropdown-item"
-																				href="region/khanty-mansiyskiy-avtonomnyy-okrug.html">Ханты-Мансийский АО</a>
-																			<a class="dropdown-item" href="region/chelyabinskaya-oblast.html">Челябинская
-																				область</a>
-																			<a class="dropdown-item" href="region/chechenskaya-respublika.html">Чеченская
-																				Республика</a>
-																			<a class="dropdown-item" href="region/chuvashskaya-respublika.html">Чувашская
-																				Республика</a>
-																			<a class="dropdown-item" href="region/chukotskiy-avtonomnyy-okrug.html">Чукотский
-																				АО</a>
-																			<a class="dropdown-item"
-																				href="region/yamalo-nenetskiy-avtonomnyy-okrug.html">Ямало-Ненецкий АО</a>
-																			<a class="dropdown-item" href="region/yaroslavskaya-oblast.html">Ярославская
-																				область</a>
+															<div class="col-12 col-sm-6 col-lg-4 mb-24">
+																<div class="form-group">
+																	<label>
+																		<span class="input-title">
+																			Ваш регион <span class="tooltip-wrapper"><span class="btn-tooptip">?</span><span
+																					class="tooltip-box"><span class="tooltip-box__close"></span>Укажите
+																					один из
+																					вариантов: регион проживания, временного нахождения или постоянной
+																					регистрации!</span></span>
+																		</span>
+																	</label>
+																	<div class="dropdown dropdown-regions">
+																		<input type="text" class="form-control input-dropdown" name="region"
+																			required="required" placeholder="Выберите регион">
+																		<div class="dropdown-menu">
+																			<div class="scroll-vertical">
+																				<a class="dropdown-item" href="region/altayskiy-kray.html">Алтайский край</a>
+																				<a class="dropdown-item" href="region/amurskaya-oblast.html">Амурская
+																					область</a>
+																				<a class="dropdown-item" href="region/arkhangelskaya-oblast.html">Архангельская
+																					область</a>
+																				<a class="dropdown-item" href="region/astrakhanskaya-oblast.html">Астраханская
+																					область</a>
+																				<a class="dropdown-item" href="region/belgorodskaya-oblast.html">Белгородская
+																					область</a>
+																				<a class="dropdown-item" href="region/bryanskaya-oblast.html">Брянская
+																					область</a>
+																				<a class="dropdown-item" href="region/vladimirskaya-oblast.html">Владимирская
+																					область</a>
+																				<a class="dropdown-item" href="region/volgogradskaya-oblast.html">Волгоградская
+																					область</a>
+																				<a class="dropdown-item" href="region/vologodskaya-oblast.html">Вологодская
+																					область</a>
+																				<a class="dropdown-item" href="region/voronezhskaya-oblast.html">Воронежская
+																					область</a>
+																				<a class="dropdown-item"
+																					href="region/yevreyskaya-avtonomnaya-oblast.html">Еврейская
+																					А.обл.</a>
+																				<a class="dropdown-item" href="region/zabaykalskiy-kray.html">Забайкальский
+																					край</a>
+																				<a class="dropdown-item" href="region/ivanovskaya-oblast.html">Ивановская
+																					область</a>
+																				<a class="dropdown-item" href="region/irkutskaya-oblast.html">Иркутская
+																					область</a>
+																				<a class="dropdown-item"
+																					href="region/kabardino-balkarskaya-respublika.html">Кабардино-Балкарская
+																					Республика</a>
+																				<a class="dropdown-item"
+																					href="region/kaliningradskaya-oblast.html">Калининградская
+																					область</a>
+																				<a class="dropdown-item" href="region/kaluzhskaya-oblast.html">Калужская
+																					область</a>
+																				<a class="dropdown-item" href="region/kamchatskiy-kray.html">Камчатский край</a>
+																				<a class="dropdown-item"
+																					href="region/karachayevo-cherkesskaya-respublika.html">Карачаево-Черкесская
+																					Республика</a>
+																				<a class="dropdown-item" href="region/kemerovskaya-oblast.html">Кемеровская
+																					область</a>
+																				<a class="dropdown-item" href="region/kirovskaya-oblast.html">Кировская
+																					область</a>
+																				<a class="dropdown-item" href="region/kostromskaya-oblast.html">Костромская
+																					область</a>
+																				<a class="dropdown-item" href="region/krasnodarskiy-kray.html">Краснодарский
+																					край</a>
+																				<a class="dropdown-item" href="region/krasnoyarskiy-kray.html">Красноярский
+																					край</a>
+																				<a class="dropdown-item" href="region/kurganskaya-oblast.html">Курганская
+																					область</a>
+																				<a class="dropdown-item" href="region/kurskaya-oblast.html">Курская область</a>
+																				<a class="dropdown-item" href="region/leningradskaya-oblast.html">Ленинградская
+																					область</a>
+																				<a class="dropdown-item" href="region/lipetskaya-oblast.html">Липецкая
+																					область</a>
+																				<a class="dropdown-item" href="region/magadanskaya-oblast.html">Магаданская
+																					область</a>
+																				<a class="dropdown-item" href="region/moskva.html">Москва</a>
+																				<a class="dropdown-item" href="region/moskovskaya-oblast.html">Московская
+																					область</a>
+																				<a class="dropdown-item" href="region/murmanskaya-oblast.html">Мурманская
+																					область</a>
+																				<a class="dropdown-item" href="region/nenetskiy-avtonomnyy-okrug.html">Ненецкий
+																					АО</a>
+																				<a class="dropdown-item" href="region/nizhegorodskaya-oblast.html">Нижегородская
+																					область</a>
+																				<a class="dropdown-item" href="region/novgorodskaya-oblast.html">Новгородская
+																					область</a>
+																				<a class="dropdown-item" href="region/novosibirskaya-oblast.html">Новосибирская
+																					область</a>
+																				<a class="dropdown-item" href="region/omskaya-oblast.html">Омская область</a>
+																				<a class="dropdown-item" href="region/orenburgskaya-oblast.html">Оренбургская
+																					область</a>
+																				<a class="dropdown-item" href="region/orlovskaya-oblast.html">Орловская
+																					область</a>
+																				<a class="dropdown-item" href="region/penzenskaya-oblast.html">Пензенская
+																					область</a>
+																				<a class="dropdown-item" href="region/permskiy-kray.html">Пермский край</a>
+																				<a class="dropdown-item" href="region/primorskiy-kray.html">Приморский край</a>
+																				<a class="dropdown-item" href="region/pskovskaya-oblast.html">Псковская
+																					область</a>
+																				<a class="dropdown-item" href="region/adygey-respublika.html">Республика Адыгея
+																					(Адыгея)</a>
+																				<a class="dropdown-item" href="region/altay-respublika.html">Республика
+																					Алтай</a>
+																				<a class="dropdown-item" href="region/bashkortostan-respublika.html">Республика
+																					Башкортостан</a>
+																				<a class="dropdown-item" href="region/buryatiya-respublika.html">Республика
+																					Бурятия</a>
+																				<a class="dropdown-item" href="region/dagestan-respublika.html">Республика
+																					Дагестан</a>
+																				<a class="dropdown-item" href="region/ingushetiya-respublika.html">Республика
+																					Ингушетия</a>
+																				<a class="dropdown-item" href="region/kalmykiya-respublika.html">Республика
+																					Калмыкия</a>
+																				<a class="dropdown-item" href="region/kareliya-respublika.html">Республика
+																					Карелия</a>
+																				<a class="dropdown-item" href="region/komi-respublika.html">Республика Коми</a>
+																				<a class="dropdown-item"
+																					href="region/avtonomnaya-respublika-krym.html">Республика
+																					Крым</a>
+																				<a class="dropdown-item" href="region/mariy-el-respublika.html">Республика Марий
+																					Эл</a>
+																				<a class="dropdown-item" href="region/mordoviya-respublika.html">Республика
+																					Мордовия</a>
+																				<a class="dropdown-item" href="region/saha-respublika.html">Республика Саха
+																					(Якутия)</a>
+																				<a class="dropdown-item"
+																					href="region/severnaya-osetiya-respublika.html">Республика
+																					Северная Осетия</a>
+																				<a class="dropdown-item" href="region/tatarstan-respublika.html">Республика
+																					Татарстан</a>
+																				<a class="dropdown-item" href="region/tyva-respublika.html">Республика Тыва</a>
+																				<a class="dropdown-item" href="region/khakasiya-respublika.html">Республика
+																					Хакасия</a>
+																				<a class="dropdown-item" href="region/rostovskaya-oblast.html">Ростовская
+																					область</a>
+																				<a class="dropdown-item" href="region/ryazanskaya-oblast.html">Рязанская
+																					область</a>
+																				<a class="dropdown-item" href="region/samarskaya-oblast.html">Самарская
+																					область</a>
+																				<a class="dropdown-item" href="region/sankt-peterburg.html">Санкт-Петербург</a>
+																				<a class="dropdown-item" href="region/saratovskaya-oblast.html">Саратовская
+																					область</a>
+																				<a class="dropdown-item" href="region/sakhalinskaya-oblast.html">Сахалинская
+																					область</a>
+																				<a class="dropdown-item" href="region/sverdlovskaya-oblast.html">Свердловская
+																					область</a>
+																				<a class="dropdown-item" href="region/sevastopol.html">Севастополь</a>
+																				<a class="dropdown-item" href="region/smolenskaya-oblast.html">Смоленская
+																					область</a>
+																				<a class="dropdown-item" href="region/stavropolskiy-kray.html">Ставропольский
+																					край</a>
+																				<a class="dropdown-item" href="region/tambovskaya-oblast.html">Тамбовская
+																					область</a>
+																				<a class="dropdown-item" href="region/tverskaya-oblast.html">Тверская
+																					область</a>
+																				<a class="dropdown-item" href="region/tomskaya-oblast.html">Томская область</a>
+																				<a class="dropdown-item" href="region/tulskaya-oblast.html">Тульская область</a>
+																				<a class="dropdown-item" href="region/tyumenskaya-oblast.html">Тюменская
+																					область</a>
+																				<a class="dropdown-item" href="region/udmurtskaya-respublika.html">Удмуртская
+																					Республика</a>
+																				<a class="dropdown-item" href="region/ulyanovskaya-oblast.html">Ульяновская
+																					область</a>
+																				<a class="dropdown-item" href="region/khabarovskiy-kray.html">Хабаровский
+																					край</a>
+																				<a class="dropdown-item"
+																					href="region/khanty-mansiyskiy-avtonomnyy-okrug.html">Ханты-Мансийский АО</a>
+																				<a class="dropdown-item" href="region/chelyabinskaya-oblast.html">Челябинская
+																					область</a>
+																				<a class="dropdown-item" href="region/chechenskaya-respublika.html">Чеченская
+																					Республика</a>
+																				<a class="dropdown-item" href="region/chuvashskaya-respublika.html">Чувашская
+																					Республика</a>
+																				<a class="dropdown-item"
+																					href="region/chukotskiy-avtonomnyy-okrug.html">Чукотский
+																					АО</a>
+																				<a class="dropdown-item"
+																					href="region/yamalo-nenetskiy-avtonomnyy-okrug.html">Ямало-Ненецкий АО</a>
+																				<a class="dropdown-item" href="region/yaroslavskaya-oblast.html">Ярославская
+																					область</a>
+																			</div>
 																		</div>
 																	</div>
 																</div>
 															</div>
-														</div>
-														<div class="col-12 col-sm-6 col-lg-4 mb-24">
-															<div class="form-group">
-																<label for="addressEnterprises">
-																	<span class="input-title">Адрес предприятия:</span>
-																</label>
-																<input type="text" class="form-control" placeholder="Москва, ул. Ленина дом 22"
-																	name="addressEnterprises" id="addressEnterprises">
+															<div class="col-12 col-sm-6 col-lg-4 mb-24">
+																<div class="form-group">
+																	<label for="addressEnterprises">
+																		<span class="input-title">Адрес предприятия:</span>
+																	</label>
+																	<input type="text" class="form-control" placeholder="Москва, ул. Ленина дом 22"
+																		name="addressEnterprises" id="addressEnterprises">
+																</div>
 															</div>
 														</div>
 													</div>
-												</div>
-												<div class="tab-pane fade" id="pills-ipNumber" role="tabpanel" aria-labelledby="ipNumber">
-													<div class="row">
-														<div class="col-12 mb-24">
-															<div class="form-group">
-																<label for="enforcementNumber">
-																	<span class="input-title">
-																		Номер исполнительного производства:
-																	</span>
-																	<input type="text" class="form-control"
-																		placeholder="Укажите в формате n..n/yy/dd/rr или n..n/yy/ddddd-ИП"
-																		name="enforcementNumber" id="enforcementNumber" required="required">
-																</label>
+													<div class="tab-pane fade" id="pills-ipNumber" role="tabpanel" aria-labelledby="ipNumber">
+														<div class="row">
+															<div class="col-12 mb-24">
+																<div class="form-group">
+																	<label for="enforcementNumber">
+																		<span class="input-title">
+																			Номер исполнительного производства:
+																		</span>
+																		<input type="text" class="form-control"
+																			placeholder="Укажите в формате n..n/yy/dd/rr или n..n/yy/ddddd-ИП"
+																			name="enforcementNumber" id="enforcementNumber" required="required">
+																	</label>
+																</div>
 															</div>
 														</div>
 													</div>
@@ -682,7 +693,8 @@
 
 										<div class="col-12">
 											<label class="form-check-label">
-												<input class="form-check-input checkBoxAgreePrivacy" type="checkbox" required="required">
+												<input class="form-check-input checkBoxAgreePrivacy" type="checkbox" checked
+													required="required">
 												<span class="checkbox-custom"></span>
 												<span class="checkbox-text">Согласен(а) с политикой и дог. оферты</span>
 											</label>
@@ -713,14 +725,14 @@
 								<div class="wrapperIconsContactTitle">
 									Телефон:
 								</div>
-								<a href="tel:4162599035" itemprop="telephone">(4162) 59-90-35</a>
+								<a href="tel:4162599035">(4162) 59-90-35</a>
 							</div>
 
 							<div class="wrapperIconsContact">
 								<div class="wrapperIconsContactTitle">
 									Факс:
 								</div>
-								<a href="tel:4162599072" itemprop="telephone">(4162) 59-90-72</a>
+								<a href="tel:4162599072">(4162) 59-90-72</a>
 							</div>
 
 							<div class="wrapperIconsContact">
@@ -742,7 +754,7 @@
 						<div class="col-12 mb-36">
 							<div class="general-box">
 								<h2 class="titleHome"><strong>Отделы судебных приставов</strong> по Амурской области</h2>
-								<form action="" class="tabs form-departmens" id="district-search">
+								<form class="tabs form-departmens" id="district-search">
 									<div class="row">
 										<div class="col-12 col-sm-6 col-lg-4 mb-24">
 											<div class="form-group">
@@ -777,8 +789,8 @@
 													</span>
 												</label>
 												<div class="dropdown dropdown-regions">
-													<input type="text" class="form-control input-dropdown" name="regionNumberID"
-														required="required" placeholder="Амурская область">
+													<input type="text" class="form-control input-dropdown" required="required"
+														placeholder="Амурская область" name="region">
 													<div class="dropdown-menu">
 														<div class="scroll-vertical">
 															<a class="dropdown-item" href="region/altayskiy-kray.html">Алтайский край</a>
@@ -1371,7 +1383,7 @@
 						<div class="col-12 mb-36">
 							<div class="general-box">
 								<h2 class="titleHome"><strong>Номера телефонов судебных приставов</strong> <br>по Амурской области</h2>
-								<form action="" class="tabs form-departmens" id="district-search">
+								<form class="tabs form-departmens">
 									<div class="row">
 										<div class="col-12 col-sm-6 col-lg-4 mb-24">
 											<div class="form-group">
@@ -1406,8 +1418,8 @@
 													</span>
 												</label>
 												<div class="dropdown dropdown-regions">
-													<input type="text" class="form-control input-dropdown" name="regionNumberID"
-														required="required" placeholder="Амурская область">
+													<input type="text" class="form-control input-dropdown" id="regionNumberID" required="required"
+														placeholder="Амурская область" name="region">
 													<div class="dropdown-menu">
 														<div class="scroll-vertical">
 															<a class="dropdown-item" href="region/altayskiy-kray.html">Алтайский край</a>
@@ -1844,16 +1856,16 @@
 								Проверка долгов
 							</div>
 						</div>
-		
+
 						<div class="contentTextNameDownFooter">
 							<p><strong>FSSPRU.NET</strong> Сервис проверки задолженности не является официальным сайтом ФССП.</p>
 						</div>
-		
+
 						<div class="contentTextUpFooter">
 							<p>Безопасность операций подтверждена сертификатом соответствия международному стандарту PCI DSS.</p>
 						</div>
 					</div>
-		
+
 					<div class="col-lg-4 col-md-4 col-sm-6 col-12">
 						<div class="wrapperSectionsFooter">
 							<div class="wrapperSectionsFooterTitle">
@@ -1878,19 +1890,19 @@
 							</div>
 						</div>
 					</div>
-		
+
 					<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 						<div class="wrapperContactFooter">
 							<div class="wrapperContactFooterBox">
 								<a href="mailto:info@fsspru.net">info@fsspru.net</a>
 								<span>По всем вопросам:</span>
 							</div>
-		
+
 							<div class="wrapperContactFooterBox">
 								<a href="tel:88003503486">8 (800) 350 34 86</a>
 								<span>Бесплатная юр. консультация:</span>
 							</div>
-		
+
 							<div class="application-links">
 								<a href="https://play.google.com/store/apps/details?id=com.fssp.app" target="_blank" rel="nofollow"
 									onclick="ym(70699780,'reachGoal','and');return true;" class="application-links__item"><img
@@ -1902,7 +1914,7 @@
 							</div>
 						</div>
 					</div>
-		
+
 					<div class="col-12">
 						<div class="wrapperPaymentsFooter">
 							<div class="box-text">
@@ -1915,7 +1927,7 @@
 					</div>
 				</div>
 			</div>
-		
+
 			<div class="container-fluid">
 				<div class="row wrapperFooter wrapperDownFooter">
 					<div class="col-lg-9 col-md-8 col-sm-6 сol-12">
@@ -1958,8 +1970,7 @@
 	</div>
 
 	<!-- Modal -->
-	<div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="resultModalLabel"
-		aria-hidden="true">
+	<div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -1972,7 +1983,7 @@
 					</div>
 				</div>
 				<div class="modal-body">
-					<form action="" method="post" class="form-modal">
+					<form method="post" class="form-modal">
 						<div class="form-group">
 							<label for="mail">
 								<span class="input-title">Укажите ваш E-mail</span>

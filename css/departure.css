@@ -39,6 +39,10 @@
   width: 100%;
 }
 
+.bailiff-next-step-first {
+  margin: 12px 0 0;
+}
+
 .form-bailiff__body {
   border-bottom: 2px solid #2862AC;
 }

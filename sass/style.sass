@@ -79,7 +79,7 @@ input, textarea, select, .form-control
 	background: #FFF
 	width: 100%
 	height: 36px
-	color: #5A5A5A
+	color: #0E0E0E
 	font-family: $default-font
 	font-size: 16px
 	font-weight: 300
@@ -93,14 +93,15 @@ input, textarea, select, .form-control
 		color: rgba(#5A5A5A, .5)
 		border: 1px solid #007BFF
 	&:focus
-		color: #5A5A5A
+		color: #0E0E0E
 		border: 1px solid #007BFF
 		outline: none
 		box-shadow: none
-
-.input-dropdown
-	background: #FFF url('../img/arrow-bottom.svg') no-repeat calc(100% - 10px) center
-	background-size: 8px
+	&:disabled
+		background: transparent
+		cursor: inherit
+		&:hover
+			color: #0E0E0E
 
 label
 	display: block
@@ -132,7 +133,7 @@ textarea
 	height: 103px
 
 .error-label
-	input
+	~ input
 		border: 1px solid #D92A2A
 		color: #5A5A5A
 		&::placeholder
@@ -274,6 +275,27 @@ h2
 	margin: 0 0 24px
 	text-transform: uppercase
 
+.input-dropdown, .dropdown-toggle-tab
+	background: #FFF url('../img/arrow-bottom.svg') no-repeat calc(100% - 10px) center
+	background-size: 8px
+	width: 100%
+
+.dropdown-toggle-tab
+	text-align: left
+	font-weight: 300
+	padding: 5px 10px
+	justify-content: flex-start
+	font-size: 16px
+	border-radius: 8px
+	border: 1px solid rgba(90, 90, 90, 0.50)
+	color: #5A5A5A
+	height: auto
+	&:after
+		display: none
+	&:fosus, &:hover
+		font-weight: 300
+		color: $accent
+
 .descCardsInfo
 	color: #5A5A5A
 	font-weight: 300
@@ -359,6 +381,10 @@ a.color-white
 			color: $accent
 			font-weight: 500
 
+.dropdown-item.active, .dropdown-item:active
+	color: $accent
+	background: transparent
+
 .scroll-vertical
 	width: 100%
 	&::-webkit-scrollbar
@@ -402,11 +428,13 @@ a.color-white
 	max-width: 416px
 	width: 100%
 	box-shadow: 0px -4px 54px 0px rgba(0, 0, 0, 0.10)
-	&-text-title
-		color: #0E0E0E
-		font-weight: 500
-		text-transform: uppercase
-		font-size: 16px
+	&-text
+		width: 100%
+		&-title
+			color: #0E0E0E
+			font-weight: 500
+			text-transform: uppercase
+			font-size: 16px
 
 .tibrr-cookie-consent-container
 	display: flex
@@ -450,8 +478,6 @@ a.color-white
 		.btn-tooptip
 			background: $accent
 			color: #fff
-		.tooltip-box
-			display: block
 
 .btn-tooptip
 	cursor: pointer
@@ -465,6 +491,9 @@ a.color-white
 	height: 14px
 	min-width: 14px
 	transition: .3s
+	&:hover
+		~	.tooltip-box
+			display: block
 
 .btn-tooptip-white
 	background: #fff
@@ -526,6 +555,11 @@ a.color-white
 .select-tab
 	background: url('../img/arrow-bottom.svg') no-repeat calc( 100% - 10px ) center
 	background-size: 8px
+
+.dropdown.show .dropdown-toggle-tab
+	font-weight: 300
+	color: $accent
+	color: #5A5A5A
 
 //checkbox my
 .form-check-label
@@ -634,14 +668,12 @@ a.color-white
 			background: $accent
 			width: 2px
 			height: calc(100% + 24px)
-		
 
 .list-dots-white
 	color: #fff
 	li
 		&::before, &:after
 			background: #fff
-	
 
 .general-box
 	width: 100%
@@ -786,6 +818,7 @@ a.color-white
 			margin: 0
 	&-item
 		margin: 0 0 24px
+		width: 100%
 		&:last-child
 			margin: 0
 		.h3
@@ -799,14 +832,15 @@ a.color-white
 		&__body
 			font-weight: 300
 			line-height: 130%
+			display: flex
+			flex-wrap: wrap
+			align-items: flex-start
 		a
 			color: #5A5A5A
 			&:hover
 				color: $accent
 		&-checked
 			display: none !important
-			&.click
-				display: block !important
 	&__toggle
 		display: flex
 		align-items: center
@@ -834,8 +868,29 @@ a.color-white
 		color: #5A5A5A
 		font-size: 24px
 		font-weight: bold
+		width: fit-content
 	.tooltip-wrapper
-		display: inline-flex	
+		display: inline-flex
+	&.click
+		.departmens-box-item-checked
+			display: block !important
+	&.active
+		.departmens-box-form
+			display: none
+		.form-check-label-payment
+			display: none
+		.sum-value
+			font-size: 14px
+			font-weight: normal
+		.sum-value-edit
+			display: flex
+		.sum-value-paid
+			display: flex
+			align-items: center
+			justify-content: center
+			font-size: 24px
+			font-weight: bold	
+		
 
 .add-payment
 	color: #fff
@@ -891,7 +946,6 @@ a.color-white
 			margin: 0 0 0 5px
 		&:last-child
 			margin: 0
-			
 
 .safeConnection
 	padding: 0 14px 0 0
@@ -907,3 +961,39 @@ a.color-white
 .card
 	border: none
 	border-radius: 12px
+
+.btn-report-sum
+	&__nosale
+		display: none
+	&.sale-price
+		.btn-report-sum
+			&__sale
+				display: none
+			&__nosale
+				display: block
+
+.departmens-box-form
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	width: 100%
+	label
+		max-width: 270px
+		width: 100%
+	&.checked
+		.checked-form
+			display: block
+
+.checked-form
+	margin: 0 0 0 11px
+	display: none
+	width: 34px
+
+.sum-value-paid, .sum-value-edit
+	display: none
+
+.sum-value-edit
+	margin: 0 0 0 auto
+
+// .departmens-box-item-credit
+// 	&.minus

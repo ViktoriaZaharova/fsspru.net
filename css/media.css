@@ -153,6 +153,11 @@
   }
 }
 @media only screen and (max-width: 991px) {
+  .btn-border:hover {
+    border: 1px solid #2862AC;
+    color: #2862AC;
+    background: #fff;
+  }
   .navbar-light .navbar-toggler {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -626,9 +631,6 @@
   .content {
     padding: 36px 0 0;
   }
-  .wrapperRadioHome {
-    display: none;
-  }
   .blockCheck-box {
     width: 100%;
   }
@@ -815,11 +817,42 @@
   .progress-steps {
     font-size: 14px;
   }
-  .table, .nameInTable {
-    font-size: 9px;
+  .table {
+    font-size: 14px;
+  }
+  .table-row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0;
+    background: #fff;
+    border-radius: 12px;
+    margin: 0 0 24px;
+  }
+  .table-row:last-child {
+    margin: 0;
+  }
+  .itemTableTravelBan {
+    padding: 0;
+    margin: 0 0 24px;
+    border: none;
+    padding: 0 14px;
+  }
+  .itemTableTravelBan:first-child {
+    color: #fff;
+    background: #2862AC;
+    padding: 24px 14px;
+    border-radius: 12px 12px 0 0;
+  }
+  .itemTableTravelBan::before {
+    content: attr(data-table);
+    text-transform: uppercase;
+    display: block;
+    margin: 0 0 12px;
+    font-weight: 500;
+    color: #0E0E0E;
   }
   .nameInTable {
-    border-radius: 0;
+    display: none;
   }
   .statistics-online {
     margin: 64px 0 119px;
@@ -939,6 +972,9 @@
   }
   .tibrr-cookie-consent-icon {
     right: -35px;
+  }
+  .tibrr-cookie-consent-button {
+    margin: 0 auto;
   }
 }
 @media only screen and (max-width: 370px) {
