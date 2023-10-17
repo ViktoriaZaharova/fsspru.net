@@ -228,12 +228,16 @@ $('.link-code').on('click', function (e) {
 
 	if (!$this.hasClass('click')) {
 		$this.addClass('click');
-		$this.html('Отправить в СМС');
+		$('#chooseEmail').removeClass('active');
+		$('#chooseSMS').addClass('active');
+		$this.html('Отправить на E-mail');
 		content1.attr('hidden', true);
 		content2.attr('hidden', false);
 	} else {
 		$this.removeClass('click');
-		$this.html('Укажите телефон');
+		$('#chooseEmail').addClass('active');
+		$('#chooseSMS').removeClass('active');
+		$this.html('Отправить в СМС');
 		content1.attr('hidden', false);
 		content2.attr('hidden', true);
 	}
